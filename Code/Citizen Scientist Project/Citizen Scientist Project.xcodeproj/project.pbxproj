@@ -1,0 +1,574 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		229E61432022A79200D4BDDA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229E61422022A79200D4BDDA /* AppDelegate.swift */; };
+		229E61452022A79200D4BDDA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229E61442022A79200D4BDDA /* ViewController.swift */; };
+		229E61482022A79200D4BDDA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 229E61462022A79200D4BDDA /* Main.storyboard */; };
+		229E614B2022A79200D4BDDA /* Citizen_Scientist_Project.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 229E61492022A79200D4BDDA /* Citizen_Scientist_Project.xcdatamodeld */; };
+		229E614D2022A79200D4BDDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 229E614C2022A79200D4BDDA /* Assets.xcassets */; };
+		229E61502022A79200D4BDDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 229E614E2022A79200D4BDDA /* LaunchScreen.storyboard */; };
+		229E615B2022A79200D4BDDA /* Citizen_Scientist_ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229E615A2022A79200D4BDDA /* Citizen_Scientist_ProjectTests.swift */; };
+		229E61662022A79200D4BDDA /* Citizen_Scientist_ProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229E61652022A79200D4BDDA /* Citizen_Scientist_ProjectUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		229E61572022A79200D4BDDA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 229E61372022A79200D4BDDA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 229E613E2022A79200D4BDDA;
+			remoteInfo = "Citizen Scientist Project";
+		};
+		229E61622022A79200D4BDDA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 229E61372022A79200D4BDDA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 229E613E2022A79200D4BDDA;
+			remoteInfo = "Citizen Scientist Project";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		229E613F2022A79200D4BDDA /* Citizen Scientist Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Citizen Scientist Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		229E61422022A79200D4BDDA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		229E61442022A79200D4BDDA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		229E61472022A79200D4BDDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		229E614A2022A79200D4BDDA /* Citizen_Scientist_Project.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Citizen_Scientist_Project.xcdatamodel; sourceTree = "<group>"; };
+		229E614C2022A79200D4BDDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		229E614F2022A79200D4BDDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		229E61512022A79200D4BDDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		229E61562022A79200D4BDDA /* Citizen Scientist ProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Citizen Scientist ProjectTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		229E615A2022A79200D4BDDA /* Citizen_Scientist_ProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Citizen_Scientist_ProjectTests.swift; sourceTree = "<group>"; };
+		229E615C2022A79200D4BDDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		229E61612022A79200D4BDDA /* Citizen Scientist ProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Citizen Scientist ProjectUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		229E61652022A79200D4BDDA /* Citizen_Scientist_ProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Citizen_Scientist_ProjectUITests.swift; sourceTree = "<group>"; };
+		229E61672022A79200D4BDDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		229E613C2022A79200D4BDDA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		229E61532022A79200D4BDDA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		229E615E2022A79200D4BDDA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		229E61362022A79200D4BDDA = {
+			isa = PBXGroup;
+			children = (
+				229E61412022A79200D4BDDA /* Citizen Scientist Project */,
+				229E61592022A79200D4BDDA /* Citizen Scientist ProjectTests */,
+				229E61642022A79200D4BDDA /* Citizen Scientist ProjectUITests */,
+				229E61402022A79200D4BDDA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		229E61402022A79200D4BDDA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				229E613F2022A79200D4BDDA /* Citizen Scientist Project.app */,
+				229E61562022A79200D4BDDA /* Citizen Scientist ProjectTests.xctest */,
+				229E61612022A79200D4BDDA /* Citizen Scientist ProjectUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		229E61412022A79200D4BDDA /* Citizen Scientist Project */ = {
+			isa = PBXGroup;
+			children = (
+				229E61422022A79200D4BDDA /* AppDelegate.swift */,
+				229E61442022A79200D4BDDA /* ViewController.swift */,
+				229E61462022A79200D4BDDA /* Main.storyboard */,
+				229E614C2022A79200D4BDDA /* Assets.xcassets */,
+				229E614E2022A79200D4BDDA /* LaunchScreen.storyboard */,
+				229E61512022A79200D4BDDA /* Info.plist */,
+				229E61492022A79200D4BDDA /* Citizen_Scientist_Project.xcdatamodeld */,
+			);
+			path = "Citizen Scientist Project";
+			sourceTree = "<group>";
+		};
+		229E61592022A79200D4BDDA /* Citizen Scientist ProjectTests */ = {
+			isa = PBXGroup;
+			children = (
+				229E615A2022A79200D4BDDA /* Citizen_Scientist_ProjectTests.swift */,
+				229E615C2022A79200D4BDDA /* Info.plist */,
+			);
+			path = "Citizen Scientist ProjectTests";
+			sourceTree = "<group>";
+		};
+		229E61642022A79200D4BDDA /* Citizen Scientist ProjectUITests */ = {
+			isa = PBXGroup;
+			children = (
+				229E61652022A79200D4BDDA /* Citizen_Scientist_ProjectUITests.swift */,
+				229E61672022A79200D4BDDA /* Info.plist */,
+			);
+			path = "Citizen Scientist ProjectUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		229E613E2022A79200D4BDDA /* Citizen Scientist Project */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 229E616A2022A79200D4BDDA /* Build configuration list for PBXNativeTarget "Citizen Scientist Project" */;
+			buildPhases = (
+				229E613B2022A79200D4BDDA /* Sources */,
+				229E613C2022A79200D4BDDA /* Frameworks */,
+				229E613D2022A79200D4BDDA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Citizen Scientist Project";
+			productName = "Citizen Scientist Project";
+			productReference = 229E613F2022A79200D4BDDA /* Citizen Scientist Project.app */;
+			productType = "com.apple.product-type.application";
+		};
+		229E61552022A79200D4BDDA /* Citizen Scientist ProjectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 229E616D2022A79200D4BDDA /* Build configuration list for PBXNativeTarget "Citizen Scientist ProjectTests" */;
+			buildPhases = (
+				229E61522022A79200D4BDDA /* Sources */,
+				229E61532022A79200D4BDDA /* Frameworks */,
+				229E61542022A79200D4BDDA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				229E61582022A79200D4BDDA /* PBXTargetDependency */,
+			);
+			name = "Citizen Scientist ProjectTests";
+			productName = "Citizen Scientist ProjectTests";
+			productReference = 229E61562022A79200D4BDDA /* Citizen Scientist ProjectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		229E61602022A79200D4BDDA /* Citizen Scientist ProjectUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 229E61702022A79200D4BDDA /* Build configuration list for PBXNativeTarget "Citizen Scientist ProjectUITests" */;
+			buildPhases = (
+				229E615D2022A79200D4BDDA /* Sources */,
+				229E615E2022A79200D4BDDA /* Frameworks */,
+				229E615F2022A79200D4BDDA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				229E61632022A79200D4BDDA /* PBXTargetDependency */,
+			);
+			name = "Citizen Scientist ProjectUITests";
+			productName = "Citizen Scientist ProjectUITests";
+			productReference = 229E61612022A79200D4BDDA /* Citizen Scientist ProjectUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		229E61372022A79200D4BDDA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Key Biscayne";
+				TargetAttributes = {
+					229E613E2022A79200D4BDDA = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					229E61552022A79200D4BDDA = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 229E613E2022A79200D4BDDA;
+					};
+					229E61602022A79200D4BDDA = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 229E613E2022A79200D4BDDA;
+					};
+				};
+			};
+			buildConfigurationList = 229E613A2022A79200D4BDDA /* Build configuration list for PBXProject "Citizen Scientist Project" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 229E61362022A79200D4BDDA;
+			productRefGroup = 229E61402022A79200D4BDDA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				229E613E2022A79200D4BDDA /* Citizen Scientist Project */,
+				229E61552022A79200D4BDDA /* Citizen Scientist ProjectTests */,
+				229E61602022A79200D4BDDA /* Citizen Scientist ProjectUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		229E613D2022A79200D4BDDA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				229E61502022A79200D4BDDA /* LaunchScreen.storyboard in Resources */,
+				229E614D2022A79200D4BDDA /* Assets.xcassets in Resources */,
+				229E61482022A79200D4BDDA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		229E61542022A79200D4BDDA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		229E615F2022A79200D4BDDA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		229E613B2022A79200D4BDDA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				229E61452022A79200D4BDDA /* ViewController.swift in Sources */,
+				229E61432022A79200D4BDDA /* AppDelegate.swift in Sources */,
+				229E614B2022A79200D4BDDA /* Citizen_Scientist_Project.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		229E61522022A79200D4BDDA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				229E615B2022A79200D4BDDA /* Citizen_Scientist_ProjectTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		229E615D2022A79200D4BDDA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				229E61662022A79200D4BDDA /* Citizen_Scientist_ProjectUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		229E61582022A79200D4BDDA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 229E613E2022A79200D4BDDA /* Citizen Scientist Project */;
+			targetProxy = 229E61572022A79200D4BDDA /* PBXContainerItemProxy */;
+		};
+		229E61632022A79200D4BDDA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 229E613E2022A79200D4BDDA /* Citizen Scientist Project */;
+			targetProxy = 229E61622022A79200D4BDDA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		229E61462022A79200D4BDDA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				229E61472022A79200D4BDDA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		229E614E2022A79200D4BDDA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				229E614F2022A79200D4BDDA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		229E61682022A79200D4BDDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		229E61692022A79200D4BDDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		229E616B2022A79200D4BDDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Citizen Scientist Project/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Key.Biscayne.Citizen-Scientist-Project";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		229E616C2022A79200D4BDDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Citizen Scientist Project/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Key.Biscayne.Citizen-Scientist-Project";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		229E616E2022A79200D4BDDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Citizen Scientist ProjectTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Key.Biscayne.Citizen-Scientist-ProjectTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Citizen Scientist Project.app/Citizen Scientist Project";
+			};
+			name = Debug;
+		};
+		229E616F2022A79200D4BDDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Citizen Scientist ProjectTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Key.Biscayne.Citizen-Scientist-ProjectTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Citizen Scientist Project.app/Citizen Scientist Project";
+			};
+			name = Release;
+		};
+		229E61712022A79200D4BDDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Citizen Scientist ProjectUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Key.Biscayne.Citizen-Scientist-ProjectUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Citizen Scientist Project";
+			};
+			name = Debug;
+		};
+		229E61722022A79200D4BDDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Citizen Scientist ProjectUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Key.Biscayne.Citizen-Scientist-ProjectUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Citizen Scientist Project";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		229E613A2022A79200D4BDDA /* Build configuration list for PBXProject "Citizen Scientist Project" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				229E61682022A79200D4BDDA /* Debug */,
+				229E61692022A79200D4BDDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		229E616A2022A79200D4BDDA /* Build configuration list for PBXNativeTarget "Citizen Scientist Project" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				229E616B2022A79200D4BDDA /* Debug */,
+				229E616C2022A79200D4BDDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		229E616D2022A79200D4BDDA /* Build configuration list for PBXNativeTarget "Citizen Scientist ProjectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				229E616E2022A79200D4BDDA /* Debug */,
+				229E616F2022A79200D4BDDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		229E61702022A79200D4BDDA /* Build configuration list for PBXNativeTarget "Citizen Scientist ProjectUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				229E61712022A79200D4BDDA /* Debug */,
+				229E61722022A79200D4BDDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		229E61492022A79200D4BDDA /* Citizen_Scientist_Project.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				229E614A2022A79200D4BDDA /* Citizen_Scientist_Project.xcdatamodel */,
+			);
+			currentVersion = 229E614A2022A79200D4BDDA /* Citizen_Scientist_Project.xcdatamodel */;
+			path = Citizen_Scientist_Project.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 229E61372022A79200D4BDDA /* Project object */;
+}

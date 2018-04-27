@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4x0-DQ-ghH">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Biomes Coral Reefs View Controller-->
+        <scene sceneID="8mN-Wl-okF">
+            <objects>
+                <viewController id="4x0-DQ-ghH" customClass="BiomesCoralReefsViewController" customModule="Citizen_Scientist_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bfL-hJ-Z8d">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="2000"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="78w-ey-400">
+                                <rect key="frame" x="0.0" y="20" width="375" height="1980"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tog-BV-aSj" userLabel="Mini Challenge View">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1566"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coral-reefs" translatesAutoresizingMaskIntoConstraints="NO" id="5jI-id-ol7">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="225"/>
+                                            </imageView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P9g-A6-PhB" userLabel="Blue Box 1">
+                                                <rect key="frame" x="0.0" y="225" width="375" height="1216"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KEY BISCAYNE’S CORAL REEFS" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="chu-nw-YcW">
+                                                        <rect key="frame" x="16" y="16" width="343" height="24"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="itH-eF-vpq">
+                                                        <rect key="frame" x="16" y="48" width="343" height="1152"/>
+                                                        <mutableString key="text">Coral reefs are either naturally occurring or artificially implanted features of the marine environment located on the ocean side of Key Biscayne. The reefs are congregations of small living creatures typically found in tropical and subtropical waters, such as off Key Biscayne.
+
+Naturally occurring reefs form independently of human intervention, while artificially formed reefs grow on human planted features such as ships sunk specifically for the purpose of providing a foundation for coral growth. At least one such ship was sunk off Key Biscayne.
+
+Coral reefs provide value to the Key through tourism, recreational fishing, and shoreline protection. The beauty of the reefs themselves and the wide range of tropical fish found on the reefs provide a valuable tourist attraction. Several reefs are found at shallow depths and thus provide an ideal site for viewing by snorkeling and scuba diving.
+
+The reefs also host a wide variety of edible fish such as snapper and grouper, thus supporting a valuable recreational fishing industry. Finally, the reefs serve to protect inshore areas during storms by causing waves to break farther offshore.
+
+Unfortunately, coral reefs are extremely fragile structures subject to both natural and man-made hazards. Extreme storms and the resulting waves can damage corals found at shallow depths.
+
+The warming of the oceans and resulting acidification of it’s water can cause ‘coral bleaching’ resulting in the loss of live coral. Man-made hazards include pollution both from offshore runoff and vessel discharge. Ship groundings on reefs also cause coral reef damage.
+
+Inspection of coral reefs by Citizen Scientists, particularly those who snorkel or scuba dive, can provide a valuable measure of the health of the coral reefs offshore Key Biscayne. Further study based on these observations can hopefully provide information on the causes of damaged reefs, and thereby lead to remedial actions to repair the damage.</mutableString>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.0039215686269999999" green="0.17254901959999999" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="itH-eF-vpq" firstAttribute="top" secondItem="chu-nw-YcW" secondAttribute="bottom" constant="8" id="Fq7-j2-a0g"/>
+                                                    <constraint firstAttribute="trailing" secondItem="itH-eF-vpq" secondAttribute="trailing" constant="16" id="Ivs-S4-vOh"/>
+                                                    <constraint firstItem="itH-eF-vpq" firstAttribute="leading" secondItem="P9g-A6-PhB" secondAttribute="leading" constant="16" id="Oit-dD-6xI"/>
+                                                    <constraint firstItem="chu-nw-YcW" firstAttribute="top" secondItem="P9g-A6-PhB" secondAttribute="top" constant="16" id="P9n-Q3-Zac"/>
+                                                    <constraint firstAttribute="bottom" secondItem="itH-eF-vpq" secondAttribute="bottom" constant="16" id="gcR-5s-Eov"/>
+                                                    <constraint firstItem="chu-nw-YcW" firstAttribute="leading" secondItem="P9g-A6-PhB" secondAttribute="leading" constant="16" id="get-hf-YA9"/>
+                                                    <constraint firstAttribute="trailing" secondItem="chu-nw-YcW" secondAttribute="trailing" constant="16" id="xjO-Ke-Kgb"/>
+                                                </constraints>
+                                            </view>
+                                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mjm-97-Ouw" userLabel="Footer">
+                                                <rect key="frame" x="0.0" y="1441" width="375" height="125"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="125" id="eOT-m9-STp"/>
+                                                </constraints>
+                                                <connections>
+                                                    <segue destination="pJI-f7-R4V" kind="embed" id="Nzj-GJ-XSG"/>
+                                                </connections>
+                                            </containerView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.18823529410000001" green="0.1960784314" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="P9g-A6-PhB" firstAttribute="top" secondItem="5jI-id-ol7" secondAttribute="bottom" id="1Mg-De-1QS"/>
+                                            <constraint firstItem="P9g-A6-PhB" firstAttribute="leading" secondItem="tog-BV-aSj" secondAttribute="leading" id="21m-Sx-kZJ"/>
+                                            <constraint firstAttribute="trailing" secondItem="5jI-id-ol7" secondAttribute="trailing" id="DeA-I7-5Eu"/>
+                                            <constraint firstAttribute="trailing" secondItem="P9g-A6-PhB" secondAttribute="trailing" id="HG2-Y2-EJC"/>
+                                            <constraint firstItem="5jI-id-ol7" firstAttribute="top" secondItem="tog-BV-aSj" secondAttribute="top" id="ILj-KD-m5G"/>
+                                            <constraint firstItem="mjm-97-Ouw" firstAttribute="top" secondItem="P9g-A6-PhB" secondAttribute="bottom" id="Sgc-WM-PLA"/>
+                                            <constraint firstItem="mjm-97-Ouw" firstAttribute="leading" secondItem="tog-BV-aSj" secondAttribute="leading" id="aMM-HK-fzg"/>
+                                            <constraint firstAttribute="trailing" secondItem="mjm-97-Ouw" secondAttribute="trailing" id="fIw-zM-A87"/>
+                                            <constraint firstItem="5jI-id-ol7" firstAttribute="width" secondItem="5jI-id-ol7" secondAttribute="height" multiplier="5:3" identifier="WaterWatchMainImageAspectRatio" id="glq-ti-eCj"/>
+                                            <constraint firstItem="5jI-id-ol7" firstAttribute="leading" secondItem="tog-BV-aSj" secondAttribute="leading" id="hbN-M6-Z0x"/>
+                                            <constraint firstAttribute="bottom" secondItem="mjm-97-Ouw" secondAttribute="bottom" id="nbL-z8-rpr"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.08235294118" green="0.090196078430000007" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="tog-BV-aSj" secondAttribute="bottom" identifier="WaterWatchMainViewBottom" id="4lV-VH-ib2"/>
+                                    <constraint firstItem="tog-BV-aSj" firstAttribute="height" secondItem="78w-ey-400" secondAttribute="height" priority="250" identifier="WaterWatchMainViewHeight" id="5CG-Kd-UOu"/>
+                                    <constraint firstItem="tog-BV-aSj" firstAttribute="leading" secondItem="78w-ey-400" secondAttribute="leading" identifier="WaterWatchMainViewLeading" id="bz0-NI-qLM"/>
+                                    <constraint firstItem="tog-BV-aSj" firstAttribute="width" secondItem="78w-ey-400" secondAttribute="width" identifier="WaterWatchMainViewWidth" id="lZZ-Ct-VI9"/>
+                                    <constraint firstAttribute="trailing" secondItem="tog-BV-aSj" secondAttribute="trailing" identifier="WaterWatchMainViewTrailing" id="mgi-GS-HlO"/>
+                                    <constraint firstItem="tog-BV-aSj" firstAttribute="top" secondItem="78w-ey-400" secondAttribute="top" identifier="WaterWatchMainViewTop" id="ty7-gv-l2v"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="laf-k1-4TJ" firstAttribute="trailing" secondItem="78w-ey-400" secondAttribute="trailing" identifier="WaterWatchScrollViewTrailing" id="Df7-qX-CwI"/>
+                            <constraint firstItem="78w-ey-400" firstAttribute="leading" secondItem="laf-k1-4TJ" secondAttribute="leading" identifier="WaterWatchScrollViewLeading" id="Hby-jw-N9W"/>
+                            <constraint firstItem="78w-ey-400" firstAttribute="top" secondItem="laf-k1-4TJ" secondAttribute="top" identifier="WaterWatchScrollViewTop" id="dtf-TX-jlY"/>
+                            <constraint firstItem="laf-k1-4TJ" firstAttribute="bottom" secondItem="78w-ey-400" secondAttribute="bottom" identifier="WaterWatchScrollViewBottom" id="gGL-X6-o4o"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="laf-k1-4TJ"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="maj-2G-pKP"/>
+                    <size key="freeformSize" width="375" height="2000"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1FE-mn-1my" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5194" y="5795"/>
+        </scene>
+        <!--Footer-->
+        <scene sceneID="8dS-Ar-hHL">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Footer" id="pJI-f7-R4V" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AU1-fB-j2h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5684" y="6060"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="coral-reefs" width="1800" height="1000"/>
+    </resources>
+</document>

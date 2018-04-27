@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="OYm-TY-SzU">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Navigation Table View Controller-->
+        <scene sceneID="lZF-B5-je6">
+            <objects>
+                <tableViewController id="OYm-TY-SzU" customClass="NavigationTableViewController" customModule="Citizen_Scientist_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" estimatedRowHeight="-1" sectionHeaderHeight="70" sectionFooterHeight="28" id="zjp-Mz-DBi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.18823529411764706" green="0.19607843137254902" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="sectionIndexBackgroundColor" red="0.18823529411764706" green="0.19607843137254902" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NavigationTableViewCell" rowHeight="70" id="DoP-dB-lm9" customClass="NavigationTableViewCell" customModule="Citizen_Scientist_Project" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="70" width="375" height="70"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DoP-dB-lm9" id="FkZ-ea-CP6">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="69.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nXV-i7-XdM">
+                                            <rect key="frame" x="16" y="12" width="45" height="45"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="45" id="VBS-fH-8gm"/>
+                                                <constraint firstAttribute="height" constant="45" id="jig-bb-ndE"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rdz-0A-Ues">
+                                            <rect key="frame" x="69" y="20" width="255" height="30"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="30" id="F6h-G1-xog"/>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="JQf-ue-i5Q"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                            <color key="textColor" red="0.60392156862745094" green="0.6588235294117647" blue="0.69803921568627447" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mfd-u2-iLf" userLabel="Open Image View">
+                                            <rect key="frame" x="329" y="20" width="30" height="30"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="30" id="57t-Sq-9uB"/>
+                                                <constraint firstAttribute="width" constant="30" id="GRP-0w-aQa"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.18823529411764706" green="0.19607843137254902" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="mfd-u2-iLf" secondAttribute="trailing" constant="16" id="3su-la-IEh"/>
+                                        <constraint firstItem="nXV-i7-XdM" firstAttribute="centerY" secondItem="FkZ-ea-CP6" secondAttribute="centerY" id="4N0-5O-weF"/>
+                                        <constraint firstItem="Rdz-0A-Ues" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="nXV-i7-XdM" secondAttribute="trailing" constant="8" symbolic="YES" id="H5a-ym-40D"/>
+                                        <constraint firstItem="nXV-i7-XdM" firstAttribute="leading" secondItem="FkZ-ea-CP6" secondAttribute="leading" constant="16" id="X1Z-kb-f9z"/>
+                                        <constraint firstItem="Rdz-0A-Ues" firstAttribute="leading" secondItem="nXV-i7-XdM" secondAttribute="trailing" constant="8" id="d08-C9-6pj"/>
+                                        <constraint firstAttribute="trailing" secondItem="Rdz-0A-Ues" secondAttribute="trailing" constant="51" id="iak-No-qxk"/>
+                                        <constraint firstItem="Rdz-0A-Ues" firstAttribute="centerY" secondItem="FkZ-ea-CP6" secondAttribute="centerY" id="yMb-DD-Vfz"/>
+                                        <constraint firstItem="mfd-u2-iLf" firstAttribute="centerY" secondItem="FkZ-ea-CP6" secondAttribute="centerY" id="z93-w6-PhW"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.18823529411764706" green="0.19607843137254902" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="openImageView" destination="mfd-u2-iLf" id="vdU-0C-BZr"/>
+                                    <outlet property="pageIconImage" destination="nXV-i7-XdM" id="E91-BV-xYb"/>
+                                    <outlet property="pageNameLabel" destination="Rdz-0A-Ues" id="USf-xC-UKe"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="OYm-TY-SzU" id="z3m-gs-qT2"/>
+                            <outlet property="delegate" destination="OYm-TY-SzU" id="gDj-2s-5hV"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="y6S-Ei-NAk"/>
+                    <connections>
+                        <segue destination="2zh-UY-3Dl" kind="show" identifier="segueToHome" id="6h3-OW-xOR"/>
+                        <segue destination="imt-Uk-MSW" kind="show" identifier="segueToProfile" id="TJo-FV-Wn8"/>
+                        <segue destination="GSH-eY-bAj" kind="show" identifier="segueToLectureSeries" id="ADW-B8-kMJ"/>
+                        <segue destination="F7b-nS-xXu" kind="show" identifier="segueToGeoHunt" id="7eI-6o-bzn"/>
+                        <segue destination="8xV-zi-7Zd" kind="show" identifier="segueToLearn" id="oWM-XK-n1l"/>
+                        <segue destination="8HL-AV-QAd" kind="show" identifier="segueToContactUs" id="cfx-Qz-ADk"/>
+                        <segue destination="4fJ-mi-NFd" kind="show" identifier="segueToExplore" id="hAW-wW-Nv0"/>
+                        <segue destination="yvR-Cq-q6O" kind="show" identifier="segueToReview" id="V1j-DS-VCL"/>
+                        <segue destination="EuN-CR-ddb" kind="show" identifier="segueToSeaLevelRise" id="WQU-Jh-995"/>
+                        <segue destination="9l6-of-ivV" kind="show" identifier="segueToWaterWatch" id="hzo-ev-y3c"/>
+                        <segue destination="Gb1-T6-ceG" kind="show" identifier="segueToEvents" id="MqL-kX-Abf"/>
+                        <segue destination="6gW-D1-JKf" kind="show" identifier="segueToAboutUs" id="dKW-TA-NkM"/>
+                        <segue destination="RFa-GZ-rGv" kind="show" identifier="segueToOurBiomes" id="vxw-yV-KdH"/>
+                        <segue destination="Qu1-Bh-sKh" kind="show" identifier="segueToNewsLetter" id="H54-t1-AEw"/>
+                        <segue destination="6Ds-eK-RIN" kind="show" identifier="segueToOurPartners" id="q65-Rn-6fj"/>
+                        <segue destination="hKx-8r-tVK" kind="show" identifier="segueToFieldActivities" id="Brc-JK-Z5r"/>
+                        <segue destination="rCF-pD-6ne" kind="show" identifier="segueToKeyChallenge" id="yQf-xl-RZZ"/>
+                        <segue destination="e57-NC-1a6" kind="show" identifier="segueToRecord" id="dcD-ai-JxD"/>
+                        <segue destination="lca-6M-8GU" kind="show" identifier="segueToReefRestoration" id="J2F-7y-fFp"/>
+                        <segue destination="jEC-6l-SfH" kind="show" identifier="segueToNews" id="eZw-EN-CJY"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LV7-D6-Q74" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7844" y="-3802"/>
+        </scene>
+        <!--Homepage-->
+        <scene sceneID="Mcs-Ul-W9X">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Homepage" id="2zh-UY-3Dl" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZAQ-hC-7zG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8831" y="-4646"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="UwE-aY-wH6">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Profile" id="imt-Uk-MSW" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ty4-JM-nqO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8811" y="-4582"/>
+        </scene>
+        <!--LectureSeries-->
+        <scene sceneID="p8U-fv-aH9">
+            <objects>
+                <viewControllerPlaceholder storyboardName="LectureSeries" id="GSH-eY-bAj" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BK9-b5-yP2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8846" y="-3855"/>
+        </scene>
+        <!--GeoHunt-->
+        <scene sceneID="9FD-P2-VWn">
+            <objects>
+                <viewControllerPlaceholder storyboardName="GeoHunt" id="F7b-nS-xXu" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wB3-ay-cB3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8822" y="-4513"/>
+        </scene>
+        <!--Learn-->
+        <scene sceneID="Fhq-yJ-e9Z">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Learn" id="8xV-zi-7Zd" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jws-Lp-JBH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8806" y="-4446"/>
+        </scene>
+        <!--News-->
+        <scene sceneID="DuT-hM-R79">
+            <objects>
+                <viewControllerPlaceholder storyboardName="News" id="jEC-6l-SfH" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oVe-9K-3Po" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8806" y="-3642"/>
+        </scene>
+        <!--ContactUs-->
+        <scene sceneID="zjN-ym-sRf">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ContactUs" id="8HL-AV-QAd" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lvf-GR-5oh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7419" y="-3345"/>
+        </scene>
+        <!--Explore-->
+        <scene sceneID="XVw-J4-ar7">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Explore" id="4fJ-mi-NFd" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kmt-gX-Keo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8816" y="-4368"/>
+        </scene>
+        <!--Review-->
+        <scene sceneID="fqt-30-Lsw">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Review" id="yvR-Cq-q6O" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CEk-GK-a8c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8814" y="-4220"/>
+        </scene>
+        <!--SeaLevelRise-->
+        <scene sceneID="e57-cE-snp">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SeaLevelRise" id="EuN-CR-ddb" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qjK-6S-FM9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8843" y="-4077"/>
+        </scene>
+        <!--WaterWatch-->
+        <scene sceneID="hnT-NW-wCC">
+            <objects>
+                <viewControllerPlaceholder storyboardName="WaterWatch" id="9l6-of-ivV" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cX1-TC-GgO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8838" y="-4001"/>
+        </scene>
+        <!--Events-->
+        <scene sceneID="dE7-yK-9De">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Events" id="Gb1-T6-ceG" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iut-0V-bX2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8812" y="-3706"/>
+        </scene>
+        <!--AboutUs-->
+        <scene sceneID="aoI-uj-TGu">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AboutUs" id="6gW-D1-JKf" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TSS-za-TPK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8822" y="-3578"/>
+        </scene>
+        <!--OurBiomes-->
+        <scene sceneID="iOh-yn-xWX">
+            <objects>
+                <viewControllerPlaceholder storyboardName="OurBiomes" id="RFa-GZ-rGv" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ck7-zf-6dj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8833" y="-3515"/>
+        </scene>
+        <!--NewsLetter-->
+        <scene sceneID="laD-7c-6iN">
+            <objects>
+                <viewControllerPlaceholder storyboardName="NewsLetter" id="Qu1-Bh-sKh" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hab-fD-QJj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8262" y="-3345"/>
+        </scene>
+        <!--OurPartners-->
+        <scene sceneID="lqA-vE-p9K">
+            <objects>
+                <viewControllerPlaceholder storyboardName="OurPartners" id="6Ds-eK-RIN" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QEP-s7-4PB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7844" y="-3345"/>
+        </scene>
+        <!--FieldActivities-->
+        <scene sceneID="tlB-Yc-wkG">
+            <objects>
+                <viewControllerPlaceholder storyboardName="FieldActivities" id="hKx-8r-tVK" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vRE-KZ-WjX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8840" y="-3782"/>
+        </scene>
+        <!--KeyChallenge-->
+        <scene sceneID="hJd-1J-Coe">
+            <objects>
+                <viewControllerPlaceholder storyboardName="KeyChallenge" id="rCF-pD-6ne" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O5U-9r-ZH6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8846" y="-4149"/>
+        </scene>
+        <!--Record-->
+        <scene sceneID="yQ5-Pz-af0">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Record" id="e57-NC-1a6" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zbx-O7-hlT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8814" y="-4296"/>
+        </scene>
+        <!--ReefRestoration-->
+        <scene sceneID="0sL-9E-PwF">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ReefRestoration" id="lca-6M-8GU" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nnt-UD-U6B" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8858" y="-3927"/>
+        </scene>
+    </scenes>
+</document>

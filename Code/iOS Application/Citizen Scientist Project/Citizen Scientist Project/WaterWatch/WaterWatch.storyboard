@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ZFc-IR-PWC">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Footer-->
+        <scene sceneID="xVy-7j-2o4">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Footer" id="mU0-ou-1DC" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8tH-Vx-hEs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7694" y="1532"/>
+        </scene>
+        <!--Navigation-->
+        <scene sceneID="87V-jJ-sdF">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Navigation" id="uyd-fs-atr" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BjU-oR-Okf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7606" y="1457"/>
+        </scene>
+        <!--Water Watch View Controller-->
+        <scene sceneID="qj7-Cg-10e">
+            <objects>
+                <viewController id="Fwl-q7-ydZ" customClass="WaterWatchViewController" customModule="Citizen_Scientist_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KKa-Is-7SY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="5000"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ni-NH-k0p">
+                                <rect key="frame" x="0.0" y="64" width="375" height="4936"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rx2-Ry-FIR" customClass="WaterWatchView" customModule="Citizen_Scientist_Project" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="2478"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="water-watch" translatesAutoresizingMaskIntoConstraints="NO" id="qqh-Lo-jHi">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="225"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="qqh-Lo-jHi" secondAttribute="height" multiplier="5:3" identifier="WaterWatchMainImageAspectRatio" id="GYK-9T-ud6"/>
+                                                </constraints>
+                                            </imageView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D2m-IR-Moa" userLabel="Blue Box 1">
+                                                <rect key="frame" x="0.0" y="225" width="375" height="1328"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BISCAYNE BAY WATER WATCH" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="c68-Hi-GMq">
+                                                        <rect key="frame" x="16" y="16" width="343" height="24"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fFy-wd-rD5">
+                                                        <rect key="frame" x="16" y="222" width="343" height="760.5"/>
+                                                        <string key="text">Biscayne Bay Water Watch (BBWW) is a community-based volunteer water quality monitoring program developed and managed by the UF/IFAS Sea Grant Extension Program in Miami-Dade County. The goal of BBWW is to garner attention to the health of Biscayne Bay and promote awareness about the importance of water quality on our local environment and economy.
+
+UF/IFAS Sea Grant Extension is partnering with local organizations to adopt water monitoring sites throughout Biscayne Bay and surrounding waters. Their volunteers are trained to collect chemical and physical parameters once a month at their adopted site(s). Field-based data includes temperature, pH, salinity, and dissolved oxygen. Water samples are collected for analysis of total nitrogen, total phosphorus, ammonia, silica, and chlorophyll a.
+
+The Key Biscayne Community Foundation (through the Citizen Science Project) received a two-year Environmental Education grant from the EPA for water quality and shoreline conservation on Key Biscayne. We are using this grant not only to create educational opportunities for the residents and visitors of the Key, but also to set up more water testing sites. In 2017, we’re sponsoring the first year of a new site near Bear Cut, where one of our partners, Miami Rowing Club, will begin monthly water testing starting in March.
+
+We also hope to set up three Atlantic sites for less intense testing which will include temperature, pH, salinity, and dissolved oxygen.</string>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FACT SHEETS" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="oZb-rY-YkN">
+                                                        <rect key="frame" x="16" y="998.5" width="343" height="24"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Iz-Rm-Igl">
+                                                        <rect key="frame" x="16" y="1038.5" width="343" height="73.5"/>
+                                                        <string key="text">Here are some fact sheets from the Biscayne Bay Water Watch to better understand the following data being collected and reported.</string>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="WCP-yA-QUa">
+                                                        <rect key="frame" x="36" y="1128" width="323" height="30"/>
+                                                        <state key="normal" title="Learn more about the Biscayne Bay Water Watch.">
+                                                            <color key="titleColor" red="0.37254901959999998" green="0.67450980390000004" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="clickLearnMoreButton:" destination="Fwl-q7-ydZ" eventType="touchUpInside" id="FhE-ZC-o5Y"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="ikQ-bI-Bvb">
+                                                        <rect key="frame" x="36" y="1174" width="323" height="30"/>
+                                                        <state key="normal" title="Dissolved Oxygen">
+                                                            <color key="titleColor" red="0.37254901959999998" green="0.67450980390000004" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="clickDissolvedOxygenButton:" destination="Fwl-q7-ydZ" eventType="touchUpInside" id="ITR-Tb-IcG"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="GUF-ZG-nZ6">
+                                                        <rect key="frame" x="36" y="1220" width="323" height="30"/>
+                                                        <state key="normal" title="Nutrients">
+                                                            <color key="titleColor" red="0.37254901959999998" green="0.67450980390000004" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="clickNutrientsButton:" destination="Fwl-q7-ydZ" eventType="touchUpInside" id="rN4-pv-aUB"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="fWK-jG-F5D">
+                                                        <rect key="frame" x="36" y="1266" width="323" height="30"/>
+                                                        <state key="normal" title="Chlorophyll a">
+                                                            <color key="titleColor" red="0.37254901959999998" green="0.67450980390000004" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="clickChlorophyllButton:" destination="Fwl-q7-ydZ" eventType="touchUpInside" id="Oje-Z5-WTQ"/>
+                                                        </connections>
+                                                    </button>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BI3-mD-2Kq">
+                                                        <rect key="frame" x="0.0" y="56" width="375" height="150"/>
+                                                        <subviews>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="key-biscayne-water-watch-logo" translatesAutoresizingMaskIntoConstraints="NO" id="2nT-RE-D7h">
+                                                                <rect key="frame" x="113.5" y="8" width="147" height="134"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="2nT-RE-D7h" secondAttribute="height" multiplier="1.1:1" id="dhW-gC-rOv"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstItem="2nT-RE-D7h" firstAttribute="top" secondItem="BI3-mD-2Kq" secondAttribute="top" constant="8" id="6ow-Xz-24F"/>
+                                                            <constraint firstItem="2nT-RE-D7h" firstAttribute="centerX" secondItem="BI3-mD-2Kq" secondAttribute="centerX" id="Axi-ad-OFr"/>
+                                                            <constraint firstAttribute="width" secondItem="BI3-mD-2Kq" secondAttribute="height" multiplier="5:2" id="UPQ-pW-fpN"/>
+                                                            <constraint firstItem="2nT-RE-D7h" firstAttribute="centerY" secondItem="BI3-mD-2Kq" secondAttribute="centerY" id="XY5-je-bjH"/>
+                                                            <constraint firstAttribute="bottom" secondItem="2nT-RE-D7h" secondAttribute="bottom" constant="8" id="hVj-o7-aMp"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.0039215686269999999" green="0.17254901959999999" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="c68-Hi-GMq" firstAttribute="leading" secondItem="D2m-IR-Moa" secondAttribute="leading" constant="16" id="0cs-hr-rNu"/>
+                                                    <constraint firstItem="BI3-mD-2Kq" firstAttribute="top" secondItem="c68-Hi-GMq" secondAttribute="bottom" constant="16" id="14k-2L-ws6"/>
+                                                    <constraint firstItem="GUF-ZG-nZ6" firstAttribute="top" secondItem="ikQ-bI-Bvb" secondAttribute="bottom" constant="16" id="1Bu-EH-gpt"/>
+                                                    <constraint firstItem="oZb-rY-YkN" firstAttribute="top" secondItem="fFy-wd-rD5" secondAttribute="bottom" constant="16" id="1kh-sZ-20y"/>
+                                                    <constraint firstAttribute="trailing" secondItem="c68-Hi-GMq" secondAttribute="trailing" constant="16" id="2Ws-4Z-71o"/>
+                                                    <constraint firstItem="2Iz-Rm-Igl" firstAttribute="leading" secondItem="D2m-IR-Moa" secondAttribute="leading" constant="16" id="BdB-XC-a3q"/>
+                                                    <constraint firstAttribute="bottom" secondItem="fWK-jG-F5D" secondAttribute="bottom" constant="32" id="Ilh-yZ-GCs"/>
+                                                    <constraint firstItem="ikQ-bI-Bvb" firstAttribute="leading" secondItem="WCP-yA-QUa" secondAttribute="leading" id="M5w-Yu-4R7"/>
+                                                    <constraint firstItem="WCP-yA-QUa" firstAttribute="top" secondItem="2Iz-Rm-Igl" secondAttribute="bottom" constant="16" id="R0j-56-YlK"/>
+                                                    <constraint firstItem="c68-Hi-GMq" firstAttribute="top" secondItem="D2m-IR-Moa" secondAttribute="top" constant="16" id="XJc-B7-D9A"/>
+                                                    <constraint firstAttribute="trailing" secondItem="ikQ-bI-Bvb" secondAttribute="trailing" constant="16" id="XRp-v4-A5l"/>
+                                                    <constraint firstAttribute="trailing" secondItem="2Iz-Rm-Igl" secondAttribute="trailing" constant="16" id="Y01-z9-Uac"/>
+                                                    <constraint firstItem="BI3-mD-2Kq" firstAttribute="leading" secondItem="D2m-IR-Moa" secondAttribute="leading" id="a0R-FL-gSw"/>
+                                                    <constraint firstItem="WCP-yA-QUa" firstAttribute="leading" secondItem="D2m-IR-Moa" secondAttribute="leading" constant="36" id="bAd-7L-wpx"/>
+                                                    <constraint firstAttribute="trailing" secondItem="oZb-rY-YkN" secondAttribute="trailing" constant="16" id="bDt-xq-uEB"/>
+                                                    <constraint firstAttribute="trailing" secondItem="fWK-jG-F5D" secondAttribute="trailing" constant="16" id="cy3-mA-ObQ"/>
+                                                    <constraint firstAttribute="trailing" secondItem="GUF-ZG-nZ6" secondAttribute="trailing" constant="16" id="e2S-Qq-qtD"/>
+                                                    <constraint firstItem="oZb-rY-YkN" firstAttribute="leading" secondItem="D2m-IR-Moa" secondAttribute="leading" constant="16" id="fJE-Ao-qb2"/>
+                                                    <constraint firstItem="fWK-jG-F5D" firstAttribute="top" secondItem="GUF-ZG-nZ6" secondAttribute="bottom" constant="16" id="fef-qJ-hna"/>
+                                                    <constraint firstAttribute="trailing" secondItem="fFy-wd-rD5" secondAttribute="trailing" constant="16" id="gC1-zC-XnN"/>
+                                                    <constraint firstItem="ikQ-bI-Bvb" firstAttribute="top" secondItem="WCP-yA-QUa" secondAttribute="bottom" constant="16" id="hNT-Zu-8jY"/>
+                                                    <constraint firstAttribute="trailing" secondItem="BI3-mD-2Kq" secondAttribute="trailing" id="kZG-VH-Pvx"/>
+                                                    <constraint firstItem="GUF-ZG-nZ6" firstAttribute="leading" secondItem="WCP-yA-QUa" secondAttribute="leading" id="lZW-7e-LQ0"/>
+                                                    <constraint firstItem="fFy-wd-rD5" firstAttribute="leading" secondItem="D2m-IR-Moa" secondAttribute="leading" constant="16" id="pJB-Xh-Ubd"/>
+                                                    <constraint firstItem="2Iz-Rm-Igl" firstAttribute="top" secondItem="oZb-rY-YkN" secondAttribute="bottom" constant="16" id="pQ8-yT-50I"/>
+                                                    <constraint firstItem="fFy-wd-rD5" firstAttribute="top" secondItem="BI3-mD-2Kq" secondAttribute="bottom" constant="16" id="q8E-P5-pBj"/>
+                                                    <constraint firstAttribute="trailing" secondItem="WCP-yA-QUa" secondAttribute="trailing" constant="16" id="ryY-1z-vs6"/>
+                                                    <constraint firstItem="fWK-jG-F5D" firstAttribute="leading" secondItem="WCP-yA-QUa" secondAttribute="leading" id="xWz-e4-hq4"/>
+                                                </constraints>
+                                            </view>
+                                            <containerView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="500" verticalHuggingPriority="500" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="kah-7I-Mip">
+                                                <rect key="frame" x="0.0" y="1553" width="375" height="800"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="800" id="eGa-LS-Iav"/>
+                                                </constraints>
+                                                <connections>
+                                                    <segue destination="wva-E6-Qz1" kind="embed" id="XUH-vl-Z8o"/>
+                                                </connections>
+                                            </containerView>
+                                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gaj-GU-P0H" userLabel="Footer">
+                                                <rect key="frame" x="0.0" y="2353" width="375" height="125"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="125" id="YfV-e6-7mb"/>
+                                                </constraints>
+                                                <connections>
+                                                    <segue destination="mU0-ou-1DC" kind="embed" id="eRg-9r-CUg"/>
+                                                </connections>
+                                            </containerView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="D2m-IR-Moa" secondAttribute="trailing" id="2ts-Ky-J94"/>
+                                            <constraint firstItem="kah-7I-Mip" firstAttribute="leading" secondItem="Rx2-Ry-FIR" secondAttribute="leading" id="3Tp-sy-obc"/>
+                                            <constraint firstItem="kah-7I-Mip" firstAttribute="top" secondItem="D2m-IR-Moa" secondAttribute="bottom" id="9g9-vg-pCw"/>
+                                            <constraint firstItem="qqh-Lo-jHi" firstAttribute="top" secondItem="Rx2-Ry-FIR" secondAttribute="top" id="GYr-ny-X8U"/>
+                                            <constraint firstItem="D2m-IR-Moa" firstAttribute="top" secondItem="qqh-Lo-jHi" secondAttribute="bottom" id="Lh5-6J-Hdh"/>
+                                            <constraint firstItem="Gaj-GU-P0H" firstAttribute="top" secondItem="kah-7I-Mip" secondAttribute="bottom" id="OcP-xn-a1o"/>
+                                            <constraint firstAttribute="trailing" secondItem="kah-7I-Mip" secondAttribute="trailing" id="PVT-WM-VkK"/>
+                                            <constraint firstAttribute="trailing" secondItem="Gaj-GU-P0H" secondAttribute="trailing" id="T7D-28-aS7"/>
+                                            <constraint firstAttribute="bottom" secondItem="Gaj-GU-P0H" secondAttribute="bottom" id="V61-JD-Om2"/>
+                                            <constraint firstItem="Gaj-GU-P0H" firstAttribute="leading" secondItem="Rx2-Ry-FIR" secondAttribute="leading" id="eEA-xF-XyB"/>
+                                            <constraint firstItem="qqh-Lo-jHi" firstAttribute="leading" secondItem="Rx2-Ry-FIR" secondAttribute="leading" id="hQ6-sJ-3c7"/>
+                                            <constraint firstItem="D2m-IR-Moa" firstAttribute="leading" secondItem="Rx2-Ry-FIR" secondAttribute="leading" id="kLf-js-TRs"/>
+                                            <constraint firstAttribute="trailing" secondItem="qqh-Lo-jHi" secondAttribute="trailing" id="o6Q-wY-onl"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="biscayneBayWaterWatchLogo" destination="2nT-RE-D7h" id="YfF-vb-Inh"/>
+                                            <outlet property="bodyTextView1" destination="fFy-wd-rD5" id="X0e-Em-dht"/>
+                                            <outlet property="bodyTextView2" destination="2Iz-Rm-Igl" id="h8O-PY-bc2"/>
+                                            <outlet property="chlorophyllALinkButton" destination="fWK-jG-F5D" id="igS-wP-gsx"/>
+                                            <outlet property="dissolvedOxygenLinkButton" destination="ikQ-bI-Bvb" id="sTj-Y2-eOu"/>
+                                            <outlet property="headerLabel1" destination="c68-Hi-GMq" id="gQP-KJ-d0E"/>
+                                            <outlet property="headerLabel2" destination="oZb-rY-YkN" id="nX4-OE-Lbd"/>
+                                            <outlet property="imageView" destination="qqh-Lo-jHi" id="r4b-zU-V6m"/>
+                                            <outlet property="learnMoreLinkButton" destination="WCP-yA-QUa" id="EHn-PA-V47"/>
+                                            <outlet property="nutrientsLinkButton" destination="GUF-ZG-nZ6" id="Tfv-iG-ZXY"/>
+                                        </connections>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.08235294118" green="0.090196078430000007" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Rx2-Ry-FIR" firstAttribute="top" secondItem="6ni-NH-k0p" secondAttribute="top" identifier="WaterWatchMainViewTop" id="3fW-1V-41Z"/>
+                                    <constraint firstAttribute="bottom" secondItem="Rx2-Ry-FIR" secondAttribute="bottom" identifier="WaterWatchMainViewBottom" id="8mH-Mv-ZPt"/>
+                                    <constraint firstItem="Rx2-Ry-FIR" firstAttribute="leading" secondItem="6ni-NH-k0p" secondAttribute="leading" identifier="WaterWatchMainViewLeading" id="9DU-kl-Sx9"/>
+                                    <constraint firstAttribute="trailing" secondItem="Rx2-Ry-FIR" secondAttribute="trailing" identifier="WaterWatchMainViewTrailing" id="MsH-Qg-Ha9"/>
+                                    <constraint firstItem="Rx2-Ry-FIR" firstAttribute="height" secondItem="6ni-NH-k0p" secondAttribute="height" priority="250" identifier="WaterWatchMainViewHeight" id="iSG-Jj-n5Q"/>
+                                    <constraint firstItem="Rx2-Ry-FIR" firstAttribute="width" secondItem="6ni-NH-k0p" secondAttribute="width" identifier="WaterWatchMainViewWidth" id="x50-f3-5HU"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="6ni-NH-k0p" firstAttribute="leading" secondItem="szx-BX-WD0" secondAttribute="leading" identifier="WaterWatchScrollViewLeading" id="Elc-Hn-JMu"/>
+                            <constraint firstItem="szx-BX-WD0" firstAttribute="bottom" secondItem="6ni-NH-k0p" secondAttribute="bottom" identifier="WaterWatchScrollViewBottom" id="Xr2-Lh-h4j"/>
+                            <constraint firstItem="6ni-NH-k0p" firstAttribute="top" secondItem="szx-BX-WD0" secondAttribute="top" identifier="WaterWatchScrollViewTop" id="gJl-vM-Pls"/>
+                            <constraint firstItem="szx-BX-WD0" firstAttribute="trailing" secondItem="6ni-NH-k0p" secondAttribute="trailing" identifier="WaterWatchScrollViewTrailing" id="mlJ-NU-UfS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="szx-BX-WD0"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="wgA-C1-rkY">
+                        <barButtonItem key="leftBarButtonItem" image="1-header-nav-1" id="THa-zs-a6x">
+                            <color key="tintColor" red="0.60392156860000001" green="0.6588235294" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="uyd-fs-atr" kind="show" id="MbU-bh-BtK"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <size key="freeformSize" width="375" height="5000"/>
+                    <connections>
+                        <outlet property="collapsibleTableView" destination="kah-7I-Mip" id="iNW-oC-xgq"/>
+                        <outlet property="heightConstraint" destination="eGa-LS-Iav" id="Dr0-iD-MM0"/>
+                        <outlet property="waterWatchView" destination="Rx2-Ry-FIR" id="XTI-t6-qee"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I1g-k9-qfA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6978.3999999999996" y="1491.4542728635683"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="UGG-HR-nGE">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ZFc-IR-PWC" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="SnY-Y7-ZXP">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Fwl-q7-ydZ" kind="relationship" relationship="rootViewController" id="Wwx-oM-22t"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NVK-Ho-dy6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6978" y="-1265"/>
+        </scene>
+        <!--Collapsible Table View Controller-->
+        <scene sceneID="Gpd-7g-REU">
+            <objects>
+                <tableViewController id="wva-E6-Qz1" customClass="CollapsibleTableViewController" customModule="Citizen_Scientist_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="jSJ-NA-igR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="800"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="WaterWatchTableViewHeaderCell" rowHeight="57" id="BC8-wc-Tvs" customClass="WaterWatchTableViewHeaderCell" customModule="Citizen_Scientist_Project" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="57"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BC8-wc-Tvs" id="Njj-2u-VcJ">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="56.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T3i-WF-vFv">
+                                            <rect key="frame" x="24" y="17" width="49" height="23.5"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                            <color key="textColor" red="0.23921568630000001" green="0.22352941179999999" blue="0.30980392159999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oPZ-K1-3T8">
+                                            <rect key="frame" x="339.5" y="18.5" width="19.5" height="20"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="oPZ-K1-3T8" secondAttribute="height" multiplier="1:1" id="BUw-D1-kBh"/>
+                                                <constraint firstAttribute="height" constant="20" id="sRB-il-za7"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.87450980389999999" green="0.90588235289999997" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstItem="T3i-WF-vFv" firstAttribute="leading" secondItem="Njj-2u-VcJ" secondAttribute="leadingMargin" constant="8" id="04p-f5-Lxw"/>
+                                        <constraint firstItem="T3i-WF-vFv" firstAttribute="centerY" secondItem="Njj-2u-VcJ" secondAttribute="centerY" id="4G2-KH-lt8"/>
+                                        <constraint firstAttribute="trailing" secondItem="oPZ-K1-3T8" secondAttribute="trailing" constant="16" id="AxM-dg-FAF"/>
+                                        <constraint firstItem="oPZ-K1-3T8" firstAttribute="leading" relation="lessThanOrEqual" secondItem="T3i-WF-vFv" secondAttribute="trailing" constant="281.5" id="Yl9-Bc-zLI"/>
+                                        <constraint firstItem="oPZ-K1-3T8" firstAttribute="centerY" secondItem="Njj-2u-VcJ" secondAttribute="centerY" id="jkN-sB-3Yp"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="arrowImageView" destination="oPZ-K1-3T8" id="Sjk-4z-7f7"/>
+                                    <outlet property="titleLabel" destination="T3i-WF-vFv" id="mHL-wJ-HJv"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="WaterWatchTableViewCellChart" rowHeight="324" id="aZf-3a-wyb" customClass="WaterWatchTableViewCellChart" customModule="Citizen_Scientist_Project" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="85" width="375" height="324"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="aZf-3a-wyb" id="q8a-bJ-wAs">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="323.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hDA-f8-a7J">
+                                            <rect key="frame" x="16" y="28" width="343" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3bb-4h-OIA">
+                                            <rect key="frame" x="16" y="49" width="264" height="264"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="3bb-4h-OIA" secondAttribute="height" multiplier="1:1" id="eUe-cD-FGS"/>
+                                            </constraints>
+                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="255" verticalHuggingPriority="255" horizontalCompressionResistancePriority="755" verticalCompressionResistancePriority="755" translatesAutoresizingMaskIntoConstraints="NO" id="7e5-jU-xTt">
+                                            <rect key="frame" x="280" y="82" width="79" height="198"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.95686274510000002" green="0.96470588239999999" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstItem="3bb-4h-OIA" firstAttribute="leading" secondItem="q8a-bJ-wAs" secondAttribute="leadingMargin" id="0DH-of-Vws"/>
+                                        <constraint firstItem="7e5-jU-xTt" firstAttribute="height" secondItem="3bb-4h-OIA" secondAttribute="height" multiplier="0.75" id="3Ci-ry-SGI"/>
+                                        <constraint firstItem="hDA-f8-a7J" firstAttribute="top" secondItem="q8a-bJ-wAs" secondAttribute="topMargin" constant="8" id="L0J-hG-kbb"/>
+                                        <constraint firstItem="7e5-jU-xTt" firstAttribute="centerY" secondItem="3bb-4h-OIA" secondAttribute="centerY" id="LMW-YY-5h4"/>
+                                        <constraint firstItem="3bb-4h-OIA" firstAttribute="bottom" secondItem="q8a-bJ-wAs" secondAttribute="bottomMargin" id="VKY-Jf-HPa"/>
+                                        <constraint firstItem="hDA-f8-a7J" firstAttribute="leading" secondItem="q8a-bJ-wAs" secondAttribute="leadingMargin" id="Zlw-3u-T9a"/>
+                                        <constraint firstItem="3bb-4h-OIA" firstAttribute="top" secondItem="hDA-f8-a7J" secondAttribute="bottom" id="Zsf-qH-N6J"/>
+                                        <constraint firstItem="7e5-jU-xTt" firstAttribute="trailing" secondItem="q8a-bJ-wAs" secondAttribute="trailingMargin" id="ftS-1h-Wph"/>
+                                        <constraint firstItem="7e5-jU-xTt" firstAttribute="leading" secondItem="3bb-4h-OIA" secondAttribute="trailing" id="kjP-qt-Kvv"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="hDA-f8-a7J" secondAttribute="trailing" id="xEQ-3m-HNf"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="chartImageView" destination="3bb-4h-OIA" id="xls-To-NfK"/>
+                                    <outlet property="chartTitle" destination="hDA-f8-a7J" id="mPJ-kG-KNp"/>
+                                    <outlet property="legendImageView" destination="7e5-jU-xTt" id="ZBJ-hy-SLJ"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="WaterWatchCollapsibleTableViewCellTable" rowHeight="324" id="VVM-ig-r4m" customClass="WaterWatchCollapsibleTableViewCellTable" customModule="Citizen_Scientist_Project" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="409" width="375" height="324"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VVM-ig-r4m" id="9bx-0y-79L">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="323.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="water-table-1" translatesAutoresizingMaskIntoConstraints="NO" id="UUW-Pm-EwD">
+                                            <rect key="frame" x="16" y="36" width="343" height="261"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.95686274510000002" green="0.96470588239999999" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstItem="UUW-Pm-EwD" firstAttribute="leading" secondItem="9bx-0y-79L" secondAttribute="leadingMargin" id="7RR-eT-Qfk"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="UUW-Pm-EwD" secondAttribute="trailing" id="BNy-Ph-13v"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="UUW-Pm-EwD" secondAttribute="bottom" constant="16" id="Dxq-Fn-bdG"/>
+                                        <constraint firstItem="UUW-Pm-EwD" firstAttribute="top" secondItem="9bx-0y-79L" secondAttribute="topMargin" constant="16" id="GBt-1S-Zn8"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="tableImageView" destination="UUW-Pm-EwD" id="zoM-6E-Kjb"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="wva-E6-Qz1" id="1a2-Xe-04T"/>
+                            <outlet property="delegate" destination="wva-E6-Qz1" id="uf2-wg-zHK"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JXi-NE-S5W" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6118" y="1109"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1-header-nav-1" width="37" height="37"/>
+        <image name="key-biscayne-water-watch-logo" width="206" height="180"/>
+        <image name="water-table-1" width="313" height="455"/>
+        <image name="water-watch" width="1800" height="1000"/>
+    </resources>
+</document>

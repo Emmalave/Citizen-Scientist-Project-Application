@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cdm-3n-sCI">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Biomes Seagrasses View Controller-->
+        <scene sceneID="SVc-rk-Yl5">
+            <objects>
+                <viewController id="cdm-3n-sCI" customClass="BiomesSeagrassesViewController" customModule="Citizen_Scientist_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rhh-zZ-Yb1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="2000"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KwP-cK-yv7">
+                                <rect key="frame" x="0.0" y="20" width="375" height="1980"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="thZ-Mg-dEt" userLabel="Mini Challenge View">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="998"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="seagrasses" translatesAutoresizingMaskIntoConstraints="NO" id="tiY-nl-iWs">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="225"/>
+                                            </imageView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bMp-Fj-81v" userLabel="Blue Box 1">
+                                                <rect key="frame" x="0.0" y="225" width="375" height="648"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KEY BISCAYNE’S SEAGRASSES" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0gh-1h-rfw">
+                                                        <rect key="frame" x="16" y="16" width="343" height="24"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YKc-6p-Qik">
+                                                        <rect key="frame" x="16" y="48" width="343" height="584"/>
+                                                        <mutableString key="text">Seagrasses and associated algal communities provide essential habitat (i.e., food, refuge) for fish and invertebrates and play key ecosystem and societal roles in maintaining water quality by trapping sediments and up-taking nutrients.
+
+Seagrass beds composed of three species, manatee grass, shoal grass, and turtle grass are abundant in shallow nearshore habitats around Key Biscayne where they can be visited and enjoyed by swimmers, kayakers, and boaters.
+
+The organisms commonly found in and around seagrass beds range from very small fish such as seahorses to marine mammals like dolphins.
+
+One of the main threats to seagrass habitats in Key Biscayne and elsewhere is the physical damage caused by careless boaters that run aground or cause significant propeller scarring.
+
+Protection of these habitats is essential for the sustainability of marine resources in our region.</mutableString>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.0039215686269999999" green="0.17254901959999999" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="YKc-6p-Qik" firstAttribute="leading" secondItem="bMp-Fj-81v" secondAttribute="leading" constant="16" id="31B-GK-PcK"/>
+                                                    <constraint firstItem="0gh-1h-rfw" firstAttribute="leading" secondItem="bMp-Fj-81v" secondAttribute="leading" constant="16" id="5HX-nF-V8k"/>
+                                                    <constraint firstAttribute="trailing" secondItem="0gh-1h-rfw" secondAttribute="trailing" constant="16" id="Orh-4m-RHr"/>
+                                                    <constraint firstItem="0gh-1h-rfw" firstAttribute="top" secondItem="bMp-Fj-81v" secondAttribute="top" constant="16" id="UXZ-eR-hW4"/>
+                                                    <constraint firstAttribute="bottom" secondItem="YKc-6p-Qik" secondAttribute="bottom" constant="16" id="Wy8-Z6-jrQ"/>
+                                                    <constraint firstAttribute="trailing" secondItem="YKc-6p-Qik" secondAttribute="trailing" constant="16" id="ZbV-Qf-viR"/>
+                                                    <constraint firstItem="YKc-6p-Qik" firstAttribute="top" secondItem="0gh-1h-rfw" secondAttribute="bottom" constant="8" id="bbr-tD-3Lg"/>
+                                                </constraints>
+                                            </view>
+                                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i8b-gl-T24" userLabel="Footer">
+                                                <rect key="frame" x="0.0" y="873" width="375" height="125"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="125" id="S7c-DF-gCr"/>
+                                                </constraints>
+                                                <connections>
+                                                    <segue destination="dVy-aZ-Pta" kind="embed" id="jd9-qM-pIv"/>
+                                                </connections>
+                                            </containerView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.18823529410000001" green="0.1960784314" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="tiY-nl-iWs" secondAttribute="trailing" id="0me-aq-6XZ"/>
+                                            <constraint firstAttribute="bottom" secondItem="i8b-gl-T24" secondAttribute="bottom" id="5l7-3T-LDy"/>
+                                            <constraint firstItem="tiY-nl-iWs" firstAttribute="leading" secondItem="thZ-Mg-dEt" secondAttribute="leading" id="9mk-OU-Dta"/>
+                                            <constraint firstItem="bMp-Fj-81v" firstAttribute="top" secondItem="tiY-nl-iWs" secondAttribute="bottom" id="A7O-aZ-32r"/>
+                                            <constraint firstItem="bMp-Fj-81v" firstAttribute="leading" secondItem="thZ-Mg-dEt" secondAttribute="leading" id="Bje-qI-hZQ"/>
+                                            <constraint firstItem="tiY-nl-iWs" firstAttribute="width" secondItem="tiY-nl-iWs" secondAttribute="height" multiplier="5:3" identifier="WaterWatchMainImageAspectRatio" id="DNv-oG-kgn"/>
+                                            <constraint firstAttribute="trailing" secondItem="i8b-gl-T24" secondAttribute="trailing" id="O3T-Ij-Hvp"/>
+                                            <constraint firstItem="i8b-gl-T24" firstAttribute="top" secondItem="bMp-Fj-81v" secondAttribute="bottom" id="S56-Bh-42H"/>
+                                            <constraint firstAttribute="trailing" secondItem="bMp-Fj-81v" secondAttribute="trailing" id="SKu-Ix-IF0"/>
+                                            <constraint firstItem="i8b-gl-T24" firstAttribute="leading" secondItem="thZ-Mg-dEt" secondAttribute="leading" id="fMx-Ry-2po"/>
+                                            <constraint firstItem="tiY-nl-iWs" firstAttribute="top" secondItem="thZ-Mg-dEt" secondAttribute="top" id="llI-zi-B38"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.08235294118" green="0.090196078430000007" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="thZ-Mg-dEt" firstAttribute="height" secondItem="KwP-cK-yv7" secondAttribute="height" priority="250" identifier="WaterWatchMainViewHeight" id="E5e-vK-apq"/>
+                                    <constraint firstItem="thZ-Mg-dEt" firstAttribute="width" secondItem="KwP-cK-yv7" secondAttribute="width" identifier="WaterWatchMainViewWidth" id="KvR-Ld-8bY"/>
+                                    <constraint firstAttribute="bottom" secondItem="thZ-Mg-dEt" secondAttribute="bottom" identifier="WaterWatchMainViewBottom" id="Tk6-7p-Q8J"/>
+                                    <constraint firstAttribute="trailing" secondItem="thZ-Mg-dEt" secondAttribute="trailing" identifier="WaterWatchMainViewTrailing" id="fax-Oh-Dfa"/>
+                                    <constraint firstItem="thZ-Mg-dEt" firstAttribute="leading" secondItem="KwP-cK-yv7" secondAttribute="leading" identifier="WaterWatchMainViewLeading" id="lYi-4N-G8S"/>
+                                    <constraint firstItem="thZ-Mg-dEt" firstAttribute="top" secondItem="KwP-cK-yv7" secondAttribute="top" identifier="WaterWatchMainViewTop" id="nyh-rg-rkz"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="KwP-cK-yv7" firstAttribute="top" secondItem="Yxg-Iv-NJL" secondAttribute="top" identifier="WaterWatchScrollViewTop" id="2Oy-ge-gZe"/>
+                            <constraint firstItem="Yxg-Iv-NJL" firstAttribute="bottom" secondItem="KwP-cK-yv7" secondAttribute="bottom" identifier="WaterWatchScrollViewBottom" id="5My-Pe-ldX"/>
+                            <constraint firstItem="Yxg-Iv-NJL" firstAttribute="trailing" secondItem="KwP-cK-yv7" secondAttribute="trailing" identifier="WaterWatchScrollViewTrailing" id="ssI-m3-cAD"/>
+                            <constraint firstItem="KwP-cK-yv7" firstAttribute="leading" secondItem="Yxg-Iv-NJL" secondAttribute="leading" identifier="WaterWatchScrollViewLeading" id="u2I-jl-v2C"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Yxg-Iv-NJL"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="XA3-Jz-7H0"/>
+                    <size key="freeformSize" width="375" height="2000"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u6e-V9-Kqu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5194" y="5795"/>
+        </scene>
+        <!--Footer-->
+        <scene sceneID="8Ex-MT-nhx">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Footer" id="dVy-aZ-Pta" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9qQ-Br-liO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5770" y="5795"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="seagrasses" width="1800" height="1000"/>
+    </resources>
+</document>

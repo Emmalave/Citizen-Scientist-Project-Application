@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="57D-19-zWE">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Biomes Mangrove View Controller-->
+        <scene sceneID="Njt-qA-WZY">
+            <objects>
+                <viewController id="57D-19-zWE" customClass="BiomesMangroveViewController" customModule="Citizen_Scientist_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="76M-3N-rXY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="2000"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S4f-EL-e05">
+                                <rect key="frame" x="0.0" y="20" width="375" height="1980"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6rf-sp-Y1g" userLabel="Mini Challenge View">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1346.5"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mangroves" translatesAutoresizingMaskIntoConstraints="NO" id="3h5-7w-wQV">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="225"/>
+                                            </imageView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iwa-IR-oU6" userLabel="Blue Box 1">
+                                                <rect key="frame" x="0.0" y="225" width="375" height="996.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KEY BISCAYNE’S MANGROVE HAMMOCKS" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ppj-Gq-ccr">
+                                                        <rect key="frame" x="16" y="16" width="343" height="48"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HSI-Wh-adu">
+                                                        <rect key="frame" x="16" y="72" width="343" height="908.5"/>
+                                                        <mutableString key="text">Mangrove Hammocks are natural clusters of Mangrove trees that are found along the boundaries of the Key’s waterways. Specifically, Mangrove Hammocks are located primarily on the Biscayne Bay side of Key Biscayne, for instance close to the Crandon Park Marina.
+
+A Mangrove Hammock was planted at the Bill Baggs entrance to Pines Canal after Hurricane Andrew. The Hammock was planted to ensure that trees native to South Florida replace non-native trees such as the Australian Pines found in the area prior to the storm.
+
+Mangrove Hammocks provide natural protection to areas inshore of the hammocks from high winds as well as safe harbors when they partially surround inlets. They are a critical ingredient in the ecology of the Key as well as providing many recreational opportunities.
+
+Ecologically, they act as habitats for many of the birds that reside on the Key either temporarily or permanently. They also serve as breeding grounds and residences for many kinds of fish that inhabit the Bay. Many of these fish are popular catches for recreational fisherman.
+
+Recreationally, areas close to the mangroves also provide safe areas for kyaking, canoeing and small sail boats (i.e., they are not suitable for large boats). The Mangrove Hammocks are susceptible to natural and man-made dangers. High winds are obvious threats to the trees.
+
+Flooding by salt water can also damage the trees as exemplified by the storm surge effects of Hurricane Andrew on the Mangrove Hammocks of Biscayne Bay.</mutableString>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.0039215686269999999" green="0.17254901959999999" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="HSI-Wh-adu" firstAttribute="leading" secondItem="Iwa-IR-oU6" secondAttribute="leading" constant="16" id="3OE-TR-m8Q"/>
+                                                    <constraint firstItem="Ppj-Gq-ccr" firstAttribute="top" secondItem="Iwa-IR-oU6" secondAttribute="top" constant="16" id="8sW-eu-ISw"/>
+                                                    <constraint firstItem="Ppj-Gq-ccr" firstAttribute="leading" secondItem="Iwa-IR-oU6" secondAttribute="leading" constant="16" id="Nnl-dB-c1Q"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Ppj-Gq-ccr" secondAttribute="trailing" constant="16" id="TwP-6m-MBs"/>
+                                                    <constraint firstAttribute="trailing" secondItem="HSI-Wh-adu" secondAttribute="trailing" constant="16" id="U6q-er-1fz"/>
+                                                    <constraint firstItem="HSI-Wh-adu" firstAttribute="top" secondItem="Ppj-Gq-ccr" secondAttribute="bottom" constant="8" id="sW7-vp-ljN"/>
+                                                    <constraint firstAttribute="bottom" secondItem="HSI-Wh-adu" secondAttribute="bottom" constant="16" id="wAV-dR-YfU"/>
+                                                </constraints>
+                                            </view>
+                                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cOt-pr-QLV" userLabel="Footer">
+                                                <rect key="frame" x="0.0" y="1221.5" width="375" height="125"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="125" id="ZHL-9U-KRU"/>
+                                                </constraints>
+                                                <connections>
+                                                    <segue destination="lFl-Xa-e3g" kind="embed" id="8e6-PZ-hcc"/>
+                                                </connections>
+                                            </containerView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.18823529410000001" green="0.1960784314" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="Iwa-IR-oU6" secondAttribute="trailing" id="1FC-Bx-4gH"/>
+                                            <constraint firstItem="Iwa-IR-oU6" firstAttribute="leading" secondItem="6rf-sp-Y1g" secondAttribute="leading" id="2yJ-ew-nfJ"/>
+                                            <constraint firstItem="cOt-pr-QLV" firstAttribute="top" secondItem="Iwa-IR-oU6" secondAttribute="bottom" id="4k9-P9-3ah"/>
+                                            <constraint firstItem="3h5-7w-wQV" firstAttribute="top" secondItem="6rf-sp-Y1g" secondAttribute="top" id="5ku-1v-UwU"/>
+                                            <constraint firstAttribute="trailing" secondItem="3h5-7w-wQV" secondAttribute="trailing" id="9DC-0H-wXr"/>
+                                            <constraint firstItem="3h5-7w-wQV" firstAttribute="width" secondItem="3h5-7w-wQV" secondAttribute="height" multiplier="5:3" identifier="WaterWatchMainImageAspectRatio" id="DHY-Wx-y6K"/>
+                                            <constraint firstAttribute="trailing" secondItem="cOt-pr-QLV" secondAttribute="trailing" id="Mah-4b-Lud"/>
+                                            <constraint firstItem="cOt-pr-QLV" firstAttribute="leading" secondItem="6rf-sp-Y1g" secondAttribute="leading" id="Mei-hs-KDZ"/>
+                                            <constraint firstAttribute="bottom" secondItem="cOt-pr-QLV" secondAttribute="bottom" id="NiG-2T-2Nv"/>
+                                            <constraint firstItem="Iwa-IR-oU6" firstAttribute="top" secondItem="3h5-7w-wQV" secondAttribute="bottom" id="Tu7-za-krM"/>
+                                            <constraint firstItem="3h5-7w-wQV" firstAttribute="leading" secondItem="6rf-sp-Y1g" secondAttribute="leading" id="mE4-5u-JJo"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.08235294118" green="0.090196078430000007" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="6rf-sp-Y1g" firstAttribute="width" secondItem="S4f-EL-e05" secondAttribute="width" identifier="WaterWatchMainViewWidth" id="6Xh-pF-KiD"/>
+                                    <constraint firstAttribute="bottom" secondItem="6rf-sp-Y1g" secondAttribute="bottom" identifier="WaterWatchMainViewBottom" id="IBR-Tj-KUV"/>
+                                    <constraint firstAttribute="trailing" secondItem="6rf-sp-Y1g" secondAttribute="trailing" identifier="WaterWatchMainViewTrailing" id="LIy-IW-wte"/>
+                                    <constraint firstItem="6rf-sp-Y1g" firstAttribute="leading" secondItem="S4f-EL-e05" secondAttribute="leading" identifier="WaterWatchMainViewLeading" id="TiJ-W7-A6T"/>
+                                    <constraint firstItem="6rf-sp-Y1g" firstAttribute="top" secondItem="S4f-EL-e05" secondAttribute="top" identifier="WaterWatchMainViewTop" id="nh5-l0-Cx0"/>
+                                    <constraint firstItem="6rf-sp-Y1g" firstAttribute="height" secondItem="S4f-EL-e05" secondAttribute="height" priority="250" identifier="WaterWatchMainViewHeight" id="xvv-eI-gmY"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="S4f-EL-e05" firstAttribute="leading" secondItem="ZYA-oj-So6" secondAttribute="leading" identifier="WaterWatchScrollViewLeading" id="BMf-TW-gwu"/>
+                            <constraint firstItem="S4f-EL-e05" firstAttribute="top" secondItem="ZYA-oj-So6" secondAttribute="top" identifier="WaterWatchScrollViewTop" id="FqX-j9-Y5e"/>
+                            <constraint firstItem="ZYA-oj-So6" firstAttribute="bottom" secondItem="S4f-EL-e05" secondAttribute="bottom" identifier="WaterWatchScrollViewBottom" id="RGQ-Xg-RQ3"/>
+                            <constraint firstItem="ZYA-oj-So6" firstAttribute="trailing" secondItem="S4f-EL-e05" secondAttribute="trailing" identifier="WaterWatchScrollViewTrailing" id="k3x-l5-yXV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ZYA-oj-So6"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="qgY-VC-elR"/>
+                    <size key="freeformSize" width="375" height="2000"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ksE-R2-SqE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5194" y="5795"/>
+        </scene>
+        <!--Footer-->
+        <scene sceneID="iqg-6t-fYZ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Footer" id="lFl-Xa-e3g" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yov-qX-WJx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5729" y="6066"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="mangroves" width="1800" height="1000"/>
+    </resources>
+</document>

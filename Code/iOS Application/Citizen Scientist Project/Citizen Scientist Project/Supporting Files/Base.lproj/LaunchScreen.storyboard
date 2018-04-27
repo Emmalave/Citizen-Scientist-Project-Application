@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1-loading-screen" translatesAutoresizingMaskIntoConstraints="NO" id="BT8-6Y-C5B">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="BT8-6Y-C5B" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="SzB-3t-LEK"/>
+                            <constraint firstItem="BT8-6Y-C5B" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="UqW-lm-p5U"/>
+                            <constraint firstItem="BT8-6Y-C5B" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="aiY-47-kDz"/>
+                            <constraint firstItem="BT8-6Y-C5B" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="c5e-hz-YPx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="GMb-mE-sQf">
+                        <barButtonItem key="leftBarButtonItem" enabled="NO" image="1-header-nav-1" id="YW0-kg-E64">
+                            <color key="tintColor" red="0.60392156860000001" green="0.6588235294" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="416.80000000000001" y="463.71814092953525"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1-header-nav-1" width="37" height="37"/>
+        <image name="1-loading-screen" width="1072" height="1916"/>
+    </resources>
+</document>

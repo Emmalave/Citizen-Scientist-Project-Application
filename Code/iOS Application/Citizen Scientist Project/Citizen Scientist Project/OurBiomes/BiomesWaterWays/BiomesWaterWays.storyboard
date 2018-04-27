@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3JY-uV-qfB">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Biomes Water Ways View Controller-->
+        <scene sceneID="N6v-ni-bYQ">
+            <objects>
+                <viewController id="3JY-uV-qfB" customClass="BiomesWaterWaysViewController" customModule="Citizen_Scientist_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1ef-oW-d3l">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="2000"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cun-Qy-TGE">
+                                <rect key="frame" x="0.0" y="20" width="375" height="1980"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DNZ-9z-lbS" userLabel="Mini Challenge View">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1383.5"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="waterways" translatesAutoresizingMaskIntoConstraints="NO" id="wOw-YM-six">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="225"/>
+                                            </imageView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dpV-eB-cGZ" userLabel="Blue Box 1">
+                                                <rect key="frame" x="0.0" y="225" width="375" height="1033.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KEY BISCAYNE’S WATERWAYS" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q3u-M9-P62">
+                                                        <rect key="frame" x="16" y="16" width="343" height="24"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lMd-83-Naq">
+                                                        <rect key="frame" x="16" y="48" width="343" height="969.5"/>
+                                                        <mutableString key="text">Key Biscayne has many inlets that provide outlets to Biscayne Bay for sea life such as sharks, manatees, and numerous species of other fish. In addition, the inlets serve as entry points to docking areas for personal boats ranging from sailboats to power boats, and small (order of 10 feet) to large (order of 150 feet).
+
+The inlets provide recreational opportunities for both residents of and visitors to the Key. A popular pastime is dropping anchor and interacting with other boaters on the shallow sandbars located on the Bay-side of the Key.
+
+Sightseeing on the inlets of the Key is another popular recreational use of the Island’s waterways. Boats anchoring either alone or rafting with other boats are also a common sight in the Key’s waterways, often with boaters lounging in the water.
+
+Hazards are numerous in the waterways. Intense storms and associated storm surges can cause boats to come loose from their docks or offshore moorings.
+
+Excessive speed in the waterways can cause large wakes causing boats to be damaged through interactions with docks and piling, and the same boats can cause considerable damage to the slow moving manatees who are frequently scarred by the boat’s propellor.
+
+Trash thrown in the waterways by inconsiderate boaters can cause damage to fish and birds in the area. Fish and birds ensnared in plastic line or bottle holders is a particularly disturbing site.
+
+Observant Citizen Scientists reporting on the health of the Key’s waterways will provide the information needed to ensure these features remain enjoyable experiences.</mutableString>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.0039215686269999999" green="0.17254901959999999" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="lMd-83-Naq" firstAttribute="leading" secondItem="dpV-eB-cGZ" secondAttribute="leading" constant="16" id="0ea-hB-ydP"/>
+                                                    <constraint firstAttribute="bottom" secondItem="lMd-83-Naq" secondAttribute="bottom" constant="16" id="2vR-rq-K2R"/>
+                                                    <constraint firstItem="Q3u-M9-P62" firstAttribute="leading" secondItem="dpV-eB-cGZ" secondAttribute="leading" constant="16" id="Emv-MQ-Ghu"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Q3u-M9-P62" secondAttribute="trailing" constant="16" id="Q5Y-jg-Xg7"/>
+                                                    <constraint firstItem="Q3u-M9-P62" firstAttribute="top" secondItem="dpV-eB-cGZ" secondAttribute="top" constant="16" id="QQE-9z-T6B"/>
+                                                    <constraint firstAttribute="trailing" secondItem="lMd-83-Naq" secondAttribute="trailing" constant="16" id="Ru8-Nd-0eg"/>
+                                                    <constraint firstItem="lMd-83-Naq" firstAttribute="top" secondItem="Q3u-M9-P62" secondAttribute="bottom" constant="8" id="aFK-us-I6d"/>
+                                                </constraints>
+                                            </view>
+                                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qYL-Ll-0ZF" userLabel="Footer">
+                                                <rect key="frame" x="0.0" y="1258.5" width="375" height="125"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="125" id="i4u-cd-2Wk"/>
+                                                </constraints>
+                                                <connections>
+                                                    <segue destination="y9h-wA-898" kind="embed" id="5Z9-Y7-WbP"/>
+                                                </connections>
+                                            </containerView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.18823529410000001" green="0.1960784314" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="wOw-YM-six" secondAttribute="trailing" id="0Rq-Mt-de8"/>
+                                            <constraint firstItem="qYL-Ll-0ZF" firstAttribute="leading" secondItem="DNZ-9z-lbS" secondAttribute="leading" id="1mj-cc-ySW"/>
+                                            <constraint firstItem="wOw-YM-six" firstAttribute="leading" secondItem="DNZ-9z-lbS" secondAttribute="leading" id="HPj-4g-i3i"/>
+                                            <constraint firstItem="wOw-YM-six" firstAttribute="top" secondItem="DNZ-9z-lbS" secondAttribute="top" id="WX3-8r-Q8z"/>
+                                            <constraint firstItem="wOw-YM-six" firstAttribute="width" secondItem="wOw-YM-six" secondAttribute="height" multiplier="5:3" identifier="WaterWatchMainImageAspectRatio" id="cZd-Go-ZvM"/>
+                                            <constraint firstAttribute="bottom" secondItem="qYL-Ll-0ZF" secondAttribute="bottom" id="efW-2R-Ygf"/>
+                                            <constraint firstItem="qYL-Ll-0ZF" firstAttribute="top" secondItem="dpV-eB-cGZ" secondAttribute="bottom" id="gaS-jA-1T2"/>
+                                            <constraint firstItem="dpV-eB-cGZ" firstAttribute="leading" secondItem="DNZ-9z-lbS" secondAttribute="leading" id="gwN-Le-cnB"/>
+                                            <constraint firstItem="dpV-eB-cGZ" firstAttribute="top" secondItem="wOw-YM-six" secondAttribute="bottom" id="iJa-rX-ogA"/>
+                                            <constraint firstAttribute="trailing" secondItem="dpV-eB-cGZ" secondAttribute="trailing" id="xbH-1C-pDX"/>
+                                            <constraint firstAttribute="trailing" secondItem="qYL-Ll-0ZF" secondAttribute="trailing" id="xqq-8E-tar"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.08235294118" green="0.090196078430000007" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="DNZ-9z-lbS" firstAttribute="width" secondItem="Cun-Qy-TGE" secondAttribute="width" identifier="WaterWatchMainViewWidth" id="1I1-K0-2cd"/>
+                                    <constraint firstAttribute="trailing" secondItem="DNZ-9z-lbS" secondAttribute="trailing" identifier="WaterWatchMainViewTrailing" id="Mra-od-kjc"/>
+                                    <constraint firstItem="DNZ-9z-lbS" firstAttribute="top" secondItem="Cun-Qy-TGE" secondAttribute="top" identifier="WaterWatchMainViewTop" id="OFb-vp-bdd"/>
+                                    <constraint firstItem="DNZ-9z-lbS" firstAttribute="leading" secondItem="Cun-Qy-TGE" secondAttribute="leading" identifier="WaterWatchMainViewLeading" id="U1i-vQ-IXu"/>
+                                    <constraint firstAttribute="bottom" secondItem="DNZ-9z-lbS" secondAttribute="bottom" identifier="WaterWatchMainViewBottom" id="XMz-EI-dmS"/>
+                                    <constraint firstItem="DNZ-9z-lbS" firstAttribute="height" secondItem="Cun-Qy-TGE" secondAttribute="height" priority="250" identifier="WaterWatchMainViewHeight" id="yJ0-Rl-hw0"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Lug-Fa-Cex" firstAttribute="trailing" secondItem="Cun-Qy-TGE" secondAttribute="trailing" identifier="WaterWatchScrollViewTrailing" id="Fxy-3X-l1D"/>
+                            <constraint firstItem="Cun-Qy-TGE" firstAttribute="top" secondItem="Lug-Fa-Cex" secondAttribute="top" identifier="WaterWatchScrollViewTop" id="pMl-i7-kWv"/>
+                            <constraint firstItem="Cun-Qy-TGE" firstAttribute="leading" secondItem="Lug-Fa-Cex" secondAttribute="leading" identifier="WaterWatchScrollViewLeading" id="pZI-JI-xX3"/>
+                            <constraint firstItem="Lug-Fa-Cex" firstAttribute="bottom" secondItem="Cun-Qy-TGE" secondAttribute="bottom" identifier="WaterWatchScrollViewBottom" id="rX8-b7-tO9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Lug-Fa-Cex"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="lbu-Uo-tdw"/>
+                    <size key="freeformSize" width="375" height="2000"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IqJ-Te-D5O" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5194" y="5795"/>
+        </scene>
+        <!--Footer-->
+        <scene sceneID="XMF-PO-wsO">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Footer" id="y9h-wA-898" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uzg-pR-opy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5785" y="6099"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="waterways" width="1800" height="1000"/>
+    </resources>
+</document>

@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jyu-GM-Zjx">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Navigation-->
+        <scene sceneID="87V-jJ-sdF">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Navigation" id="uyd-fs-atr" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BjU-oR-Okf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="11463" y="1986"/>
+        </scene>
+        <!--Footer-->
+        <scene sceneID="fPd-6B-LeM">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Footer" id="Ri2-FB-SuH" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0ad-sr-pLo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="11169" y="3161"/>
+        </scene>
+        <!--Field Activity View Controller-->
+        <scene sceneID="gKd-Y3-Kma">
+            <objects>
+                <viewController id="Bsb-78-wsS" customClass="FieldActivityViewController" customModule="Citizen_Scientist_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="D4U-IO-DvY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="3000"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5dl-0l-BKu">
+                                <rect key="frame" x="0.0" y="64" width="375" height="2936"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CTs-pF-vqS">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="2801.5"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="field-activities-header" translatesAutoresizingMaskIntoConstraints="NO" id="kn3-vx-ALt">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="225"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="kn3-vx-ALt" secondAttribute="height" multiplier="5:3" identifier="WaterWatchMainImageAspectRatio" id="uu8-yP-nv2"/>
+                                                </constraints>
+                                            </imageView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QJc-CU-nzw" userLabel="Blue Box 1">
+                                                <rect key="frame" x="0.0" y="225" width="375" height="697"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KEY BISCAYNE CITIZEN SCIENTIST PROJECT’S FIELD ACTIVITIES" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Vk3-1i-5rf">
+                                                        <rect key="frame" x="16" y="16" width="343" height="48"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Vg-8u-XWl">
+                                                        <rect key="frame" x="16" y="80" width="343" height="226"/>
+                                                        <string key="text">The Citizen Scientist Project’s Field Activities are ongoing monthly outdoor activities hosted on and around Key Biscayne and are open to the public, some legal waivers and fees may apply for participation.
+
+The past Citizen Scientist Project’s Field Activities have included beach cleanups, mangrove cleanups, reef conservation &amp; restoration, water sampling &amp; testing, fishing clinics, and more.</string>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eHr-FY-6Q1" userLabel="Water Background">
+                                                        <rect key="frame" x="0.0" y="322" width="375" height="375"/>
+                                                        <subviews>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="water-bg" translatesAutoresizingMaskIntoConstraints="NO" id="pD6-GT-xUb">
+                                                                <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="375" id="gd8-0U-oRv"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="event-icon" translatesAutoresizingMaskIntoConstraints="NO" id="Q0u-zD-Cep">
+                                                                <rect key="frame" x="124.5" y="32" width="125" height="125"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="Q0u-zD-Cep" secondAttribute="height" multiplier="1:1" id="82l-VD-E8L"/>
+                                                                    <constraint firstAttribute="height" constant="125" id="DVw-si-KXk"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JOIN THE NEXT CITIZEN SCIENTIST PROJECT FIELD ACTIVITY" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="1Z2-Re-ELB">
+                                                                <rect key="frame" x="32" y="178" width="311" height="72"/>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AcE-JV-7rI">
+                                                                <rect key="frame" x="112.5" y="282" width="150" height="44"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="44" id="VUl-QX-bCv"/>
+                                                                    <constraint firstAttribute="width" constant="150" id="pi5-fg-yN3"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                                                <state key="normal" title="Learn More"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                        <real key="value" value="4"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="clickLearnMoreButton:" destination="Bsb-78-wsS" eventType="touchUpInside" id="2WZ-DI-uLN"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="pD6-GT-xUb" secondAttribute="trailing" id="1NJ-i2-B92"/>
+                                                            <constraint firstItem="1Z2-Re-ELB" firstAttribute="leading" secondItem="eHr-FY-6Q1" secondAttribute="leading" constant="32" id="4xD-Zr-YvQ"/>
+                                                            <constraint firstItem="AcE-JV-7rI" firstAttribute="top" secondItem="1Z2-Re-ELB" secondAttribute="bottom" constant="32" id="HsU-Yq-MJP"/>
+                                                            <constraint firstItem="pD6-GT-xUb" firstAttribute="leading" secondItem="eHr-FY-6Q1" secondAttribute="leading" id="PwN-jR-n8R"/>
+                                                            <constraint firstAttribute="trailing" secondItem="1Z2-Re-ELB" secondAttribute="trailing" constant="32" id="SSN-sF-Eva"/>
+                                                            <constraint firstItem="1Z2-Re-ELB" firstAttribute="top" secondItem="Q0u-zD-Cep" secondAttribute="bottom" constant="21" id="ZzK-u1-ML6"/>
+                                                            <constraint firstAttribute="bottom" secondItem="pD6-GT-xUb" secondAttribute="bottom" id="cAj-cU-H5O"/>
+                                                            <constraint firstItem="Q0u-zD-Cep" firstAttribute="top" secondItem="eHr-FY-6Q1" secondAttribute="top" constant="32" id="eHe-7g-fde"/>
+                                                            <constraint firstItem="pD6-GT-xUb" firstAttribute="top" secondItem="eHr-FY-6Q1" secondAttribute="top" id="foY-bY-mwB"/>
+                                                            <constraint firstItem="AcE-JV-7rI" firstAttribute="centerX" secondItem="eHr-FY-6Q1" secondAttribute="centerX" id="j0g-bG-3yG"/>
+                                                            <constraint firstItem="Q0u-zD-Cep" firstAttribute="centerX" secondItem="eHr-FY-6Q1" secondAttribute="centerX" id="mFc-FS-S7d"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.0039215686269999999" green="0.17254901959999999" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="Vk3-1i-5rf" secondAttribute="trailing" constant="16" id="1Ik-s3-q4N"/>
+                                                    <constraint firstItem="3Vg-8u-XWl" firstAttribute="leading" secondItem="QJc-CU-nzw" secondAttribute="leading" constant="16" id="1Ur-MV-qEz"/>
+                                                    <constraint firstItem="Vk3-1i-5rf" firstAttribute="top" secondItem="QJc-CU-nzw" secondAttribute="top" constant="16" id="BHO-vB-Uou"/>
+                                                    <constraint firstItem="3Vg-8u-XWl" firstAttribute="top" secondItem="Vk3-1i-5rf" secondAttribute="bottom" constant="16" id="Cof-Po-dDz"/>
+                                                    <constraint firstAttribute="trailing" secondItem="3Vg-8u-XWl" secondAttribute="trailing" constant="16" id="KBy-TH-DK3"/>
+                                                    <constraint firstItem="eHr-FY-6Q1" firstAttribute="leading" secondItem="QJc-CU-nzw" secondAttribute="leading" id="eAf-n7-DP7"/>
+                                                    <constraint firstItem="eHr-FY-6Q1" firstAttribute="top" secondItem="3Vg-8u-XWl" secondAttribute="bottom" constant="16" id="fYL-ic-3Jf"/>
+                                                    <constraint firstItem="Vk3-1i-5rf" firstAttribute="leading" secondItem="QJc-CU-nzw" secondAttribute="leading" constant="16" id="oV9-nW-o1u"/>
+                                                    <constraint firstAttribute="trailing" secondItem="eHr-FY-6Q1" secondAttribute="trailing" id="wMg-gw-KkS"/>
+                                                    <constraint firstAttribute="bottom" secondItem="eHr-FY-6Q1" secondAttribute="bottom" id="yL2-kW-MjN"/>
+                                                </constraints>
+                                            </view>
+                                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xsB-Yn-nA3" userLabel="Footer">
+                                                <rect key="frame" x="0.0" y="2676.5" width="375" height="125"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="125" id="8o0-hh-ADc"/>
+                                                </constraints>
+                                                <connections>
+                                                    <segue destination="Ri2-FB-SuH" kind="embed" id="9Ua-H4-I82"/>
+                                                </connections>
+                                            </containerView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iqr-Ib-9Ec">
+                                                <rect key="frame" x="0.0" y="922" width="375" height="1754.5"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C4I-6m-JBr">
+                                                        <rect key="frame" x="0.0" y="0.0" width="375" height="564"/>
+                                                        <subviews>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beach-cleanup" translatesAutoresizingMaskIntoConstraints="NO" id="WVO-Hn-pLb">
+                                                                <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="WVO-Hn-pLb" secondAttribute="height" multiplier="3:2" id="O2G-Uf-3DJ"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KEY BISCAYNE BEACH CLEANUP" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="JTg-Ru-FCp">
+                                                                <rect key="frame" x="16" y="282" width="343" height="24"/>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                                                <color key="textColor" red="0.23921568630000001" green="0.22352941179999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NOG-BP-mu6">
+                                                                <rect key="frame" x="16" y="322" width="343" height="226"/>
+                                                                <string key="text">If you go to Google and type in citizen science, you will get over two million hits. So what is a this anyway? You may have heard it on the radio or read about it in the paper, but what is it really? Citizen science is a way for you, the general public, to be directly involved in the process of scientific data collection and be engaged in scientific thinking. The purpose is to have volunteers beachesbecome amateur scientists while working with a group of professional scientists.</string>
+                                                                <color key="textColor" red="0.23921568630000001" green="0.22352941179999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                            </textView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" red="0.95686274510000002" green="0.96470588239999999" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <constraints>
+                                                            <constraint firstItem="JTg-Ru-FCp" firstAttribute="top" secondItem="WVO-Hn-pLb" secondAttribute="bottom" constant="32" id="HCc-Ke-a5T"/>
+                                                            <constraint firstItem="NOG-BP-mu6" firstAttribute="leading" secondItem="C4I-6m-JBr" secondAttribute="leading" constant="16" id="Jey-zJ-VCX"/>
+                                                            <constraint firstItem="WVO-Hn-pLb" firstAttribute="top" secondItem="C4I-6m-JBr" secondAttribute="top" id="LCX-r9-IjN"/>
+                                                            <constraint firstAttribute="trailing" secondItem="JTg-Ru-FCp" secondAttribute="trailing" constant="16" id="RVa-kR-N7E"/>
+                                                            <constraint firstItem="WVO-Hn-pLb" firstAttribute="leading" secondItem="C4I-6m-JBr" secondAttribute="leading" id="UU6-fp-rUj"/>
+                                                            <constraint firstItem="JTg-Ru-FCp" firstAttribute="leading" secondItem="C4I-6m-JBr" secondAttribute="leading" constant="16" id="XJh-Dk-ecb"/>
+                                                            <constraint firstAttribute="trailing" secondItem="WVO-Hn-pLb" secondAttribute="trailing" id="Y1a-bq-NaK"/>
+                                                            <constraint firstAttribute="bottom" secondItem="NOG-BP-mu6" secondAttribute="bottom" constant="16" id="nJH-Em-EKq"/>
+                                                            <constraint firstItem="NOG-BP-mu6" firstAttribute="top" secondItem="JTg-Ru-FCp" secondAttribute="bottom" constant="16" id="qIu-9e-rFN"/>
+                                                            <constraint firstAttribute="trailing" secondItem="NOG-BP-mu6" secondAttribute="trailing" constant="16" id="rr1-5j-3fO"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M7v-lw-Q5m">
+                                                        <rect key="frame" x="0.0" y="564" width="375" height="645.5"/>
+                                                        <subviews>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fishing-clinic" translatesAutoresizingMaskIntoConstraints="NO" id="bWS-5B-hWF">
+                                                                <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="bWS-5B-hWF" secondAttribute="height" multiplier="3:2" id="fod-uT-yAR"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CITIZEN SCIENTIST PROJECT’S FISHING CLINIC" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Kc1-fR-NbD">
+                                                                <rect key="frame" x="16" y="282.5" width="343" height="48"/>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                                                <color key="textColor" red="0.23921568630000001" green="0.22352941179999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tnt-30-NCt">
+                                                                <rect key="frame" x="16" y="346.5" width="343" height="283.5"/>
+                                                                <mutableString key="text">Dr. Elizabeth Golden talks to us about Bill Baggs State Park. The State Park has a unique history and a number of natural resources that the public can utilize! Bill Baggs Cape Florida State Park is the home of a historic lighthouse built in 1825 and reconstructed in 1846, and is the oldest standing structure in Miami-Dade County. Visitors come to the park to sunbathe, swim and picnic on more than one mile of sandy Atlantic beachfront, currently ranked #7 on the list of “Top 10 Beaches in America” by Dr. Stephen Leatherman, aka ‘Dr. Beach.’ Biking and kayaking are popular activities.</mutableString>
+                                                                <color key="textColor" red="0.23921568630000001" green="0.22352941179999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                            </textView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" red="0.95686274510000002" green="0.96470588239999999" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <constraints>
+                                                            <constraint firstItem="Kc1-fR-NbD" firstAttribute="top" secondItem="bWS-5B-hWF" secondAttribute="bottom" constant="32" id="0CI-gE-Vcl"/>
+                                                            <constraint firstAttribute="bottom" secondItem="tnt-30-NCt" secondAttribute="bottom" constant="16" id="9CO-JE-e4b"/>
+                                                            <constraint firstItem="tnt-30-NCt" firstAttribute="top" secondItem="Kc1-fR-NbD" secondAttribute="bottom" constant="16" id="P4V-Ln-3nX"/>
+                                                            <constraint firstAttribute="trailing" secondItem="Kc1-fR-NbD" secondAttribute="trailing" constant="16" id="PEB-cJ-ofJ"/>
+                                                            <constraint firstAttribute="trailing" secondItem="bWS-5B-hWF" secondAttribute="trailing" id="Tax-n7-Yw6"/>
+                                                            <constraint firstItem="tnt-30-NCt" firstAttribute="leading" secondItem="M7v-lw-Q5m" secondAttribute="leading" constant="16" id="ZQ4-8m-h5M"/>
+                                                            <constraint firstItem="bWS-5B-hWF" firstAttribute="leading" secondItem="M7v-lw-Q5m" secondAttribute="leading" id="ked-aC-sFb"/>
+                                                            <constraint firstAttribute="trailing" secondItem="tnt-30-NCt" secondAttribute="trailing" constant="16" id="rGz-7R-zTr"/>
+                                                            <constraint firstItem="bWS-5B-hWF" firstAttribute="top" secondItem="M7v-lw-Q5m" secondAttribute="top" id="v0t-Sb-Og1"/>
+                                                            <constraint firstItem="Kc1-fR-NbD" firstAttribute="leading" secondItem="M7v-lw-Q5m" secondAttribute="leading" constant="16" id="yQl-jW-wAV"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3gD-Ln-geC">
+                                                        <rect key="frame" x="0.0" y="1209.5" width="375" height="545"/>
+                                                        <subviews>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mangrove-cleanup" translatesAutoresizingMaskIntoConstraints="NO" id="i3t-Pu-uro">
+                                                                <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="i3t-Pu-uro" secondAttribute="height" multiplier="3:2" id="KNx-Kx-RR5"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MANGROVE CLEANUPS" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="h3u-OU-fPs">
+                                                                <rect key="frame" x="16" y="282.5" width="343" height="24"/>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                                                <color key="textColor" red="0.23921568630000001" green="0.22352941179999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Znk-3r-HCv">
+                                                                <rect key="frame" x="16" y="322.5" width="343" height="207"/>
+                                                                <string key="text">Dr. Andrew Baker’s lecture about the declining health of coral reefs around the world, and how research at the Rosenstiel School can help understand, prevent, and reverse these declines. The lecture discusses the effects of climate change on coral reefs, in particular the phenomenon of coral ‘bleaching’, and the question of whether corals can adapt to increasing temperatures and ocean acidification.</string>
+                                                                <color key="textColor" red="0.23921568630000001" green="0.22352941179999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                            </textView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" red="0.95686274510000002" green="0.96470588239999999" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <constraints>
+                                                            <constraint firstItem="i3t-Pu-uro" firstAttribute="top" secondItem="3gD-Ln-geC" secondAttribute="top" id="7NS-cs-ue3"/>
+                                                            <constraint firstItem="h3u-OU-fPs" firstAttribute="leading" secondItem="3gD-Ln-geC" secondAttribute="leading" constant="16" id="CfO-dk-Ctd"/>
+                                                            <constraint firstItem="Znk-3r-HCv" firstAttribute="top" secondItem="h3u-OU-fPs" secondAttribute="bottom" constant="16" id="Eb9-eF-MWZ"/>
+                                                            <constraint firstItem="Znk-3r-HCv" firstAttribute="leading" secondItem="3gD-Ln-geC" secondAttribute="leading" constant="16" id="KFZ-zK-2t3"/>
+                                                            <constraint firstAttribute="trailing" secondItem="h3u-OU-fPs" secondAttribute="trailing" constant="16" id="KhP-dh-0ex"/>
+                                                            <constraint firstItem="h3u-OU-fPs" firstAttribute="top" secondItem="i3t-Pu-uro" secondAttribute="bottom" constant="32" id="Lut-5N-bBx"/>
+                                                            <constraint firstAttribute="trailing" secondItem="i3t-Pu-uro" secondAttribute="trailing" id="SZD-AA-xRM"/>
+                                                            <constraint firstAttribute="bottom" secondItem="Znk-3r-HCv" secondAttribute="bottom" constant="16" id="pgl-se-565"/>
+                                                            <constraint firstAttribute="trailing" secondItem="Znk-3r-HCv" secondAttribute="trailing" constant="16" id="uDb-LL-AkD"/>
+                                                            <constraint firstItem="i3t-Pu-uro" firstAttribute="leading" secondItem="3gD-Ln-geC" secondAttribute="leading" id="xAt-Mp-r0R"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="3gD-Ln-geC" firstAttribute="leading" secondItem="Iqr-Ib-9Ec" secondAttribute="leading" id="3lT-9l-YuK"/>
+                                                    <constraint firstAttribute="bottom" secondItem="3gD-Ln-geC" secondAttribute="bottom" id="Bc1-IW-yXe"/>
+                                                    <constraint firstItem="M7v-lw-Q5m" firstAttribute="leading" secondItem="Iqr-Ib-9Ec" secondAttribute="leading" id="Ixe-EZ-iyy"/>
+                                                    <constraint firstItem="C4I-6m-JBr" firstAttribute="leading" secondItem="Iqr-Ib-9Ec" secondAttribute="leading" id="RO1-nh-kM6"/>
+                                                    <constraint firstAttribute="trailing" secondItem="M7v-lw-Q5m" secondAttribute="trailing" id="Rou-UH-LUT"/>
+                                                    <constraint firstItem="C4I-6m-JBr" firstAttribute="leading" secondItem="Iqr-Ib-9Ec" secondAttribute="leading" id="SRz-od-t90"/>
+                                                    <constraint firstAttribute="trailing" secondItem="3gD-Ln-geC" secondAttribute="trailing" id="UGx-SP-Kl4"/>
+                                                    <constraint firstItem="C4I-6m-JBr" firstAttribute="top" secondItem="Iqr-Ib-9Ec" secondAttribute="top" id="XtP-5P-pER"/>
+                                                    <constraint firstAttribute="trailing" secondItem="C4I-6m-JBr" secondAttribute="trailing" id="bq9-Mt-sNA"/>
+                                                    <constraint firstItem="3gD-Ln-geC" firstAttribute="top" secondItem="M7v-lw-Q5m" secondAttribute="bottom" id="cm3-7Z-R8U"/>
+                                                    <constraint firstItem="M7v-lw-Q5m" firstAttribute="top" secondItem="C4I-6m-JBr" secondAttribute="bottom" id="jX8-ab-U1h"/>
+                                                    <constraint firstAttribute="trailing" secondItem="C4I-6m-JBr" secondAttribute="trailing" id="yPh-Mq-O3O"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="QJc-CU-nzw" secondAttribute="trailing" id="3t0-VS-YrV"/>
+                                            <constraint firstItem="xsB-Yn-nA3" firstAttribute="top" secondItem="Iqr-Ib-9Ec" secondAttribute="bottom" id="6Ma-Xk-JaH"/>
+                                            <constraint firstAttribute="bottom" secondItem="xsB-Yn-nA3" secondAttribute="bottom" id="8fP-gM-aYI"/>
+                                            <constraint firstItem="Iqr-Ib-9Ec" firstAttribute="top" secondItem="QJc-CU-nzw" secondAttribute="bottom" id="Apz-wy-EO3"/>
+                                            <constraint firstItem="xsB-Yn-nA3" firstAttribute="leading" secondItem="CTs-pF-vqS" secondAttribute="leading" id="JdK-LR-wUP"/>
+                                            <constraint firstItem="QJc-CU-nzw" firstAttribute="leading" secondItem="CTs-pF-vqS" secondAttribute="leading" id="TpL-Yg-hM4"/>
+                                            <constraint firstAttribute="trailing" secondItem="kn3-vx-ALt" secondAttribute="trailing" id="avr-x2-I8f"/>
+                                            <constraint firstAttribute="trailing" secondItem="Iqr-Ib-9Ec" secondAttribute="trailing" id="fHg-z7-KWy"/>
+                                            <constraint firstItem="kn3-vx-ALt" firstAttribute="top" secondItem="CTs-pF-vqS" secondAttribute="top" id="ioX-TZ-tyk"/>
+                                            <constraint firstItem="QJc-CU-nzw" firstAttribute="top" secondItem="kn3-vx-ALt" secondAttribute="bottom" id="ldr-aI-H3u"/>
+                                            <constraint firstItem="kn3-vx-ALt" firstAttribute="leading" secondItem="CTs-pF-vqS" secondAttribute="leading" id="qxd-Py-LLA"/>
+                                            <constraint firstItem="Iqr-Ib-9Ec" firstAttribute="leading" secondItem="CTs-pF-vqS" secondAttribute="leading" id="vjL-95-E1A"/>
+                                            <constraint firstAttribute="trailing" secondItem="xsB-Yn-nA3" secondAttribute="trailing" id="ygN-xS-OBg"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.08235294118" green="0.090196078430000007" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="CTs-pF-vqS" firstAttribute="top" secondItem="5dl-0l-BKu" secondAttribute="top" identifier="WaterWatchMainViewTop" id="RjC-45-zXe"/>
+                                    <constraint firstItem="CTs-pF-vqS" firstAttribute="leading" secondItem="5dl-0l-BKu" secondAttribute="leading" identifier="WaterWatchMainViewLeading" id="Td5-28-Otk"/>
+                                    <constraint firstAttribute="bottom" secondItem="CTs-pF-vqS" secondAttribute="bottom" identifier="WaterWatchMainViewBottom" id="Zlc-Se-eSh"/>
+                                    <constraint firstItem="CTs-pF-vqS" firstAttribute="height" secondItem="5dl-0l-BKu" secondAttribute="height" priority="250" identifier="WaterWatchMainViewHeight" id="Zp4-1A-Lc7"/>
+                                    <constraint firstItem="CTs-pF-vqS" firstAttribute="width" secondItem="5dl-0l-BKu" secondAttribute="width" identifier="WaterWatchMainViewWidth" id="pgs-pT-Npb"/>
+                                    <constraint firstAttribute="trailing" secondItem="CTs-pF-vqS" secondAttribute="trailing" identifier="WaterWatchMainViewTrailing" id="x2L-XJ-zIb"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="5dl-0l-BKu" firstAttribute="top" secondItem="476-J8-p1b" secondAttribute="top" identifier="WaterWatchScrollViewTop" id="4wO-tF-ag1"/>
+                            <constraint firstItem="476-J8-p1b" firstAttribute="trailing" secondItem="5dl-0l-BKu" secondAttribute="trailing" identifier="WaterWatchScrollViewTrailing" id="So7-dO-uQn"/>
+                            <constraint firstItem="476-J8-p1b" firstAttribute="bottom" secondItem="5dl-0l-BKu" secondAttribute="bottom" identifier="WaterWatchScrollViewBottom" id="oJW-fP-5Z7"/>
+                            <constraint firstItem="5dl-0l-BKu" firstAttribute="leading" secondItem="476-J8-p1b" secondAttribute="leading" identifier="WaterWatchScrollViewLeading" id="tOm-zV-tXi"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="476-J8-p1b"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="65R-qp-vYA">
+                        <barButtonItem key="leftBarButtonItem" image="1-header-nav-1" id="510-YR-07b">
+                            <color key="tintColor" red="0.60392156860000001" green="0.6588235294" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="uyd-fs-atr" kind="show" id="wYh-NC-Dkp"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <size key="freeformSize" width="375" height="3000"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FHf-fK-8D1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="10552.799999999999" y="1986.2068965517242"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="5Iu-cx-gNz">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jyu-GM-Zjx" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="OG0-Xq-2eK">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Bsb-78-wsS" kind="relationship" relationship="rootViewController" id="WG7-Pd-Chh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gUb-Ck-aiY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="10553" y="82"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1-header-nav-1" width="37" height="37"/>
+        <image name="beach-cleanup" width="600" height="400"/>
+        <image name="event-icon" width="800" height="800"/>
+        <image name="field-activities-header" width="1800" height="1000"/>
+        <image name="fishing-clinic" width="600" height="400"/>
+        <image name="mangrove-cleanup" width="600" height="400"/>
+        <image name="water-bg" width="1800" height="1000"/>
+    </resources>
+</document>

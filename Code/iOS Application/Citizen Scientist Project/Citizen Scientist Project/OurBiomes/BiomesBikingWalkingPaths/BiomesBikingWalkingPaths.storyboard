@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lcv-uo-OML">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Biomes Biking Walking Paths View Controller-->
+        <scene sceneID="eWZ-HN-QIs">
+            <objects>
+                <viewController id="lcv-uo-OML" customClass="BiomesBikingWalkingPathsViewController" customModule="Citizen_Scientist_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="p9z-mE-ZOl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="2000"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YIR-XO-YMt">
+                                <rect key="frame" x="0.0" y="20" width="375" height="1980"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NbL-rW-mF1" userLabel="Mini Challenge View">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1590"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="paths" translatesAutoresizingMaskIntoConstraints="NO" id="7Js-NF-zr2">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="225"/>
+                                            </imageView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HA2-Zu-JYd" userLabel="Blue Box 1">
+                                                <rect key="frame" x="0.0" y="225" width="375" height="1240"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KEY BISCAYNE’S BIKING &amp; WALKING PATHS" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h9C-yS-Evd">
+                                                        <rect key="frame" x="16" y="16" width="343" height="48"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SBN-lH-9Zj">
+                                                        <rect key="frame" x="16" y="72" width="343" height="1152"/>
+                                                        <mutableString key="text">Although man-made, the biking and walking paths on the Key open a large window to the natural resources of the Island and provide residents and visitors a view of some of it’s hidden treasures. They provide environmentally protected methods to view the Key and another entry to the shops of the Island.
+
+Although not hidden, the most used routes are the paths bordering the Rickenbacker Causeway-Crandon Boulevard roadway that extends from the beginning of Crandon Park to the southern end of Bill Baggs Park.
+
+Crandon Park includes a biking/walking path along the walkway bordering the beach, extending into a tree grove area located on the northern end of the Key and onto the bridge crossing over Bear Cut to Virginia Key. The main bike path in the Village is along Crandon Boulevard.
+
+Bill Baggs includes several biking/walking paths, one of which extends from the park entrance to the Key Biscayne Lighthouse on the southern tip of the Island.
+
+There is a walking/biking path along the southeastern side of the Key that includes a stunning vista of Biscayne Bay as well mini-piers for recreational fishing and several walking paths that lead into the heart of the park. This path also passes by No Name Harbor and the Key Biscayne Lighthouse, the latter housing a description of the early history of the Island.
+
+These paths are not immune to natural and man-made hazards. Plant overgrowth of the paths can endanger both bikers and walkers. Faults in the paths can cause dangerous hazards to bikers.
+
+Trash can detract from the pleasure of the path, as well as endangering the flora and fauna that reside along the them (e.g., fishing line entrapment of birds).
+
+Citizen Scientist inspection of the paths and reporting on features detrimental to their use would allow both bikers and walkers to continue to enjoy the natural environment of the Key while also protecting the local flaura and fauna.</mutableString>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.0039215686269999999" green="0.17254901959999999" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="SBN-lH-9Zj" firstAttribute="leading" secondItem="HA2-Zu-JYd" secondAttribute="leading" constant="16" id="50v-t3-jvt"/>
+                                                    <constraint firstAttribute="trailing" secondItem="SBN-lH-9Zj" secondAttribute="trailing" constant="16" id="9Tr-oO-fDD"/>
+                                                    <constraint firstItem="SBN-lH-9Zj" firstAttribute="top" secondItem="h9C-yS-Evd" secondAttribute="bottom" constant="8" id="JUX-qY-1Az"/>
+                                                    <constraint firstItem="h9C-yS-Evd" firstAttribute="top" secondItem="HA2-Zu-JYd" secondAttribute="top" constant="16" id="JUo-OR-jj8"/>
+                                                    <constraint firstAttribute="trailing" secondItem="h9C-yS-Evd" secondAttribute="trailing" constant="16" id="WOF-If-fGe"/>
+                                                    <constraint firstItem="h9C-yS-Evd" firstAttribute="leading" secondItem="HA2-Zu-JYd" secondAttribute="leading" constant="16" id="it2-gI-arV"/>
+                                                    <constraint firstAttribute="bottom" secondItem="SBN-lH-9Zj" secondAttribute="bottom" constant="16" id="sGE-GI-3Oa"/>
+                                                </constraints>
+                                            </view>
+                                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XI0-zA-1pk" userLabel="Footer">
+                                                <rect key="frame" x="0.0" y="1465" width="375" height="125"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="125" id="T0z-8h-3Br"/>
+                                                </constraints>
+                                                <connections>
+                                                    <segue destination="HEP-aT-mAJ" kind="embed" id="r78-2J-bch"/>
+                                                </connections>
+                                            </containerView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.18823529410000001" green="0.1960784314" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="XI0-zA-1pk" firstAttribute="leading" secondItem="NbL-rW-mF1" secondAttribute="leading" id="0cy-Yv-ViE"/>
+                                            <constraint firstAttribute="bottom" secondItem="XI0-zA-1pk" secondAttribute="bottom" id="9D6-by-jNw"/>
+                                            <constraint firstItem="HA2-Zu-JYd" firstAttribute="top" secondItem="7Js-NF-zr2" secondAttribute="bottom" id="AlN-k0-U8b"/>
+                                            <constraint firstItem="7Js-NF-zr2" firstAttribute="leading" secondItem="NbL-rW-mF1" secondAttribute="leading" id="CnL-Rr-nPs"/>
+                                            <constraint firstItem="HA2-Zu-JYd" firstAttribute="leading" secondItem="NbL-rW-mF1" secondAttribute="leading" id="Kkm-pW-NzU"/>
+                                            <constraint firstItem="XI0-zA-1pk" firstAttribute="top" secondItem="HA2-Zu-JYd" secondAttribute="bottom" id="Uon-6d-beu"/>
+                                            <constraint firstItem="7Js-NF-zr2" firstAttribute="width" secondItem="7Js-NF-zr2" secondAttribute="height" multiplier="5:3" identifier="WaterWatchMainImageAspectRatio" id="Wjz-jc-wSg"/>
+                                            <constraint firstAttribute="trailing" secondItem="XI0-zA-1pk" secondAttribute="trailing" id="ZfB-Fv-LUZ"/>
+                                            <constraint firstAttribute="trailing" secondItem="HA2-Zu-JYd" secondAttribute="trailing" id="ayu-hn-uNi"/>
+                                            <constraint firstAttribute="trailing" secondItem="7Js-NF-zr2" secondAttribute="trailing" id="g0Q-bx-2Gb"/>
+                                            <constraint firstItem="7Js-NF-zr2" firstAttribute="top" secondItem="NbL-rW-mF1" secondAttribute="top" id="n0S-9W-c8d"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.08235294118" green="0.090196078430000007" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="NbL-rW-mF1" firstAttribute="height" secondItem="YIR-XO-YMt" secondAttribute="height" priority="250" identifier="WaterWatchMainViewHeight" id="61p-U4-MxZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="NbL-rW-mF1" secondAttribute="trailing" identifier="WaterWatchMainViewTrailing" id="JpA-7i-jco"/>
+                                    <constraint firstAttribute="bottom" secondItem="NbL-rW-mF1" secondAttribute="bottom" identifier="WaterWatchMainViewBottom" id="kUz-vf-RPh"/>
+                                    <constraint firstItem="NbL-rW-mF1" firstAttribute="width" secondItem="YIR-XO-YMt" secondAttribute="width" identifier="WaterWatchMainViewWidth" id="pQs-Jp-szu"/>
+                                    <constraint firstItem="NbL-rW-mF1" firstAttribute="top" secondItem="YIR-XO-YMt" secondAttribute="top" identifier="WaterWatchMainViewTop" id="sVg-8y-rs8"/>
+                                    <constraint firstItem="NbL-rW-mF1" firstAttribute="leading" secondItem="YIR-XO-YMt" secondAttribute="leading" identifier="WaterWatchMainViewLeading" id="u0w-aS-Led"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="YIR-XO-YMt" firstAttribute="leading" secondItem="5iy-81-xxT" secondAttribute="leading" identifier="WaterWatchScrollViewLeading" id="Nib-hW-JjQ"/>
+                            <constraint firstItem="YIR-XO-YMt" firstAttribute="top" secondItem="5iy-81-xxT" secondAttribute="top" identifier="WaterWatchScrollViewTop" id="m0v-hm-6de"/>
+                            <constraint firstItem="5iy-81-xxT" firstAttribute="bottom" secondItem="YIR-XO-YMt" secondAttribute="bottom" identifier="WaterWatchScrollViewBottom" id="oyC-iS-vsD"/>
+                            <constraint firstItem="5iy-81-xxT" firstAttribute="trailing" secondItem="YIR-XO-YMt" secondAttribute="trailing" identifier="WaterWatchScrollViewTrailing" id="rzY-LQ-SEk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5iy-81-xxT"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="vTt-oP-inI"/>
+                    <size key="freeformSize" width="375" height="2000"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Eyq-e8-t9y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5194" y="5795"/>
+        </scene>
+        <!--Footer-->
+        <scene sceneID="sZh-tg-2oM">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Footer" id="HEP-aT-mAJ" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sGk-CH-OZl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5766" y="6284"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="paths" width="1800" height="1000"/>
+    </resources>
+</document>

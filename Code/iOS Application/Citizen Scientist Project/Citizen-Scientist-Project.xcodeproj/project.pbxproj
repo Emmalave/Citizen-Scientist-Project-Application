@@ -1,0 +1,1958 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2207B7852075C46300A4DE90 /* PreviousWinners.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2207B7842075C46300A4DE90 /* PreviousWinners.storyboard */; };
+		2207B7872075C4AE00A4DE90 /* PreviousWinnersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2207B7862075C4AE00A4DE90 /* PreviousWinnersViewController.swift */; };
+		2207B7AB2075DBFC00A4DE90 /* ReusableFooterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2207B7AA2075DBFC00A4DE90 /* ReusableFooterViewController.swift */; };
+		2207B7AD2075DC2400A4DE90 /* Footer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2207B7AC2075DC2400A4DE90 /* Footer.storyboard */; };
+		220A9820207B407800FB5752 /* NavigationPageContentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220A981F207B407800FB5752 /* NavigationPageContentManager.swift */; };
+		220A9825207BB9E000FB5752 /* MiniChallengeContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220A9824207BB9E000FB5752 /* MiniChallengeContent.swift */; };
+		220A9827207BBB4600FB5752 /* MiniChallengeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220A9826207BBB4600FB5752 /* MiniChallengeView.swift */; };
+		220A9829207BBE6000FB5752 /* MiniChallengeContentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220A9828207BBE6000FB5752 /* MiniChallengeContentManager.swift */; };
+		220A982B207BC66C00FB5752 /* iNaturalistContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220A982A207BC66C00FB5752 /* iNaturalistContent.swift */; };
+		220A982D207BC6DF00FB5752 /* iNaturalistContentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220A982C207BC6DF00FB5752 /* iNaturalistContentManager.swift */; };
+		222B8E1B208FB1C400E531B9 /* OurPartnersFirstCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222B8E1A208FB1C400E531B9 /* OurPartnersFirstCollectionViewController.swift */; };
+		222B8E1F209342CE00E531B9 /* OurPartnersContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222B8E1E209342CE00E531B9 /* OurPartnersContent.swift */; };
+		222B8E21209342E000E531B9 /* OurPartnersContentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222B8E20209342E000E531B9 /* OurPartnersContentManager.swift */; };
+		222B8E2320934C8600E531B9 /* OurPartnersCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222B8E2220934C8600E531B9 /* OurPartnersCollectionViewCell.swift */; };
+		222B8E2520934CA400E531B9 /* OurPartnersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222B8E2420934CA400E531B9 /* OurPartnersView.swift */; };
+		222B8E27209361A200E531B9 /* OurPartnersSecondCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222B8E26209361A200E531B9 /* OurPartnersSecondCollectionViewController.swift */; };
+		222BB586207734E30070354B /* SeaLevelRiseContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222BB585207734E30070354B /* SeaLevelRiseContent.swift */; };
+		222BB588207737210070354B /* SeaLevelRiseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222BB587207737210070354B /* SeaLevelRiseView.swift */; };
+		222BB58A20773D520070354B /* SeaLevelRiseContentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222BB58920773D520070354B /* SeaLevelRiseContentManager.swift */; };
+		222BB58C20774ED50070354B /* ExternalAppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222BB58B20774ED50070354B /* ExternalAppManager.swift */; };
+		222BB58E2077521D0070354B /* InternalAppStructures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222BB58D2077521D0070354B /* InternalAppStructures.swift */; };
+		222BB59120775ECC0070354B /* WebView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 222BB58F20775ECB0070354B /* WebView.storyboard */; };
+		222BB5B5207A984D0070354B /* CollapsibleTableContentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222BB5B4207A984D0070354B /* CollapsibleTableContentManager.swift */; };
+		2235A2C02063B1EE00DEDC9E /* CollapsibleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2235A2BF2063B1EE00DEDC9E /* CollapsibleTableViewController.swift */; };
+		2235A2C32063B26A00DEDC9E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2235A2C22063B26A00DEDC9E /* Extensions.swift */; };
+		2235A2C52063B2F400DEDC9E /* CollapsibleTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2235A2C42063B2F400DEDC9E /* CollapsibleTableViewHeader.swift */; };
+		2235A2C72063B33600DEDC9E /* WaterWatchTableViewCellChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2235A2C62063B33600DEDC9E /* WaterWatchTableViewCellChart.swift */; };
+		2235A2C92063B38D00DEDC9E /* CollapsibleGraphChartTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2235A2C82063B38D00DEDC9E /* CollapsibleGraphChartTable.swift */; };
+		2238FC932073024B00BCAE3F /* ReusableHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2238FC922073024B00BCAE3F /* ReusableHeader.swift */; };
+		2238FC9B207307A200BCAE3F /* Navigation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2238FC99207307A200BCAE3F /* Navigation.storyboard */; };
+		2238FC9D2073080800BCAE3F /* Homepage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2238FC9C2073080800BCAE3F /* Homepage.storyboard */; };
+		2238FC9F20730D7900BCAE3F /* ContactUs.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2238FC9E20730D7900BCAE3F /* ContactUs.storyboard */; };
+		2238FCA22073107400BCAE3F /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2238FCA02073107400BCAE3F /* Profile.storyboard */; };
+		2238FCA5207310B000BCAE3F /* GeoHunt.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2238FCA3207310B000BCAE3F /* GeoHunt.storyboard */; };
+		2238FCA7207310FA00BCAE3F /* Learn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2238FCA6207310FA00BCAE3F /* Learn.storyboard */; };
+		2238FCAA2073113300BCAE3F /* Explore.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2238FCA82073113300BCAE3F /* Explore.storyboard */; };
+		2238FCAC2073117C00BCAE3F /* Record.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2238FCAB2073117C00BCAE3F /* Record.storyboard */; };
+		2238FCAF207311F800BCAE3F /* Review.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2238FCAD207311F800BCAE3F /* Review.storyboard */; };
+		2238FCB12073125600BCAE3F /* OurPartners.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2238FCB02073125600BCAE3F /* OurPartners.storyboard */; };
+		2238FCB4207312AA00BCAE3F /* NewsLetter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2238FCB2207312AA00BCAE3F /* NewsLetter.storyboard */; };
+		2238FCB6207312F000BCAE3F /* OurBiomes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2238FCB5207312F000BCAE3F /* OurBiomes.storyboard */; };
+		2238FCB92073132C00BCAE3F /* AboutUs.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2238FCB72073132C00BCAE3F /* AboutUs.storyboard */; };
+		2238FCBC207313AB00BCAE3F /* Events.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2238FCBA207313AB00BCAE3F /* Events.storyboard */; };
+		2238FCBE207313E900BCAE3F /* News.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2238FCBD207313E900BCAE3F /* News.storyboard */; };
+		2238FCC12073143900BCAE3F /* FieldActivities.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2238FCBF2073143900BCAE3F /* FieldActivities.storyboard */; };
+		2238FCC32073147200BCAE3F /* LectureSeries.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2238FCC22073147200BCAE3F /* LectureSeries.storyboard */; };
+		2238FCC6207314E900BCAE3F /* ReefRestoration.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2238FCC4207314E900BCAE3F /* ReefRestoration.storyboard */; };
+		2238FCC92073154200BCAE3F /* SeaLevelRise.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2238FCC72073154200BCAE3F /* SeaLevelRise.storyboard */; };
+		2238FCCC207316AE00BCAE3F /* KeyChallenge.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2238FCCA207316AE00BCAE3F /* KeyChallenge.storyboard */; };
+		2238FCCF2073177600BCAE3F /* WaterWatch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2238FCCE2073177600BCAE3F /* WaterWatch.storyboard */; };
+		2238FCF22073301F00BCAE3F /* MiniChallenge.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2238FCF02073301F00BCAE3F /* MiniChallenge.storyboard */; };
+		22395D01204E432600177243 /* NavigationPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22395D00204E432600177243 /* NavigationPage.swift */; };
+		22395D052052798600177243 /* WaterWatchContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22395D042052798600177243 /* WaterWatchContent.swift */; };
+		22395D072052830600177243 /* WaterWatchContentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22395D062052830600177243 /* WaterWatchContentManager.swift */; };
+		22395D0B20528DE800177243 /* WaterWatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22395D0A20528DE800177243 /* WaterWatchView.swift */; };
+		22594972202D969F0047E055 /* SectionFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22594971202D969F0047E055 /* SectionFooterView.swift */; };
+		22594976202DA6EC0047E055 /* HomeCellContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22594975202DA6EC0047E055 /* HomeCellContent.swift */; };
+		22594978202DAA0C0047E055 /* HomeContentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22594977202DAA0C0047E055 /* HomeContentManager.swift */; };
+		2259497B202DCCEC0047E055 /* Footer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2259497A202DCCEC0047E055 /* Footer.swift */; };
+		226BDBCB20889B4900FAC995 /* WaterWatchCollapsibleTableViewCellTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226BDBCA20889B4900FAC995 /* WaterWatchCollapsibleTableViewCellTable.swift */; };
+		22891A3D202DEBE7000FEBB4 /* SocialNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22891A3C202DEBE7000FEBB4 /* SocialNetwork.swift */; };
+		228FA9A02047788B003610B3 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228FA99F2047788B003610B3 /* WebViewController.swift */; };
+		228FA9A2204778B3003610B3 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228FA9A1204778B3003610B3 /* TableViewController.swift */; };
+		2292AC89207F76C8002DAD23 /* LectureSeriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2292AC88207F76C8002DAD23 /* LectureSeriesView.swift */; };
+		2292AC8B207F76E3002DAD23 /* LectureSeriesContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2292AC8A207F76E3002DAD23 /* LectureSeriesContent.swift */; };
+		2292AC8D207F76F1002DAD23 /* LectureSeriesContentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2292AC8C207F76F1002DAD23 /* LectureSeriesContentManager.swift */; };
+		2292AC982080D1CF002DAD23 /* BiomesBeaches.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2292AC972080D1CF002DAD23 /* BiomesBeaches.storyboard */; };
+		2292AC9A2080D1E8002DAD23 /* BiomesGreenSpaces.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2292AC992080D1E8002DAD23 /* BiomesGreenSpaces.storyboard */; };
+		2292AC9C2080D1FD002DAD23 /* BiomesBikingWalkingPaths.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2292AC9B2080D1FD002DAD23 /* BiomesBikingWalkingPaths.storyboard */; };
+		2292AC9E2080D20C002DAD23 /* BiomesMangrove.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2292AC9D2080D20C002DAD23 /* BiomesMangrove.storyboard */; };
+		2292ACA02080D21E002DAD23 /* BiomesCoralReefs.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2292AC9F2080D21E002DAD23 /* BiomesCoralReefs.storyboard */; };
+		2292ACA22080D234002DAD23 /* BiomesWaterWays.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2292ACA12080D234002DAD23 /* BiomesWaterWays.storyboard */; };
+		2292ACA42080D270002DAD23 /* BiomesSeagrasses.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2292ACA32080D270002DAD23 /* BiomesSeagrasses.storyboard */; };
+		2292ACAD2080D2FB002DAD23 /* BiomesSeagrassesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2292ACAC2080D2FB002DAD23 /* BiomesSeagrassesViewController.swift */; };
+		2292ACAF2080D343002DAD23 /* BiomesBeachesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2292ACAE2080D343002DAD23 /* BiomesBeachesViewController.swift */; };
+		2292ACB12080D35B002DAD23 /* BiomesGreenSpacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2292ACB02080D35B002DAD23 /* BiomesGreenSpacesViewController.swift */; };
+		2292ACB32080D37E002DAD23 /* BiomesBikingWalkingPathsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2292ACB22080D37E002DAD23 /* BiomesBikingWalkingPathsViewController.swift */; };
+		2292ACB52080D39A002DAD23 /* BiomesMangroveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2292ACB42080D39A002DAD23 /* BiomesMangroveViewController.swift */; };
+		2292ACB72080D3B7002DAD23 /* BiomesCoralReefsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2292ACB62080D3B7002DAD23 /* BiomesCoralReefsViewController.swift */; };
+		2292ACB92080D3CB002DAD23 /* BiomesWaterWaysViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2292ACB82080D3CB002DAD23 /* BiomesWaterWaysViewController.swift */; };
+		22992258203E5814006CE1AB /* NavigationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22992257203E5814006CE1AB /* NavigationTableViewController.swift */; };
+		2299225A203E58FA006CE1AB /* segueToTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22992259203E58FA006CE1AB /* segueToTable.swift */; };
+		229E61432022A79200D4BDDA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229E61422022A79200D4BDDA /* AppDelegate.swift */; };
+		229E61452022A79200D4BDDA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229E61442022A79200D4BDDA /* HomeViewController.swift */; };
+		229E614B2022A79200D4BDDA /* Citizen_Scientist_Project.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 229E61492022A79200D4BDDA /* Citizen_Scientist_Project.xcdatamodeld */; };
+		229E614D2022A79200D4BDDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 229E614C2022A79200D4BDDA /* Assets.xcassets */; };
+		229E61502022A79200D4BDDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 229E614E2022A79200D4BDDA /* LaunchScreen.storyboard */; };
+		22BE72EA208769FB003BAD05 /* PreviousWinnersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BE72E9208769FB003BAD05 /* PreviousWinnersView.swift */; };
+		22BE72EE208798FE003BAD05 /* KeyChallengeCollapsibleTableContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BE72ED208798FE003BAD05 /* KeyChallengeCollapsibleTableContent.swift */; };
+		22BE72F020879916003BAD05 /* KeyChallengeCollapsibleTableContentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BE72EF20879916003BAD05 /* KeyChallengeCollapsibleTableContentManager.swift */; };
+		22BE72F22087A5ED003BAD05 /* KeyChallengeCollapsibleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BE72F12087A5ED003BAD05 /* KeyChallengeCollapsibleTableViewController.swift */; };
+		22BE72F42087A711003BAD05 /* KeyChallengeCollapsibleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BE72F32087A711003BAD05 /* KeyChallengeCollapsibleTableViewCell.swift */; };
+		22BE72F62087A735003BAD05 /* KeyChallengeCollapsibleTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BE72F52087A735003BAD05 /* KeyChallengeCollapsibleTableViewHeader.swift */; };
+		22BE72F82087A74B003BAD05 /* KeyChallengeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BE72F72087A74B003BAD05 /* KeyChallengeView.swift */; };
+		22BE72FA2087A76D003BAD05 /* KeyChallengeContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BE72F92087A76D003BAD05 /* KeyChallengeContent.swift */; };
+		22BE72FC2087A77D003BAD05 /* KeyChallengeContentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BE72FB2087A77D003BAD05 /* KeyChallengeContentManager.swift */; };
+		22CA83B2206E348800287889 /* iNaturalistDownloadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CA83B1206E348800287889 /* iNaturalistDownloadView.swift */; };
+		22CA83B6206E52EC00287889 /* iNaturalistVimeoTutorialsPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CA83B5206E52EC00287889 /* iNaturalistVimeoTutorialsPageViewController.swift */; };
+		22CA83B8206E55D300287889 /* iNaturalistVimeoTutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CA83B7206E55D300287889 /* iNaturalistVimeoTutorialViewController.swift */; };
+		22CA83BA206E593600287889 /* iNaturalistVimeoTutorialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CA83B9206E593600287889 /* iNaturalistVimeoTutorialView.swift */; };
+		22CF18A820873260001E2648 /* PreviousWinnersCollapsibleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CF18A720873260001E2648 /* PreviousWinnersCollapsibleTableViewController.swift */; };
+		22CF18AA20873699001E2648 /* PreviousWinnersCollapsibleTableContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CF18A920873699001E2648 /* PreviousWinnersCollapsibleTableContent.swift */; };
+		22CF18AC208736C5001E2648 /* PreviousWinnersCollapsibleTableContentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CF18AB208736C5001E2648 /* PreviousWinnersCollapsibleTableContentManager.swift */; };
+		22CF18AE208745C8001E2648 /* PreviousWinnersCollapsibleTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CF18AD208745C7001E2648 /* PreviousWinnersCollapsibleTableViewHeader.swift */; };
+		22CF18B0208745D8001E2648 /* PreviousWinnersCollapsibleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CF18AF208745D8001E2648 /* PreviousWinnersCollapsibleTableViewCell.swift */; };
+		22CF18B2208765ED001E2648 /* PreviousWinnersContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CF18B1208765ED001E2648 /* PreviousWinnersContent.swift */; };
+		22CF18B420876605001E2648 /* PreviousWinnerContentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CF18B320876605001E2648 /* PreviousWinnerContentManager.swift */; };
+		22DD10D6208EF6EA004872C7 /* AboutUsExplorePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DD10D5208EF6EA004872C7 /* AboutUsExplorePageViewController.swift */; };
+		22DD10D8208EF700004872C7 /* AboutUsGetInvolvedPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DD10D7208EF700004872C7 /* AboutUsGetInvolvedPageViewController.swift */; };
+		22DD10DA208EF9BA004872C7 /* AboutUsExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DD10D9208EF9BA004872C7 /* AboutUsExploreViewController.swift */; };
+		22DD10DE208EFD00004872C7 /* AboutUsContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DD10DD208EFD00004872C7 /* AboutUsContent.swift */; };
+		22DD10E0208EFD12004872C7 /* AboutUsContentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DD10DF208EFD12004872C7 /* AboutUsContentManager.swift */; };
+		22DD10E2208F147C004872C7 /* AboutUsExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DD10E1208F147C004872C7 /* AboutUsExploreView.swift */; };
+		22DD10E4208F1495004872C7 /* AboutUsGetInvolvedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DD10E3208F1495004872C7 /* AboutUsGetInvolvedView.swift */; };
+		22DD10E6208F1AAF004872C7 /* AboutUsGetInvolvedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DD10E5208F1AAF004872C7 /* AboutUsGetInvolvedViewController.swift */; };
+		22E377B9206CE29300D277F2 /* MiniChallengeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E377B8206CE29300D277F2 /* MiniChallengeViewController.swift */; };
+		22E377BB206E22AA00D277F2 /* iNaturalistDownloadStepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E377BA206E22AA00D277F2 /* iNaturalistDownloadStepViewController.swift */; };
+		22E377BD206E23DB00D277F2 /* iNaturalistDownloadStepsPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E377BC206E23DB00D277F2 /* iNaturalistDownloadStepsPageViewController.swift */; };
+		22E377BF206E24FB00D277F2 /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E377BE206E24FB00D277F2 /* Storyboard.swift */; };
+		22F78C8F202D0F900001049D /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F78C8E202D0F900001049D /* HomeCollectionViewCell.swift */; };
+		6D021BFE203E2A0C003E35D5 /* LearnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D021BFD203E2A0C003E35D5 /* LearnViewController.swift */; };
+		6D021C00203E2A36003E35D5 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D021BFF203E2A36003E35D5 /* ExploreViewController.swift */; };
+		6D021C02203E2A47003E35D5 /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D021C01203E2A47003E35D5 /* RecordViewController.swift */; };
+		6D021C04203E2A52003E35D5 /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D021C03203E2A52003E35D5 /* ReviewViewController.swift */; };
+		6D021C06203E2E1D003E35D5 /* KeyChallengeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D021C05203E2E1D003E35D5 /* KeyChallengeViewController.swift */; };
+		6D021C08203E2E2F003E35D5 /* SeaLevelRiseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D021C07203E2E2F003E35D5 /* SeaLevelRiseViewController.swift */; };
+		6D021C0A203E2E3F003E35D5 /* WaterWatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D021C09203E2E3F003E35D5 /* WaterWatchViewController.swift */; };
+		6D021C0C203E2E52003E35D5 /* ReefRestorationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D021C0B203E2E52003E35D5 /* ReefRestorationViewController.swift */; };
+		6D021C0E203E2E63003E35D5 /* LectureSeriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D021C0D203E2E63003E35D5 /* LectureSeriesViewController.swift */; };
+		6D021C10203E2E72003E35D5 /* FieldActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D021C0F203E2E72003E35D5 /* FieldActivityViewController.swift */; };
+		6D021C12203E3117003E35D5 /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D021C11203E3117003E35D5 /* AboutUsViewController.swift */; };
+		6D021C14203E3126003E35D5 /* OurBiomesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D021C13203E3126003E35D5 /* OurBiomesViewController.swift */; };
+		6D021C16203E3133003E35D5 /* NewslettersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D021C15203E3133003E35D5 /* NewslettersViewController.swift */; };
+		6D021C18203E3142003E35D5 /* OurPartnersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D021C17203E3142003E35D5 /* OurPartnersViewController.swift */; };
+		6D021C1A203E314E003E35D5 /* ContactUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D021C19203E314E003E35D5 /* ContactUsViewController.swift */; };
+		6D0DCF2E203B5AC3000F5D62 /* NavigationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0DCF2D203B5AC3000F5D62 /* NavigationTableViewCell.swift */; };
+		6D37E600203C869D00FF4BBA /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D37E5FF203C869D00FF4BBA /* ProfileViewController.swift */; };
+		6D37E602203C884B00FF4BBA /* GeoHuntViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D37E601203C884B00FF4BBA /* GeoHuntViewController.swift */; };
+		6D37E608203C893A00FF4BBA /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D37E607203C893A00FF4BBA /* EventsViewController.swift */; };
+		6D37E60A203C897100FF4BBA /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D37E609203C897100FF4BBA /* NewsViewController.swift */; };
+		6D9DF564203F3FAC0036C0E2 /* StatusReefRestorationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9DF563203F3FAC0036C0E2 /* StatusReefRestorationViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		229E61572022A79200D4BDDA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 229E61372022A79200D4BDDA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 229E613E2022A79200D4BDDA;
+			remoteInfo = "Citizen Scientist Project";
+		};
+		229E61622022A79200D4BDDA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 229E61372022A79200D4BDDA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 229E613E2022A79200D4BDDA;
+			remoteInfo = "Citizen Scientist Project";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2207B7842075C46300A4DE90 /* PreviousWinners.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PreviousWinners.storyboard; sourceTree = "<group>"; };
+		2207B7862075C4AE00A4DE90 /* PreviousWinnersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviousWinnersViewController.swift; sourceTree = "<group>"; };
+		2207B7AA2075DBFC00A4DE90 /* ReusableFooterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableFooterViewController.swift; sourceTree = "<group>"; };
+		2207B7AC2075DC2400A4DE90 /* Footer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Footer.storyboard; sourceTree = "<group>"; };
+		220A981F207B407800FB5752 /* NavigationPageContentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationPageContentManager.swift; sourceTree = "<group>"; };
+		220A9824207BB9E000FB5752 /* MiniChallengeContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniChallengeContent.swift; sourceTree = "<group>"; };
+		220A9826207BBB4600FB5752 /* MiniChallengeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniChallengeView.swift; sourceTree = "<group>"; };
+		220A9828207BBE6000FB5752 /* MiniChallengeContentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniChallengeContentManager.swift; sourceTree = "<group>"; };
+		220A982A207BC66C00FB5752 /* iNaturalistContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iNaturalistContent.swift; sourceTree = "<group>"; };
+		220A982C207BC6DF00FB5752 /* iNaturalistContentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iNaturalistContentManager.swift; sourceTree = "<group>"; };
+		222B8E1A208FB1C400E531B9 /* OurPartnersFirstCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OurPartnersFirstCollectionViewController.swift; sourceTree = "<group>"; };
+		222B8E1E209342CE00E531B9 /* OurPartnersContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OurPartnersContent.swift; sourceTree = "<group>"; };
+		222B8E20209342E000E531B9 /* OurPartnersContentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OurPartnersContentManager.swift; sourceTree = "<group>"; };
+		222B8E2220934C8600E531B9 /* OurPartnersCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OurPartnersCollectionViewCell.swift; sourceTree = "<group>"; };
+		222B8E2420934CA400E531B9 /* OurPartnersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OurPartnersView.swift; sourceTree = "<group>"; };
+		222B8E26209361A200E531B9 /* OurPartnersSecondCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OurPartnersSecondCollectionViewController.swift; sourceTree = "<group>"; };
+		222BB585207734E30070354B /* SeaLevelRiseContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeaLevelRiseContent.swift; sourceTree = "<group>"; };
+		222BB587207737210070354B /* SeaLevelRiseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeaLevelRiseView.swift; sourceTree = "<group>"; };
+		222BB58920773D520070354B /* SeaLevelRiseContentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeaLevelRiseContentManager.swift; sourceTree = "<group>"; };
+		222BB58B20774ED50070354B /* ExternalAppManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExternalAppManager.swift; sourceTree = "<group>"; };
+		222BB58D2077521D0070354B /* InternalAppStructures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternalAppStructures.swift; sourceTree = "<group>"; };
+		222BB59020775ECB0070354B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Citizen Scientist Project/SeaLevelRise/Citizen Scientist Project/Base.lproj/WebView.storyboard"; sourceTree = "<group>"; };
+		222BB5B4207A984D0070354B /* CollapsibleTableContentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapsibleTableContentManager.swift; sourceTree = "<group>"; };
+		2235A2BF2063B1EE00DEDC9E /* CollapsibleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapsibleTableViewController.swift; sourceTree = "<group>"; };
+		2235A2C22063B26A00DEDC9E /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		2235A2C42063B2F400DEDC9E /* CollapsibleTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapsibleTableViewHeader.swift; sourceTree = "<group>"; };
+		2235A2C62063B33600DEDC9E /* WaterWatchTableViewCellChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterWatchTableViewCellChart.swift; sourceTree = "<group>"; };
+		2235A2C82063B38D00DEDC9E /* CollapsibleGraphChartTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapsibleGraphChartTable.swift; sourceTree = "<group>"; };
+		2238FC922073024B00BCAE3F /* ReusableHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableHeader.swift; sourceTree = "<group>"; };
+		2238FC9A207307A200BCAE3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Citizen Scientist Project/Base.lproj/Navigation.storyboard"; sourceTree = "<group>"; };
+		2238FC9C2073080800BCAE3F /* Homepage.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Homepage.storyboard; sourceTree = "<group>"; };
+		2238FC9E20730D7900BCAE3F /* ContactUs.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ContactUs.storyboard; sourceTree = "<group>"; };
+		2238FCA12073107400BCAE3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Citizen Scientist Project/Base.lproj/Profile.storyboard"; sourceTree = "<group>"; };
+		2238FCA4207310B000BCAE3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Citizen Scientist Project/Base.lproj/GeoHunt.storyboard"; sourceTree = "<group>"; };
+		2238FCA6207310FA00BCAE3F /* Learn.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Learn.storyboard; sourceTree = "<group>"; };
+		2238FCA92073113300BCAE3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Citizen Scientist Project/Base.lproj/Explore.storyboard"; sourceTree = "<group>"; };
+		2238FCAB2073117C00BCAE3F /* Record.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Record.storyboard; sourceTree = "<group>"; };
+		2238FCAE207311F800BCAE3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Citizen Scientist Project/Base.lproj/Review.storyboard"; sourceTree = "<group>"; };
+		2238FCB02073125600BCAE3F /* OurPartners.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = OurPartners.storyboard; sourceTree = "<group>"; };
+		2238FCB3207312AA00BCAE3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Citizen Scientist Project/Base.lproj/NewsLetter.storyboard"; sourceTree = "<group>"; };
+		2238FCB5207312F000BCAE3F /* OurBiomes.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = OurBiomes.storyboard; sourceTree = "<group>"; };
+		2238FCB82073132C00BCAE3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Citizen Scientist Project/Base.lproj/AboutUs.storyboard"; sourceTree = "<group>"; };
+		2238FCBB207313AB00BCAE3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Citizen Scientist Project/Base.lproj/Events.storyboard"; sourceTree = "<group>"; };
+		2238FCBD207313E900BCAE3F /* News.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = News.storyboard; sourceTree = "<group>"; };
+		2238FCC02073143900BCAE3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Citizen Scientist Project/Base.lproj/FieldActivities.storyboard"; sourceTree = "<group>"; };
+		2238FCC22073147200BCAE3F /* LectureSeries.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LectureSeries.storyboard; sourceTree = "<group>"; };
+		2238FCC5207314E900BCAE3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Citizen Scientist Project/Base.lproj/ReefRestoration.storyboard"; sourceTree = "<group>"; };
+		2238FCC82073154200BCAE3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Citizen Scientist Project/Base.lproj/SeaLevelRise.storyboard"; sourceTree = "<group>"; };
+		2238FCCB207316AE00BCAE3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Citizen Scientist Project/Base.lproj/KeyChallenge.storyboard"; sourceTree = "<group>"; };
+		2238FCCE2073177600BCAE3F /* WaterWatch.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WaterWatch.storyboard; sourceTree = "<group>"; };
+		2238FCF12073301F00BCAE3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Citizen Scientist Project/KeyChallenge/Citizen Scientist Project/Base.lproj/MiniChallenge.storyboard"; sourceTree = "<group>"; };
+		22395D00204E432600177243 /* NavigationPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationPage.swift; sourceTree = "<group>"; };
+		22395D042052798600177243 /* WaterWatchContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterWatchContent.swift; sourceTree = "<group>"; };
+		22395D062052830600177243 /* WaterWatchContentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterWatchContentManager.swift; sourceTree = "<group>"; };
+		22395D0A20528DE800177243 /* WaterWatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterWatchView.swift; sourceTree = "<group>"; };
+		22594971202D969F0047E055 /* SectionFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionFooterView.swift; sourceTree = "<group>"; };
+		22594975202DA6EC0047E055 /* HomeCellContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCellContent.swift; sourceTree = "<group>"; };
+		22594977202DAA0C0047E055 /* HomeContentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeContentManager.swift; sourceTree = "<group>"; };
+		2259497A202DCCEC0047E055 /* Footer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Footer.swift; sourceTree = "<group>"; };
+		226BDBCA20889B4900FAC995 /* WaterWatchCollapsibleTableViewCellTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterWatchCollapsibleTableViewCellTable.swift; sourceTree = "<group>"; };
+		22891A3C202DEBE7000FEBB4 /* SocialNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialNetwork.swift; sourceTree = "<group>"; };
+		228FA99F2047788B003610B3 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		228FA9A1204778B3003610B3 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		2292AC88207F76C8002DAD23 /* LectureSeriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LectureSeriesView.swift; sourceTree = "<group>"; };
+		2292AC8A207F76E3002DAD23 /* LectureSeriesContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LectureSeriesContent.swift; sourceTree = "<group>"; };
+		2292AC8C207F76F1002DAD23 /* LectureSeriesContentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LectureSeriesContentManager.swift; sourceTree = "<group>"; };
+		2292AC972080D1CF002DAD23 /* BiomesBeaches.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BiomesBeaches.storyboard; sourceTree = "<group>"; };
+		2292AC992080D1E8002DAD23 /* BiomesGreenSpaces.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BiomesGreenSpaces.storyboard; sourceTree = "<group>"; };
+		2292AC9B2080D1FD002DAD23 /* BiomesBikingWalkingPaths.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BiomesBikingWalkingPaths.storyboard; sourceTree = "<group>"; };
+		2292AC9D2080D20C002DAD23 /* BiomesMangrove.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BiomesMangrove.storyboard; sourceTree = "<group>"; };
+		2292AC9F2080D21E002DAD23 /* BiomesCoralReefs.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BiomesCoralReefs.storyboard; sourceTree = "<group>"; };
+		2292ACA12080D234002DAD23 /* BiomesWaterWays.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BiomesWaterWays.storyboard; sourceTree = "<group>"; };
+		2292ACA32080D270002DAD23 /* BiomesSeagrasses.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BiomesSeagrasses.storyboard; sourceTree = "<group>"; };
+		2292ACAC2080D2FB002DAD23 /* BiomesSeagrassesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiomesSeagrassesViewController.swift; sourceTree = "<group>"; };
+		2292ACAE2080D343002DAD23 /* BiomesBeachesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiomesBeachesViewController.swift; sourceTree = "<group>"; };
+		2292ACB02080D35B002DAD23 /* BiomesGreenSpacesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiomesGreenSpacesViewController.swift; sourceTree = "<group>"; };
+		2292ACB22080D37E002DAD23 /* BiomesBikingWalkingPathsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiomesBikingWalkingPathsViewController.swift; sourceTree = "<group>"; };
+		2292ACB42080D39A002DAD23 /* BiomesMangroveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiomesMangroveViewController.swift; sourceTree = "<group>"; };
+		2292ACB62080D3B7002DAD23 /* BiomesCoralReefsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiomesCoralReefsViewController.swift; sourceTree = "<group>"; };
+		2292ACB82080D3CB002DAD23 /* BiomesWaterWaysViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiomesWaterWaysViewController.swift; sourceTree = "<group>"; };
+		22992257203E5814006CE1AB /* NavigationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTableViewController.swift; sourceTree = "<group>"; };
+		22992259203E58FA006CE1AB /* segueToTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = segueToTable.swift; sourceTree = "<group>"; };
+		229E613F2022A79200D4BDDA /* Citizen-Scientist-Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Citizen-Scientist-Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		229E61422022A79200D4BDDA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		229E61442022A79200D4BDDA /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		229E614A2022A79200D4BDDA /* Citizen_Scientist_Project.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Citizen_Scientist_Project.xcdatamodel; sourceTree = "<group>"; };
+		229E614C2022A79200D4BDDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		229E614F2022A79200D4BDDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		229E61512022A79200D4BDDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		229E61562022A79200D4BDDA /* Citizen-Scientist-ProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Citizen-Scientist-ProjectTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		229E61612022A79200D4BDDA /* Citizen-Scientist-ProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Citizen-Scientist-ProjectUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		22BE72E9208769FB003BAD05 /* PreviousWinnersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviousWinnersView.swift; sourceTree = "<group>"; };
+		22BE72ED208798FE003BAD05 /* KeyChallengeCollapsibleTableContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChallengeCollapsibleTableContent.swift; sourceTree = "<group>"; };
+		22BE72EF20879916003BAD05 /* KeyChallengeCollapsibleTableContentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChallengeCollapsibleTableContentManager.swift; sourceTree = "<group>"; };
+		22BE72F12087A5ED003BAD05 /* KeyChallengeCollapsibleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChallengeCollapsibleTableViewController.swift; sourceTree = "<group>"; };
+		22BE72F32087A711003BAD05 /* KeyChallengeCollapsibleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChallengeCollapsibleTableViewCell.swift; sourceTree = "<group>"; };
+		22BE72F52087A735003BAD05 /* KeyChallengeCollapsibleTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChallengeCollapsibleTableViewHeader.swift; sourceTree = "<group>"; };
+		22BE72F72087A74B003BAD05 /* KeyChallengeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChallengeView.swift; sourceTree = "<group>"; };
+		22BE72F92087A76D003BAD05 /* KeyChallengeContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChallengeContent.swift; sourceTree = "<group>"; };
+		22BE72FB2087A77D003BAD05 /* KeyChallengeContentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChallengeContentManager.swift; sourceTree = "<group>"; };
+		22CA83B1206E348800287889 /* iNaturalistDownloadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iNaturalistDownloadView.swift; sourceTree = "<group>"; };
+		22CA83B5206E52EC00287889 /* iNaturalistVimeoTutorialsPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iNaturalistVimeoTutorialsPageViewController.swift; sourceTree = "<group>"; };
+		22CA83B7206E55D300287889 /* iNaturalistVimeoTutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iNaturalistVimeoTutorialViewController.swift; sourceTree = "<group>"; };
+		22CA83B9206E593600287889 /* iNaturalistVimeoTutorialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iNaturalistVimeoTutorialView.swift; sourceTree = "<group>"; };
+		22CF18A720873260001E2648 /* PreviousWinnersCollapsibleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviousWinnersCollapsibleTableViewController.swift; sourceTree = "<group>"; };
+		22CF18A920873699001E2648 /* PreviousWinnersCollapsibleTableContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviousWinnersCollapsibleTableContent.swift; sourceTree = "<group>"; };
+		22CF18AB208736C5001E2648 /* PreviousWinnersCollapsibleTableContentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviousWinnersCollapsibleTableContentManager.swift; sourceTree = "<group>"; };
+		22CF18AD208745C7001E2648 /* PreviousWinnersCollapsibleTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviousWinnersCollapsibleTableViewHeader.swift; sourceTree = "<group>"; };
+		22CF18AF208745D8001E2648 /* PreviousWinnersCollapsibleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviousWinnersCollapsibleTableViewCell.swift; sourceTree = "<group>"; };
+		22CF18B1208765ED001E2648 /* PreviousWinnersContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviousWinnersContent.swift; sourceTree = "<group>"; };
+		22CF18B320876605001E2648 /* PreviousWinnerContentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviousWinnerContentManager.swift; sourceTree = "<group>"; };
+		22DD10D5208EF6EA004872C7 /* AboutUsExplorePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsExplorePageViewController.swift; sourceTree = "<group>"; };
+		22DD10D7208EF700004872C7 /* AboutUsGetInvolvedPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsGetInvolvedPageViewController.swift; sourceTree = "<group>"; };
+		22DD10D9208EF9BA004872C7 /* AboutUsExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsExploreViewController.swift; sourceTree = "<group>"; };
+		22DD10DD208EFD00004872C7 /* AboutUsContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsContent.swift; sourceTree = "<group>"; };
+		22DD10DF208EFD12004872C7 /* AboutUsContentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsContentManager.swift; sourceTree = "<group>"; };
+		22DD10E1208F147C004872C7 /* AboutUsExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsExploreView.swift; sourceTree = "<group>"; };
+		22DD10E3208F1495004872C7 /* AboutUsGetInvolvedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsGetInvolvedView.swift; sourceTree = "<group>"; };
+		22DD10E5208F1AAF004872C7 /* AboutUsGetInvolvedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsGetInvolvedViewController.swift; sourceTree = "<group>"; };
+		22E377B8206CE29300D277F2 /* MiniChallengeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniChallengeViewController.swift; sourceTree = "<group>"; };
+		22E377BA206E22AA00D277F2 /* iNaturalistDownloadStepViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iNaturalistDownloadStepViewController.swift; sourceTree = "<group>"; };
+		22E377BC206E23DB00D277F2 /* iNaturalistDownloadStepsPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iNaturalistDownloadStepsPageViewController.swift; sourceTree = "<group>"; };
+		22E377BE206E24FB00D277F2 /* Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
+		22F78C8E202D0F900001049D /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		6D021BFD203E2A0C003E35D5 /* LearnViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnViewController.swift; sourceTree = "<group>"; };
+		6D021BFF203E2A36003E35D5 /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
+		6D021C01203E2A47003E35D5 /* RecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
+		6D021C03203E2A52003E35D5 /* ReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
+		6D021C05203E2E1D003E35D5 /* KeyChallengeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChallengeViewController.swift; sourceTree = "<group>"; };
+		6D021C07203E2E2F003E35D5 /* SeaLevelRiseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeaLevelRiseViewController.swift; sourceTree = "<group>"; };
+		6D021C09203E2E3F003E35D5 /* WaterWatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterWatchViewController.swift; sourceTree = "<group>"; };
+		6D021C0B203E2E52003E35D5 /* ReefRestorationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReefRestorationViewController.swift; sourceTree = "<group>"; };
+		6D021C0D203E2E63003E35D5 /* LectureSeriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LectureSeriesViewController.swift; sourceTree = "<group>"; };
+		6D021C0F203E2E72003E35D5 /* FieldActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldActivityViewController.swift; sourceTree = "<group>"; };
+		6D021C11203E3117003E35D5 /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
+		6D021C13203E3126003E35D5 /* OurBiomesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OurBiomesViewController.swift; sourceTree = "<group>"; };
+		6D021C15203E3133003E35D5 /* NewslettersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewslettersViewController.swift; sourceTree = "<group>"; };
+		6D021C17203E3142003E35D5 /* OurPartnersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OurPartnersViewController.swift; sourceTree = "<group>"; };
+		6D021C19203E314E003E35D5 /* ContactUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsViewController.swift; sourceTree = "<group>"; };
+		6D0DCF2D203B5AC3000F5D62 /* NavigationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTableViewCell.swift; sourceTree = "<group>"; };
+		6D37E5FF203C869D00FF4BBA /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileViewController.swift; path = "Citizen Scientist Project/Profile/Controller/ProfileViewController.swift"; sourceTree = SOURCE_ROOT; };
+		6D37E601203C884B00FF4BBA /* GeoHuntViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GeoHuntViewController.swift; path = "Citizen Scientist Project/GeoHunt/Controller/GeoHuntViewController.swift"; sourceTree = SOURCE_ROOT; };
+		6D37E607203C893A00FF4BBA /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
+		6D37E609203C897100FF4BBA /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		6D9DF563203F3FAC0036C0E2 /* StatusReefRestorationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusReefRestorationViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		229E613C2022A79200D4BDDA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		229E61532022A79200D4BDDA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		229E615E2022A79200D4BDDA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2207B7802075C41800A4DE90 /* PreviousWinners */ = {
+			isa = PBXGroup;
+			children = (
+				2207B7842075C46300A4DE90 /* PreviousWinners.storyboard */,
+				2207B7832075C44400A4DE90 /* Model */,
+				2207B7822075C43E00A4DE90 /* View */,
+				2207B7812075C43000A4DE90 /* Controller */,
+			);
+			path = PreviousWinners;
+			sourceTree = "<group>";
+		};
+		2207B7812075C43000A4DE90 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2207B7862075C4AE00A4DE90 /* PreviousWinnersViewController.swift */,
+				22CF18A720873260001E2648 /* PreviousWinnersCollapsibleTableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2207B7822075C43E00A4DE90 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				22BE72E9208769FB003BAD05 /* PreviousWinnersView.swift */,
+				22CF18AD208745C7001E2648 /* PreviousWinnersCollapsibleTableViewHeader.swift */,
+				22CF18AF208745D8001E2648 /* PreviousWinnersCollapsibleTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2207B7832075C44400A4DE90 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				22CF18B1208765ED001E2648 /* PreviousWinnersContent.swift */,
+				22CF18B320876605001E2648 /* PreviousWinnerContentManager.swift */,
+				22CF18A920873699001E2648 /* PreviousWinnersCollapsibleTableContent.swift */,
+				22CF18AB208736C5001E2648 /* PreviousWinnersCollapsibleTableContentManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2207B7882075CC1000A4DE90 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2207B7A92075DBC900A4DE90 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2207B7AA2075DBFC00A4DE90 /* ReusableFooterViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		220A9823207BB9C400FB5752 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				220A9824207BB9E000FB5752 /* MiniChallengeContent.swift */,
+				220A9828207BBE6000FB5752 /* MiniChallengeContentManager.swift */,
+				220A982A207BC66C00FB5752 /* iNaturalistContent.swift */,
+				220A982C207BC6DF00FB5752 /* iNaturalistContentManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		222B8E1C209342A300E531B9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				222B8E2420934CA400E531B9 /* OurPartnersView.swift */,
+				222B8E2220934C8600E531B9 /* OurPartnersCollectionViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		222B8E1D209342AA00E531B9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				222B8E1E209342CE00E531B9 /* OurPartnersContent.swift */,
+				222B8E20209342E000E531B9 /* OurPartnersContentManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		222BB5832077347D0070354B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				222BB587207737210070354B /* SeaLevelRiseView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		222BB584207734880070354B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				222BB585207734E30070354B /* SeaLevelRiseContent.swift */,
+				222BB58920773D520070354B /* SeaLevelRiseContentManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		222BB59220775F1F0070354B /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				222BB58F20775ECB0070354B /* WebView.storyboard */,
+				222BB59320775F5F0070354B /* Controller */,
+			);
+			path = WebView;
+			sourceTree = "<group>";
+		};
+		222BB59320775F5F0070354B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				228FA99F2047788B003610B3 /* WebViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2235A2C12063B23600DEDC9E /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				22E377BE206E24FB00D277F2 /* Storyboard.swift */,
+				222BB59220775F1F0070354B /* WebView */,
+				2235A2C22063B26A00DEDC9E /* Extensions.swift */,
+				222BB58B20774ED50070354B /* ExternalAppManager.swift */,
+				222BB58D2077521D0070354B /* InternalAppStructures.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		2238FC912073021600BCAE3F /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				2238FC922073024B00BCAE3F /* ReusableHeader.swift */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		22395CFD204E42F400177243 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				22395D00204E432600177243 /* NavigationPage.swift */,
+				220A981F207B407800FB5752 /* NavigationPageContentManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		22395D022052791000177243 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				22395D0A20528DE800177243 /* WaterWatchView.swift */,
+				2235A2C42063B2F400DEDC9E /* CollapsibleTableViewHeader.swift */,
+				2235A2C62063B33600DEDC9E /* WaterWatchTableViewCellChart.swift */,
+				226BDBCA20889B4900FAC995 /* WaterWatchCollapsibleTableViewCellTable.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		22395D032052792000177243 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				22395D042052798600177243 /* WaterWatchContent.swift */,
+				22395D062052830600177243 /* WaterWatchContentManager.swift */,
+				2235A2C82063B38D00DEDC9E /* CollapsibleGraphChartTable.swift */,
+				222BB5B4207A984D0070354B /* CollapsibleTableContentManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		22594979202DBFFB0047E055 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				229E61422022A79200D4BDDA /* AppDelegate.swift */,
+				229E614E2022A79200D4BDDA /* LaunchScreen.storyboard */,
+				229E61512022A79200D4BDDA /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2262D2E3203E316600FB8AFB /* Footer */ = {
+			isa = PBXGroup;
+			children = (
+				2207B7AC2075DC2400A4DE90 /* Footer.storyboard */,
+				2299222D203E5328006CE1AB /* Model */,
+				2299222C203E5303006CE1AB /* View */,
+				2207B7A92075DBC900A4DE90 /* Controller */,
+			);
+			path = Footer;
+			sourceTree = "<group>";
+		};
+		2292AC86207F75D0002DAD23 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2292AC8A207F76E3002DAD23 /* LectureSeriesContent.swift */,
+				2292AC8C207F76F1002DAD23 /* LectureSeriesContentManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2292AC87207F75DA002DAD23 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2292AC88207F76C8002DAD23 /* LectureSeriesView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2292AC8E2080D10C002DAD23 /* BiomesBeaches */ = {
+			isa = PBXGroup;
+			children = (
+				2292AC972080D1CF002DAD23 /* BiomesBeaches.storyboard */,
+				2292ACA52080D298002DAD23 /* Controller */,
+			);
+			path = BiomesBeaches;
+			sourceTree = "<group>";
+		};
+		2292AC8F2080D125002DAD23 /* BiomesSeagrasses */ = {
+			isa = PBXGroup;
+			children = (
+				2292ACA32080D270002DAD23 /* BiomesSeagrasses.storyboard */,
+				2292ACAB2080D2C2002DAD23 /* Controller */,
+			);
+			path = BiomesSeagrasses;
+			sourceTree = "<group>";
+		};
+		2292AC902080D139002DAD23 /* BiomesWaterWays */ = {
+			isa = PBXGroup;
+			children = (
+				2292ACA12080D234002DAD23 /* BiomesWaterWays.storyboard */,
+				2292ACAA2080D2BB002DAD23 /* Controller */,
+			);
+			path = BiomesWaterWays;
+			sourceTree = "<group>";
+		};
+		2292AC912080D142002DAD23 /* BiomesCoralReefs */ = {
+			isa = PBXGroup;
+			children = (
+				2292AC9F2080D21E002DAD23 /* BiomesCoralReefs.storyboard */,
+				2292ACA92080D2B5002DAD23 /* Controller */,
+			);
+			path = BiomesCoralReefs;
+			sourceTree = "<group>";
+		};
+		2292AC922080D150002DAD23 /* BiomesMangrove */ = {
+			isa = PBXGroup;
+			children = (
+				2292AC9D2080D20C002DAD23 /* BiomesMangrove.storyboard */,
+				2292ACA82080D2AE002DAD23 /* Controller */,
+			);
+			path = BiomesMangrove;
+			sourceTree = "<group>";
+		};
+		2292AC932080D162002DAD23 /* BiomesBikingWalkingPaths */ = {
+			isa = PBXGroup;
+			children = (
+				2292AC9B2080D1FD002DAD23 /* BiomesBikingWalkingPaths.storyboard */,
+				2292ACA72080D2A7002DAD23 /* Controller */,
+			);
+			path = BiomesBikingWalkingPaths;
+			sourceTree = "<group>";
+		};
+		2292AC942080D171002DAD23 /* BiomesGreenSpaces */ = {
+			isa = PBXGroup;
+			children = (
+				2292AC992080D1E8002DAD23 /* BiomesGreenSpaces.storyboard */,
+				2292ACA62080D2A1002DAD23 /* Controller */,
+			);
+			path = BiomesGreenSpaces;
+			sourceTree = "<group>";
+		};
+		2292AC962080D1A2002DAD23 /* OurBiomes */ = {
+			isa = PBXGroup;
+			children = (
+				2238FCB5207312F000BCAE3F /* OurBiomes.storyboard */,
+				6D8D70BC203E68EA00503CA9 /* Controller */,
+			);
+			path = OurBiomes;
+			sourceTree = "<group>";
+		};
+		2292ACA52080D298002DAD23 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2292ACAE2080D343002DAD23 /* BiomesBeachesViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2292ACA62080D2A1002DAD23 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2292ACB02080D35B002DAD23 /* BiomesGreenSpacesViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2292ACA72080D2A7002DAD23 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2292ACB22080D37E002DAD23 /* BiomesBikingWalkingPathsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2292ACA82080D2AE002DAD23 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2292ACB42080D39A002DAD23 /* BiomesMangroveViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2292ACA92080D2B5002DAD23 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2292ACB62080D3B7002DAD23 /* BiomesCoralReefsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2292ACAA2080D2BB002DAD23 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2292ACB82080D3CB002DAD23 /* BiomesWaterWaysViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2292ACAB2080D2C2002DAD23 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2292ACAC2080D2FB002DAD23 /* BiomesSeagrassesViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		22992227203E51FF006CE1AB /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				2238FC99207307A200BCAE3F /* Navigation.storyboard */,
+				22395CFD204E42F400177243 /* Model */,
+				22F78C91202D153D0001049D /* View */,
+				2299222E203E53A6006CE1AB /* Controller */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		22992228203E5254006CE1AB /* Homepage */ = {
+			isa = PBXGroup;
+			children = (
+				2238FC9C2073080800BCAE3F /* Homepage.storyboard */,
+				2299222B203E5284006CE1AB /* Model */,
+				2299222A203E527B006CE1AB /* View */,
+				22992229203E5273006CE1AB /* Controller */,
+			);
+			path = Homepage;
+			sourceTree = "<group>";
+		};
+		22992229203E5273006CE1AB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				229E61442022A79200D4BDDA /* HomeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2299222A203E527B006CE1AB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				22F78C8E202D0F900001049D /* HomeCollectionViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2299222B203E5284006CE1AB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				22594975202DA6EC0047E055 /* HomeCellContent.swift */,
+				22594977202DAA0C0047E055 /* HomeContentManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2299222C203E5303006CE1AB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				22594971202D969F0047E055 /* SectionFooterView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2299222D203E5328006CE1AB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2259497A202DCCEC0047E055 /* Footer.swift */,
+				22891A3C202DEBE7000FEBB4 /* SocialNetwork.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2299222E203E53A6006CE1AB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				22992257203E5814006CE1AB /* NavigationTableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2299222F203E53E2006CE1AB /* KeyChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				2238FCCA207316AE00BCAE3F /* KeyChallenge.storyboard */,
+				22BE72EB20879860003BAD05 /* Model */,
+				22BE72EC20879873003BAD05 /* View */,
+				22992230203E5405006CE1AB /* Controller */,
+			);
+			path = KeyChallenge;
+			sourceTree = "<group>";
+		};
+		22992230203E5405006CE1AB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6D021C05203E2E1D003E35D5 /* KeyChallengeViewController.swift */,
+				22BE72F12087A5ED003BAD05 /* KeyChallengeCollapsibleTableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		22992233203E5433006CE1AB /* AboutUs */ = {
+			isa = PBXGroup;
+			children = (
+				2238FCB72073132C00BCAE3F /* AboutUs.storyboard */,
+				22DD10DC208EFCEA004872C7 /* Model */,
+				22DD10DB208EFCE2004872C7 /* View */,
+				22992256203E56E2006CE1AB /* Controller */,
+			);
+			path = AboutUs;
+			sourceTree = "<group>";
+		};
+		22992234203E543F006CE1AB /* ContactUs */ = {
+			isa = PBXGroup;
+			children = (
+				2238FC9E20730D7900BCAE3F /* ContactUs.storyboard */,
+				22992255203E56D7006CE1AB /* Controller */,
+			);
+			path = ContactUs;
+			sourceTree = "<group>";
+		};
+		22992235203E5449006CE1AB /* Events */ = {
+			isa = PBXGroup;
+			children = (
+				2238FCBA207313AB00BCAE3F /* Events.storyboard */,
+				22992254203E56CA006CE1AB /* Controller */,
+			);
+			path = Events;
+			sourceTree = "<group>";
+		};
+		22992236203E5453006CE1AB /* Explore */ = {
+			isa = PBXGroup;
+			children = (
+				2238FCA82073113300BCAE3F /* Explore.storyboard */,
+				22992253203E56C0006CE1AB /* Controller */,
+			);
+			path = Explore;
+			sourceTree = "<group>";
+		};
+		22992237203E5459006CE1AB /* FieldActivities */ = {
+			isa = PBXGroup;
+			children = (
+				2238FCBF2073143900BCAE3F /* FieldActivities.storyboard */,
+				22992252203E56B4006CE1AB /* Controller */,
+			);
+			path = FieldActivities;
+			sourceTree = "<group>";
+		};
+		22992238203E5462006CE1AB /* GeoHunt */ = {
+			isa = PBXGroup;
+			children = (
+				2238FCA3207310B000BCAE3F /* GeoHunt.storyboard */,
+				22992251203E56A9006CE1AB /* Controller */,
+			);
+			path = GeoHunt;
+			sourceTree = "<group>";
+		};
+		22992239203E546C006CE1AB /* Learn */ = {
+			isa = PBXGroup;
+			children = (
+				2238FCA6207310FA00BCAE3F /* Learn.storyboard */,
+				22992250203E569C006CE1AB /* Controller */,
+			);
+			path = Learn;
+			sourceTree = "<group>";
+		};
+		2299223A203E5475006CE1AB /* LectureSeries */ = {
+			isa = PBXGroup;
+			children = (
+				2238FCC22073147200BCAE3F /* LectureSeries.storyboard */,
+				2292AC86207F75D0002DAD23 /* Model */,
+				2292AC87207F75DA002DAD23 /* View */,
+				2299224F203E5690006CE1AB /* Controller */,
+			);
+			path = LectureSeries;
+			sourceTree = "<group>";
+		};
+		2299223B203E547D006CE1AB /* NewsLetters */ = {
+			isa = PBXGroup;
+			children = (
+				2238FCB2207312AA00BCAE3F /* NewsLetter.storyboard */,
+				2299224E203E5682006CE1AB /* Controller */,
+			);
+			path = NewsLetters;
+			sourceTree = "<group>";
+		};
+		2299223C203E5489006CE1AB /* OurBiomes */ = {
+			isa = PBXGroup;
+			children = (
+				2292AC962080D1A2002DAD23 /* OurBiomes */,
+				2292AC8E2080D10C002DAD23 /* BiomesBeaches */,
+				2292AC942080D171002DAD23 /* BiomesGreenSpaces */,
+				2292AC932080D162002DAD23 /* BiomesBikingWalkingPaths */,
+				2292AC922080D150002DAD23 /* BiomesMangrove */,
+				2292AC912080D142002DAD23 /* BiomesCoralReefs */,
+				2292AC902080D139002DAD23 /* BiomesWaterWays */,
+				2292AC8F2080D125002DAD23 /* BiomesSeagrasses */,
+			);
+			path = OurBiomes;
+			sourceTree = "<group>";
+		};
+		2299223D203E54F9006CE1AB /* News */ = {
+			isa = PBXGroup;
+			children = (
+				2238FCBD207313E900BCAE3F /* News.storyboard */,
+				2299224C203E5668006CE1AB /* Controller */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		2299223E203E5505006CE1AB /* OurPartners */ = {
+			isa = PBXGroup;
+			children = (
+				2238FCB02073125600BCAE3F /* OurPartners.storyboard */,
+				222B8E1D209342AA00E531B9 /* Model */,
+				222B8E1C209342A300E531B9 /* View */,
+				2299224B203E564C006CE1AB /* Controller */,
+			);
+			path = OurPartners;
+			sourceTree = "<group>";
+		};
+		2299223F203E5510006CE1AB /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				2238FCA02073107400BCAE3F /* Profile.storyboard */,
+				2299224A203E5630006CE1AB /* Controller */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		22992240203E5518006CE1AB /* Record */ = {
+			isa = PBXGroup;
+			children = (
+				2238FCAB2073117C00BCAE3F /* Record.storyboard */,
+				22992249203E5626006CE1AB /* Controller */,
+			);
+			path = Record;
+			sourceTree = "<group>";
+		};
+		22992241203E551F006CE1AB /* ReefRestoration */ = {
+			isa = PBXGroup;
+			children = (
+				2238FCC4207314E900BCAE3F /* ReefRestoration.storyboard */,
+				22992248203E561C006CE1AB /* Controller */,
+			);
+			path = ReefRestoration;
+			sourceTree = "<group>";
+		};
+		22992242203E5553006CE1AB /* Review */ = {
+			isa = PBXGroup;
+			children = (
+				2238FCAD207311F800BCAE3F /* Review.storyboard */,
+				22992247203E5611006CE1AB /* Controller */,
+			);
+			path = Review;
+			sourceTree = "<group>";
+		};
+		22992243203E555C006CE1AB /* SeaLevelRise */ = {
+			isa = PBXGroup;
+			children = (
+				2238FCC72073154200BCAE3F /* SeaLevelRise.storyboard */,
+				222BB584207734880070354B /* Model */,
+				222BB5832077347D0070354B /* View */,
+				22992246203E5608006CE1AB /* Controller */,
+				2207B7882075CC1000A4DE90 /* Resources */,
+			);
+			path = SeaLevelRise;
+			sourceTree = "<group>";
+		};
+		22992244203E5564006CE1AB /* WaterWatch */ = {
+			isa = PBXGroup;
+			children = (
+				2238FCCE2073177600BCAE3F /* WaterWatch.storyboard */,
+				22395D032052792000177243 /* Model */,
+				22395D022052791000177243 /* View */,
+				22992245203E55FD006CE1AB /* Controller */,
+			);
+			path = WaterWatch;
+			sourceTree = "<group>";
+		};
+		22992245203E55FD006CE1AB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6D021C09203E2E3F003E35D5 /* WaterWatchViewController.swift */,
+				2235A2BF2063B1EE00DEDC9E /* CollapsibleTableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		22992246203E5608006CE1AB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6D021C07203E2E2F003E35D5 /* SeaLevelRiseViewController.swift */,
+				228FA9A1204778B3003610B3 /* TableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		22992247203E5611006CE1AB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6D021C03203E2A52003E35D5 /* ReviewViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		22992248203E561C006CE1AB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6D021C0B203E2E52003E35D5 /* ReefRestorationViewController.swift */,
+				6D9DF563203F3FAC0036C0E2 /* StatusReefRestorationViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		22992249203E5626006CE1AB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6D021C01203E2A47003E35D5 /* RecordViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2299224A203E5630006CE1AB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6D37E5FF203C869D00FF4BBA /* ProfileViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2299224B203E564C006CE1AB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6D021C17203E3142003E35D5 /* OurPartnersViewController.swift */,
+				222B8E1A208FB1C400E531B9 /* OurPartnersFirstCollectionViewController.swift */,
+				222B8E26209361A200E531B9 /* OurPartnersSecondCollectionViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2299224C203E5668006CE1AB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6D37E609203C897100FF4BBA /* NewsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2299224E203E5682006CE1AB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6D021C15203E3133003E35D5 /* NewslettersViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2299224F203E5690006CE1AB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6D021C0D203E2E63003E35D5 /* LectureSeriesViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		22992250203E569C006CE1AB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6D021BFD203E2A0C003E35D5 /* LearnViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		22992251203E56A9006CE1AB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6D37E601203C884B00FF4BBA /* GeoHuntViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		22992252203E56B4006CE1AB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6D021C0F203E2E72003E35D5 /* FieldActivityViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		22992253203E56C0006CE1AB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6D021BFF203E2A36003E35D5 /* ExploreViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		22992254203E56CA006CE1AB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6D37E607203C893A00FF4BBA /* EventsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		22992255203E56D7006CE1AB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6D021C19203E314E003E35D5 /* ContactUsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		22992256203E56E2006CE1AB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6D021C11203E3117003E35D5 /* AboutUsViewController.swift */,
+				22DD10D3208EF691004872C7 /* AboutUsExplore */,
+				22DD10D4208EF6A5004872C7 /* AboutUsGetInvolved */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		229E61362022A79200D4BDDA = {
+			isa = PBXGroup;
+			children = (
+				229E61412022A79200D4BDDA /* Citizen Scientist Project */,
+				229E61402022A79200D4BDDA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		229E61402022A79200D4BDDA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				229E613F2022A79200D4BDDA /* Citizen-Scientist-Project.app */,
+				229E61562022A79200D4BDDA /* Citizen-Scientist-ProjectTests.xctest */,
+				229E61612022A79200D4BDDA /* Citizen-Scientist-ProjectUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		229E61412022A79200D4BDDA /* Citizen Scientist Project */ = {
+			isa = PBXGroup;
+			children = (
+				2238FC912073021600BCAE3F /* Header */,
+				22992228203E5254006CE1AB /* Homepage */,
+				2262D2E3203E316600FB8AFB /* Footer */,
+				22992227203E51FF006CE1AB /* Navigation */,
+				22992244203E5564006CE1AB /* WaterWatch */,
+				22992243203E555C006CE1AB /* SeaLevelRise */,
+				22992242203E5553006CE1AB /* Review */,
+				22992241203E551F006CE1AB /* ReefRestoration */,
+				2299222F203E53E2006CE1AB /* KeyChallenge */,
+				22E377B4206CE22F00D277F2 /* MiniChallenge */,
+				2207B7802075C41800A4DE90 /* PreviousWinners */,
+				22992240203E5518006CE1AB /* Record */,
+				2299223F203E5510006CE1AB /* Profile */,
+				2299223E203E5505006CE1AB /* OurPartners */,
+				2299223D203E54F9006CE1AB /* News */,
+				2299223C203E5489006CE1AB /* OurBiomes */,
+				2299223B203E547D006CE1AB /* NewsLetters */,
+				2299223A203E5475006CE1AB /* LectureSeries */,
+				22992239203E546C006CE1AB /* Learn */,
+				22992238203E5462006CE1AB /* GeoHunt */,
+				22992237203E5459006CE1AB /* FieldActivities */,
+				22992236203E5453006CE1AB /* Explore */,
+				22992235203E5449006CE1AB /* Events */,
+				22992234203E543F006CE1AB /* ContactUs */,
+				22992233203E5433006CE1AB /* AboutUs */,
+				2235A2C12063B23600DEDC9E /* Helpers */,
+				22594979202DBFFB0047E055 /* Supporting Files */,
+				229E614C2022A79200D4BDDA /* Assets.xcassets */,
+				229E61492022A79200D4BDDA /* Citizen_Scientist_Project.xcdatamodeld */,
+			);
+			path = "Citizen Scientist Project";
+			sourceTree = "<group>";
+		};
+		22BE72EB20879860003BAD05 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				22BE72F92087A76D003BAD05 /* KeyChallengeContent.swift */,
+				22BE72FB2087A77D003BAD05 /* KeyChallengeContentManager.swift */,
+				22BE72ED208798FE003BAD05 /* KeyChallengeCollapsibleTableContent.swift */,
+				22BE72EF20879916003BAD05 /* KeyChallengeCollapsibleTableContentManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		22BE72EC20879873003BAD05 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				22BE72F72087A74B003BAD05 /* KeyChallengeView.swift */,
+				22BE72F52087A735003BAD05 /* KeyChallengeCollapsibleTableViewHeader.swift */,
+				22BE72F32087A711003BAD05 /* KeyChallengeCollapsibleTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		22CA83B3206E527C00287889 /* iNaturalistDownload */ = {
+			isa = PBXGroup;
+			children = (
+				22E377BC206E23DB00D277F2 /* iNaturalistDownloadStepsPageViewController.swift */,
+				22E377BA206E22AA00D277F2 /* iNaturalistDownloadStepViewController.swift */,
+			);
+			path = iNaturalistDownload;
+			sourceTree = "<group>";
+		};
+		22CA83B4206E52A000287889 /* iNaturalistVimeoTutorials */ = {
+			isa = PBXGroup;
+			children = (
+				22CA83B5206E52EC00287889 /* iNaturalistVimeoTutorialsPageViewController.swift */,
+				22CA83B7206E55D300287889 /* iNaturalistVimeoTutorialViewController.swift */,
+			);
+			path = iNaturalistVimeoTutorials;
+			sourceTree = "<group>";
+		};
+		22DD10D3208EF691004872C7 /* AboutUsExplore */ = {
+			isa = PBXGroup;
+			children = (
+				22DD10D5208EF6EA004872C7 /* AboutUsExplorePageViewController.swift */,
+				22DD10D9208EF9BA004872C7 /* AboutUsExploreViewController.swift */,
+			);
+			path = AboutUsExplore;
+			sourceTree = "<group>";
+		};
+		22DD10D4208EF6A5004872C7 /* AboutUsGetInvolved */ = {
+			isa = PBXGroup;
+			children = (
+				22DD10D7208EF700004872C7 /* AboutUsGetInvolvedPageViewController.swift */,
+				22DD10E5208F1AAF004872C7 /* AboutUsGetInvolvedViewController.swift */,
+			);
+			path = AboutUsGetInvolved;
+			sourceTree = "<group>";
+		};
+		22DD10DB208EFCE2004872C7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				22DD10E1208F147C004872C7 /* AboutUsExploreView.swift */,
+				22DD10E3208F1495004872C7 /* AboutUsGetInvolvedView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		22DD10DC208EFCEA004872C7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				22DD10DD208EFD00004872C7 /* AboutUsContent.swift */,
+				22DD10DF208EFD12004872C7 /* AboutUsContentManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		22E377B4206CE22F00D277F2 /* MiniChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				2238FCF02073301F00BCAE3F /* MiniChallenge.storyboard */,
+				220A9823207BB9C400FB5752 /* Model */,
+				22E377B6206CE25400D277F2 /* View */,
+				22E377B5206CE24B00D277F2 /* Controller */,
+			);
+			path = MiniChallenge;
+			sourceTree = "<group>";
+		};
+		22E377B5206CE24B00D277F2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				22E377B8206CE29300D277F2 /* MiniChallengeViewController.swift */,
+				22CA83B3206E527C00287889 /* iNaturalistDownload */,
+				22CA83B4206E52A000287889 /* iNaturalistVimeoTutorials */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		22E377B6206CE25400D277F2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				220A9826207BBB4600FB5752 /* MiniChallengeView.swift */,
+				22CA83B1206E348800287889 /* iNaturalistDownloadView.swift */,
+				22CA83B9206E593600287889 /* iNaturalistVimeoTutorialView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		22F78C91202D153D0001049D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6D0DCF2D203B5AC3000F5D62 /* NavigationTableViewCell.swift */,
+				22992259203E58FA006CE1AB /* segueToTable.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6D8D70BC203E68EA00503CA9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6D021C13203E3126003E35D5 /* OurBiomesViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		229E613E2022A79200D4BDDA /* Citizen-Scientist-Project */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 229E616A2022A79200D4BDDA /* Build configuration list for PBXNativeTarget "Citizen-Scientist-Project" */;
+			buildPhases = (
+				229E613B2022A79200D4BDDA /* Sources */,
+				229E613C2022A79200D4BDDA /* Frameworks */,
+				229E613D2022A79200D4BDDA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Citizen-Scientist-Project";
+			productName = "Citizen Scientist Project";
+			productReference = 229E613F2022A79200D4BDDA /* Citizen-Scientist-Project.app */;
+			productType = "com.apple.product-type.application";
+		};
+		229E61552022A79200D4BDDA /* Citizen-Scientist-ProjectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 229E616D2022A79200D4BDDA /* Build configuration list for PBXNativeTarget "Citizen-Scientist-ProjectTests" */;
+			buildPhases = (
+				229E61522022A79200D4BDDA /* Sources */,
+				229E61532022A79200D4BDDA /* Frameworks */,
+				229E61542022A79200D4BDDA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				229E61582022A79200D4BDDA /* PBXTargetDependency */,
+			);
+			name = "Citizen-Scientist-ProjectTests";
+			productName = "Citizen Scientist ProjectTests";
+			productReference = 229E61562022A79200D4BDDA /* Citizen-Scientist-ProjectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		229E61602022A79200D4BDDA /* Citizen-Scientist-ProjectUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 229E61702022A79200D4BDDA /* Build configuration list for PBXNativeTarget "Citizen-Scientist-ProjectUITests" */;
+			buildPhases = (
+				229E615D2022A79200D4BDDA /* Sources */,
+				229E615E2022A79200D4BDDA /* Frameworks */,
+				229E615F2022A79200D4BDDA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				229E61632022A79200D4BDDA /* PBXTargetDependency */,
+			);
+			name = "Citizen-Scientist-ProjectUITests";
+			productName = "Citizen Scientist ProjectUITests";
+			productReference = 229E61612022A79200D4BDDA /* Citizen-Scientist-ProjectUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		229E61372022A79200D4BDDA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Key Biscayne";
+				TargetAttributes = {
+					229E613E2022A79200D4BDDA = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					229E61552022A79200D4BDDA = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 229E613E2022A79200D4BDDA;
+					};
+					229E61602022A79200D4BDDA = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 229E613E2022A79200D4BDDA;
+					};
+				};
+			};
+			buildConfigurationList = 229E613A2022A79200D4BDDA /* Build configuration list for PBXProject "Citizen-Scientist-Project" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 229E61362022A79200D4BDDA;
+			productRefGroup = 229E61402022A79200D4BDDA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				229E613E2022A79200D4BDDA /* Citizen-Scientist-Project */,
+				229E61552022A79200D4BDDA /* Citizen-Scientist-ProjectTests */,
+				229E61602022A79200D4BDDA /* Citizen-Scientist-ProjectUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		229E613D2022A79200D4BDDA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2238FCC12073143900BCAE3F /* FieldActivities.storyboard in Resources */,
+				2207B7852075C46300A4DE90 /* PreviousWinners.storyboard in Resources */,
+				2207B7AD2075DC2400A4DE90 /* Footer.storyboard in Resources */,
+				229E61502022A79200D4BDDA /* LaunchScreen.storyboard in Resources */,
+				2238FCC32073147200BCAE3F /* LectureSeries.storyboard in Resources */,
+				2238FCB4207312AA00BCAE3F /* NewsLetter.storyboard in Resources */,
+				2238FCA7207310FA00BCAE3F /* Learn.storyboard in Resources */,
+				2238FCB6207312F000BCAE3F /* OurBiomes.storyboard in Resources */,
+				2292AC9C2080D1FD002DAD23 /* BiomesBikingWalkingPaths.storyboard in Resources */,
+				2238FCAA2073113300BCAE3F /* Explore.storyboard in Resources */,
+				2292ACA22080D234002DAD23 /* BiomesWaterWays.storyboard in Resources */,
+				2238FC9F20730D7900BCAE3F /* ContactUs.storyboard in Resources */,
+				2238FCCC207316AE00BCAE3F /* KeyChallenge.storyboard in Resources */,
+				229E614D2022A79200D4BDDA /* Assets.xcassets in Resources */,
+				2292ACA42080D270002DAD23 /* BiomesSeagrasses.storyboard in Resources */,
+				2238FCA5207310B000BCAE3F /* GeoHunt.storyboard in Resources */,
+				2238FCBC207313AB00BCAE3F /* Events.storyboard in Resources */,
+				2292ACA02080D21E002DAD23 /* BiomesCoralReefs.storyboard in Resources */,
+				2238FCAF207311F800BCAE3F /* Review.storyboard in Resources */,
+				2292AC9A2080D1E8002DAD23 /* BiomesGreenSpaces.storyboard in Resources */,
+				2238FCC92073154200BCAE3F /* SeaLevelRise.storyboard in Resources */,
+				2238FC9D2073080800BCAE3F /* Homepage.storyboard in Resources */,
+				222BB59120775ECC0070354B /* WebView.storyboard in Resources */,
+				2238FC9B207307A200BCAE3F /* Navigation.storyboard in Resources */,
+				2238FCA22073107400BCAE3F /* Profile.storyboard in Resources */,
+				2238FCBE207313E900BCAE3F /* News.storyboard in Resources */,
+				2238FCB92073132C00BCAE3F /* AboutUs.storyboard in Resources */,
+				2292AC9E2080D20C002DAD23 /* BiomesMangrove.storyboard in Resources */,
+				2238FCC6207314E900BCAE3F /* ReefRestoration.storyboard in Resources */,
+				2238FCAC2073117C00BCAE3F /* Record.storyboard in Resources */,
+				2238FCCF2073177600BCAE3F /* WaterWatch.storyboard in Resources */,
+				2292AC982080D1CF002DAD23 /* BiomesBeaches.storyboard in Resources */,
+				2238FCB12073125600BCAE3F /* OurPartners.storyboard in Resources */,
+				2238FCF22073301F00BCAE3F /* MiniChallenge.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		229E61542022A79200D4BDDA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		229E615F2022A79200D4BDDA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		229E613B2022A79200D4BDDA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				220A982D207BC6DF00FB5752 /* iNaturalistContentManager.swift in Sources */,
+				22CA83BA206E593600287889 /* iNaturalistVimeoTutorialView.swift in Sources */,
+				6D021C14203E3126003E35D5 /* OurBiomesViewController.swift in Sources */,
+				22CF18AE208745C8001E2648 /* PreviousWinnersCollapsibleTableViewHeader.swift in Sources */,
+				220A9827207BBB4600FB5752 /* MiniChallengeView.swift in Sources */,
+				222BB58C20774ED50070354B /* ExternalAppManager.swift in Sources */,
+				22DD10D8208EF700004872C7 /* AboutUsGetInvolvedPageViewController.swift in Sources */,
+				22594976202DA6EC0047E055 /* HomeCellContent.swift in Sources */,
+				222B8E2520934CA400E531B9 /* OurPartnersView.swift in Sources */,
+				2292ACB12080D35B002DAD23 /* BiomesGreenSpacesViewController.swift in Sources */,
+				220A9825207BB9E000FB5752 /* MiniChallengeContent.swift in Sources */,
+				2235A2C72063B33600DEDC9E /* WaterWatchTableViewCellChart.swift in Sources */,
+				2235A2C52063B2F400DEDC9E /* CollapsibleTableViewHeader.swift in Sources */,
+				22395D0B20528DE800177243 /* WaterWatchView.swift in Sources */,
+				2292ACB72080D3B7002DAD23 /* BiomesCoralReefsViewController.swift in Sources */,
+				2235A2C02063B1EE00DEDC9E /* CollapsibleTableViewController.swift in Sources */,
+				2292AC89207F76C8002DAD23 /* LectureSeriesView.swift in Sources */,
+				22CA83B8206E55D300287889 /* iNaturalistVimeoTutorialViewController.swift in Sources */,
+				6D021C02203E2A47003E35D5 /* RecordViewController.swift in Sources */,
+				22CA83B2206E348800287889 /* iNaturalistDownloadView.swift in Sources */,
+				22CF18AA20873699001E2648 /* PreviousWinnersCollapsibleTableContent.swift in Sources */,
+				222B8E2320934C8600E531B9 /* OurPartnersCollectionViewCell.swift in Sources */,
+				22DD10D6208EF6EA004872C7 /* AboutUsExplorePageViewController.swift in Sources */,
+				6D9DF564203F3FAC0036C0E2 /* StatusReefRestorationViewController.swift in Sources */,
+				2235A2C92063B38D00DEDC9E /* CollapsibleGraphChartTable.swift in Sources */,
+				22CA83B6206E52EC00287889 /* iNaturalistVimeoTutorialsPageViewController.swift in Sources */,
+				22BE72F22087A5ED003BAD05 /* KeyChallengeCollapsibleTableViewController.swift in Sources */,
+				22BE72F62087A735003BAD05 /* KeyChallengeCollapsibleTableViewHeader.swift in Sources */,
+				22E377BF206E24FB00D277F2 /* Storyboard.swift in Sources */,
+				229E61452022A79200D4BDDA /* HomeViewController.swift in Sources */,
+				6D021C16203E3133003E35D5 /* NewslettersViewController.swift in Sources */,
+				22BE72EE208798FE003BAD05 /* KeyChallengeCollapsibleTableContent.swift in Sources */,
+				2259497B202DCCEC0047E055 /* Footer.swift in Sources */,
+				22CF18B420876605001E2648 /* PreviousWinnerContentManager.swift in Sources */,
+				2292ACAD2080D2FB002DAD23 /* BiomesSeagrassesViewController.swift in Sources */,
+				22BE72F42087A711003BAD05 /* KeyChallengeCollapsibleTableViewCell.swift in Sources */,
+				2292ACAF2080D343002DAD23 /* BiomesBeachesViewController.swift in Sources */,
+				222BB58E2077521D0070354B /* InternalAppStructures.swift in Sources */,
+				2299225A203E58FA006CE1AB /* segueToTable.swift in Sources */,
+				22DD10E2208F147C004872C7 /* AboutUsExploreView.swift in Sources */,
+				6D021C0C203E2E52003E35D5 /* ReefRestorationViewController.swift in Sources */,
+				226BDBCB20889B4900FAC995 /* WaterWatchCollapsibleTableViewCellTable.swift in Sources */,
+				22E377BD206E23DB00D277F2 /* iNaturalistDownloadStepsPageViewController.swift in Sources */,
+				6D021C0E203E2E63003E35D5 /* LectureSeriesViewController.swift in Sources */,
+				220A9820207B407800FB5752 /* NavigationPageContentManager.swift in Sources */,
+				222BB5B5207A984D0070354B /* CollapsibleTableContentManager.swift in Sources */,
+				22BE72F020879916003BAD05 /* KeyChallengeCollapsibleTableContentManager.swift in Sources */,
+				6D021BFE203E2A0C003E35D5 /* LearnViewController.swift in Sources */,
+				2207B7AB2075DBFC00A4DE90 /* ReusableFooterViewController.swift in Sources */,
+				2292ACB92080D3CB002DAD23 /* BiomesWaterWaysViewController.swift in Sources */,
+				2292AC8B207F76E3002DAD23 /* LectureSeriesContent.swift in Sources */,
+				22BE72FA2087A76D003BAD05 /* KeyChallengeContent.swift in Sources */,
+				22DD10E6208F1AAF004872C7 /* AboutUsGetInvolvedViewController.swift in Sources */,
+				222B8E1F209342CE00E531B9 /* OurPartnersContent.swift in Sources */,
+				22891A3D202DEBE7000FEBB4 /* SocialNetwork.swift in Sources */,
+				222BB588207737210070354B /* SeaLevelRiseView.swift in Sources */,
+				22DD10E4208F1495004872C7 /* AboutUsGetInvolvedView.swift in Sources */,
+				229E61432022A79200D4BDDA /* AppDelegate.swift in Sources */,
+				22E377B9206CE29300D277F2 /* MiniChallengeViewController.swift in Sources */,
+				6D021C06203E2E1D003E35D5 /* KeyChallengeViewController.swift in Sources */,
+				22DD10DA208EF9BA004872C7 /* AboutUsExploreViewController.swift in Sources */,
+				6D021C18203E3142003E35D5 /* OurPartnersViewController.swift in Sources */,
+				22CF18B2208765ED001E2648 /* PreviousWinnersContent.swift in Sources */,
+				222B8E21209342E000E531B9 /* OurPartnersContentManager.swift in Sources */,
+				22CF18B0208745D8001E2648 /* PreviousWinnersCollapsibleTableViewCell.swift in Sources */,
+				6D37E600203C869D00FF4BBA /* ProfileViewController.swift in Sources */,
+				228FA9A02047788B003610B3 /* WebViewController.swift in Sources */,
+				222B8E1B208FB1C400E531B9 /* OurPartnersFirstCollectionViewController.swift in Sources */,
+				2292AC8D207F76F1002DAD23 /* LectureSeriesContentManager.swift in Sources */,
+				2292ACB52080D39A002DAD23 /* BiomesMangroveViewController.swift in Sources */,
+				222B8E27209361A200E531B9 /* OurPartnersSecondCollectionViewController.swift in Sources */,
+				6D37E608203C893A00FF4BBA /* EventsViewController.swift in Sources */,
+				22DD10DE208EFD00004872C7 /* AboutUsContent.swift in Sources */,
+				220A9829207BBE6000FB5752 /* MiniChallengeContentManager.swift in Sources */,
+				22BE72EA208769FB003BAD05 /* PreviousWinnersView.swift in Sources */,
+				22992258203E5814006CE1AB /* NavigationTableViewController.swift in Sources */,
+				6D021C00203E2A36003E35D5 /* ExploreViewController.swift in Sources */,
+				6D021C1A203E314E003E35D5 /* ContactUsViewController.swift in Sources */,
+				22395D072052830600177243 /* WaterWatchContentManager.swift in Sources */,
+				6D021C12203E3117003E35D5 /* AboutUsViewController.swift in Sources */,
+				6D021C0A203E2E3F003E35D5 /* WaterWatchViewController.swift in Sources */,
+				22CF18A820873260001E2648 /* PreviousWinnersCollapsibleTableViewController.swift in Sources */,
+				22F78C8F202D0F900001049D /* HomeCollectionViewCell.swift in Sources */,
+				6D021C10203E2E72003E35D5 /* FieldActivityViewController.swift in Sources */,
+				229E614B2022A79200D4BDDA /* Citizen_Scientist_Project.xcdatamodeld in Sources */,
+				2238FC932073024B00BCAE3F /* ReusableHeader.swift in Sources */,
+				2207B7872075C4AE00A4DE90 /* PreviousWinnersViewController.swift in Sources */,
+				22BE72F82087A74B003BAD05 /* KeyChallengeView.swift in Sources */,
+				6D37E60A203C897100FF4BBA /* NewsViewController.swift in Sources */,
+				22395D01204E432600177243 /* NavigationPage.swift in Sources */,
+				6D021C08203E2E2F003E35D5 /* SeaLevelRiseViewController.swift in Sources */,
+				22594978202DAA0C0047E055 /* HomeContentManager.swift in Sources */,
+				22CF18AC208736C5001E2648 /* PreviousWinnersCollapsibleTableContentManager.swift in Sources */,
+				222BB58A20773D520070354B /* SeaLevelRiseContentManager.swift in Sources */,
+				228FA9A2204778B3003610B3 /* TableViewController.swift in Sources */,
+				6D021C04203E2A52003E35D5 /* ReviewViewController.swift in Sources */,
+				22BE72FC2087A77D003BAD05 /* KeyChallengeContentManager.swift in Sources */,
+				220A982B207BC66C00FB5752 /* iNaturalistContent.swift in Sources */,
+				2292ACB32080D37E002DAD23 /* BiomesBikingWalkingPathsViewController.swift in Sources */,
+				2235A2C32063B26A00DEDC9E /* Extensions.swift in Sources */,
+				22395D052052798600177243 /* WaterWatchContent.swift in Sources */,
+				22594972202D969F0047E055 /* SectionFooterView.swift in Sources */,
+				22DD10E0208EFD12004872C7 /* AboutUsContentManager.swift in Sources */,
+				6D0DCF2E203B5AC3000F5D62 /* NavigationTableViewCell.swift in Sources */,
+				6D37E602203C884B00FF4BBA /* GeoHuntViewController.swift in Sources */,
+				22E377BB206E22AA00D277F2 /* iNaturalistDownloadStepViewController.swift in Sources */,
+				222BB586207734E30070354B /* SeaLevelRiseContent.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		229E61522022A79200D4BDDA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		229E615D2022A79200D4BDDA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		229E61582022A79200D4BDDA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 229E613E2022A79200D4BDDA /* Citizen-Scientist-Project */;
+			targetProxy = 229E61572022A79200D4BDDA /* PBXContainerItemProxy */;
+		};
+		229E61632022A79200D4BDDA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 229E613E2022A79200D4BDDA /* Citizen-Scientist-Project */;
+			targetProxy = 229E61622022A79200D4BDDA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		222BB58F20775ECB0070354B /* WebView.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				222BB59020775ECB0070354B /* Base */,
+			);
+			name = WebView.storyboard;
+			sourceTree = "<group>";
+		};
+		2238FC99207307A200BCAE3F /* Navigation.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2238FC9A207307A200BCAE3F /* Base */,
+			);
+			name = Navigation.storyboard;
+			sourceTree = "<group>";
+		};
+		2238FCA02073107400BCAE3F /* Profile.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2238FCA12073107400BCAE3F /* Base */,
+			);
+			name = Profile.storyboard;
+			sourceTree = "<group>";
+		};
+		2238FCA3207310B000BCAE3F /* GeoHunt.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2238FCA4207310B000BCAE3F /* Base */,
+			);
+			name = GeoHunt.storyboard;
+			sourceTree = "<group>";
+		};
+		2238FCA82073113300BCAE3F /* Explore.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2238FCA92073113300BCAE3F /* Base */,
+			);
+			name = Explore.storyboard;
+			sourceTree = "<group>";
+		};
+		2238FCAD207311F800BCAE3F /* Review.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2238FCAE207311F800BCAE3F /* Base */,
+			);
+			name = Review.storyboard;
+			sourceTree = "<group>";
+		};
+		2238FCB2207312AA00BCAE3F /* NewsLetter.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2238FCB3207312AA00BCAE3F /* Base */,
+			);
+			name = NewsLetter.storyboard;
+			sourceTree = "<group>";
+		};
+		2238FCB72073132C00BCAE3F /* AboutUs.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2238FCB82073132C00BCAE3F /* Base */,
+			);
+			name = AboutUs.storyboard;
+			sourceTree = "<group>";
+		};
+		2238FCBA207313AB00BCAE3F /* Events.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2238FCBB207313AB00BCAE3F /* Base */,
+			);
+			name = Events.storyboard;
+			sourceTree = "<group>";
+		};
+		2238FCBF2073143900BCAE3F /* FieldActivities.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2238FCC02073143900BCAE3F /* Base */,
+			);
+			name = FieldActivities.storyboard;
+			sourceTree = "<group>";
+		};
+		2238FCC4207314E900BCAE3F /* ReefRestoration.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2238FCC5207314E900BCAE3F /* Base */,
+			);
+			name = ReefRestoration.storyboard;
+			sourceTree = "<group>";
+		};
+		2238FCC72073154200BCAE3F /* SeaLevelRise.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2238FCC82073154200BCAE3F /* Base */,
+			);
+			name = SeaLevelRise.storyboard;
+			sourceTree = "<group>";
+		};
+		2238FCCA207316AE00BCAE3F /* KeyChallenge.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2238FCCB207316AE00BCAE3F /* Base */,
+			);
+			name = KeyChallenge.storyboard;
+			sourceTree = "<group>";
+		};
+		2238FCF02073301F00BCAE3F /* MiniChallenge.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2238FCF12073301F00BCAE3F /* Base */,
+			);
+			name = MiniChallenge.storyboard;
+			sourceTree = "<group>";
+		};
+		229E614E2022A79200D4BDDA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				229E614F2022A79200D4BDDA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		229E61682022A79200D4BDDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		229E61692022A79200D4BDDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		229E616B2022A79200D4BDDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2EAVSD837T;
+				INFOPLIST_FILE = "Citizen Scientist Project/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Key.Biscayne.Citizen-Scientist-Project2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		229E616C2022A79200D4BDDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2EAVSD837T;
+				INFOPLIST_FILE = "Citizen Scientist Project/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Key.Biscayne.Citizen-Scientist-Project2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		229E616E2022A79200D4BDDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Citizen Scientist ProjectTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Key.Biscayne.Citizen-Scientist-ProjectTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Citizen-Scientist-Project.app/Citizen-Scientist-Project";
+			};
+			name = Debug;
+		};
+		229E616F2022A79200D4BDDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Citizen Scientist ProjectTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Key.Biscayne.Citizen-Scientist-ProjectTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Citizen-Scientist-Project.app/Citizen-Scientist-Project";
+			};
+			name = Release;
+		};
+		229E61712022A79200D4BDDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Citizen Scientist ProjectUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Key.Biscayne.Citizen-Scientist-ProjectUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Citizen Scientist Project";
+			};
+			name = Debug;
+		};
+		229E61722022A79200D4BDDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Citizen Scientist ProjectUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Key.Biscayne.Citizen-Scientist-ProjectUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Citizen Scientist Project";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		229E613A2022A79200D4BDDA /* Build configuration list for PBXProject "Citizen-Scientist-Project" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				229E61682022A79200D4BDDA /* Debug */,
+				229E61692022A79200D4BDDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		229E616A2022A79200D4BDDA /* Build configuration list for PBXNativeTarget "Citizen-Scientist-Project" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				229E616B2022A79200D4BDDA /* Debug */,
+				229E616C2022A79200D4BDDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		229E616D2022A79200D4BDDA /* Build configuration list for PBXNativeTarget "Citizen-Scientist-ProjectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				229E616E2022A79200D4BDDA /* Debug */,
+				229E616F2022A79200D4BDDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		229E61702022A79200D4BDDA /* Build configuration list for PBXNativeTarget "Citizen-Scientist-ProjectUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				229E61712022A79200D4BDDA /* Debug */,
+				229E61722022A79200D4BDDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		229E61492022A79200D4BDDA /* Citizen_Scientist_Project.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				229E614A2022A79200D4BDDA /* Citizen_Scientist_Project.xcdatamodel */,
+			);
+			currentVersion = 229E614A2022A79200D4BDDA /* Citizen_Scientist_Project.xcdatamodel */;
+			path = Citizen_Scientist_Project.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 229E61372022A79200D4BDDA /* Project object */;
+}

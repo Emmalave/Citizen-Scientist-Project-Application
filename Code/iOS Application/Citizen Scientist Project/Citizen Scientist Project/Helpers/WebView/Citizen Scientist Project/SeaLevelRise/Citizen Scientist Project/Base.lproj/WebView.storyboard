@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UNA-Ob-66Q">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Web View Controller-->
+        <scene sceneID="Lyz-bx-RKP">
+            <objects>
+                <viewController id="UNA-Ob-66Q" customClass="WebViewController" customModule="Citizen_Scientist_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BCc-By-RTu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleAspectFit" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YuS-nc-cgL">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="YuS-nc-cgL" firstAttribute="leading" secondItem="Ve8-Jg-e1E" secondAttribute="leading" id="EE3-gI-vfW"/>
+                            <constraint firstItem="YuS-nc-cgL" firstAttribute="trailing" secondItem="Ve8-Jg-e1E" secondAttribute="trailing" id="QI3-Y3-5Vp"/>
+                            <constraint firstItem="YuS-nc-cgL" firstAttribute="bottom" secondItem="Ve8-Jg-e1E" secondAttribute="bottom" id="egP-5I-tM1"/>
+                            <constraint firstItem="YuS-nc-cgL" firstAttribute="top" secondItem="Ve8-Jg-e1E" secondAttribute="top" id="zlL-ct-GiI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ve8-Jg-e1E"/>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="YuS-nc-cgL" id="eGF-3F-MMP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qGv-vg-E9C" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4850" y="2553"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="d69-p8-YVv">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Biomes Green Spaces View Controller-->
+        <scene sceneID="e2P-H7-doY">
+            <objects>
+                <viewController id="d69-p8-YVv" customClass="BiomesGreenSpacesViewController" customModule="Citizen_Scientist_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uki-ev-8aL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="2000"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="76U-KO-KJx">
+                                <rect key="frame" x="0.0" y="20" width="375" height="1980"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Efi-pn-hHw" userLabel="Mini Challenge View">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1262"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="green-spaces" translatesAutoresizingMaskIntoConstraints="NO" id="Gad-WA-yBM">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="225"/>
+                                            </imageView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kgH-9m-yRt" userLabel="Blue Box 1">
+                                                <rect key="frame" x="0.0" y="225" width="375" height="912"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KEY BISCAYNE’S GREEN SPACES" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZWv-0J-b8V">
+                                                        <rect key="frame" x="16" y="16" width="343" height="24"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HuY-Uh-B4B">
+                                                        <rect key="frame" x="16" y="48" width="343" height="848"/>
+                                                        <mutableString key="text">For purposes of this discussion, green spaces are areas that are limited to trees, plants, grass, and other natural flora. As with the Key’s beaches, green spaces can be divided into 3 areas, those in Crandon Park, the Village of Key Biscayne, and Bill Baggs Park. Each area has both common and unique green spaces.
+
+For instance, Crandon Park has green spaces that include groves of various types of trees as well as grass lands. The Village of Key Biscayne has a Village Green which provides a large area of grass covered space. Bill Baggs Park has similar green space attributes to Crandon Park.
+
+These areas provide many recreational opportunities for residents of and visitors to the Key including areas for picnics, team sports, games, walking, and jogging.
+
+The Village Green includes a children’s play ground with numerous slides and other recreational structures for kids. As are the beaches, these spaces are endangered by many natural and man-made hazards.
+
+Storm induced flooding can harm the grass covered areas. Storm winds can damage the trees found in these areas. User disrespect for the environment can result in large areas of trash. Overuse of areas can turn grass areas into dust bowls.
+
+Citizen Scientist awareness of the hazards that can reduce the recreational potential and beauty of these areas and willingness to report on damaged areas will ensure prolonged availability of green spaces for the use of Key residents and visitors alike.</mutableString>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.0039215686269999999" green="0.17254901959999999" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="HuY-Uh-B4B" secondAttribute="trailing" constant="16" id="4sC-if-p8b"/>
+                                                    <constraint firstAttribute="bottom" secondItem="HuY-Uh-B4B" secondAttribute="bottom" constant="16" id="6JE-6F-8YV"/>
+                                                    <constraint firstAttribute="trailing" secondItem="ZWv-0J-b8V" secondAttribute="trailing" constant="16" id="Fak-OQ-jTd"/>
+                                                    <constraint firstItem="ZWv-0J-b8V" firstAttribute="top" secondItem="kgH-9m-yRt" secondAttribute="top" constant="16" id="Sha-wG-BxJ"/>
+                                                    <constraint firstItem="ZWv-0J-b8V" firstAttribute="leading" secondItem="kgH-9m-yRt" secondAttribute="leading" constant="16" id="XQ6-Tc-vU9"/>
+                                                    <constraint firstItem="HuY-Uh-B4B" firstAttribute="leading" secondItem="kgH-9m-yRt" secondAttribute="leading" constant="16" id="lnP-Np-Iy2"/>
+                                                    <constraint firstItem="HuY-Uh-B4B" firstAttribute="top" secondItem="ZWv-0J-b8V" secondAttribute="bottom" constant="8" id="vHR-Se-uVN"/>
+                                                </constraints>
+                                            </view>
+                                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kwx-yn-tcU" userLabel="Footer">
+                                                <rect key="frame" x="0.0" y="1137" width="375" height="125"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="125" id="n4Y-bA-bPi"/>
+                                                </constraints>
+                                                <connections>
+                                                    <segue destination="3co-BF-CT0" kind="embed" id="Qb8-ZB-dBE"/>
+                                                </connections>
+                                            </containerView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.18823529410000001" green="0.1960784314" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="kwx-yn-tcU" firstAttribute="leading" secondItem="Efi-pn-hHw" secondAttribute="leading" id="0EW-Zq-FnZ"/>
+                                            <constraint firstAttribute="trailing" secondItem="kwx-yn-tcU" secondAttribute="trailing" id="2GI-yo-Cao"/>
+                                            <constraint firstItem="Gad-WA-yBM" firstAttribute="top" secondItem="Efi-pn-hHw" secondAttribute="top" id="4Ig-yr-LAg"/>
+                                            <constraint firstAttribute="bottom" secondItem="kwx-yn-tcU" secondAttribute="bottom" id="S3j-jZ-cjH"/>
+                                            <constraint firstItem="Gad-WA-yBM" firstAttribute="leading" secondItem="Efi-pn-hHw" secondAttribute="leading" id="Swm-mB-zkv"/>
+                                            <constraint firstItem="kgH-9m-yRt" firstAttribute="leading" secondItem="Efi-pn-hHw" secondAttribute="leading" id="TZy-5p-VJK"/>
+                                            <constraint firstItem="kwx-yn-tcU" firstAttribute="top" secondItem="kgH-9m-yRt" secondAttribute="bottom" id="heF-vt-HKU"/>
+                                            <constraint firstItem="Gad-WA-yBM" firstAttribute="width" secondItem="Gad-WA-yBM" secondAttribute="height" multiplier="5:3" identifier="WaterWatchMainImageAspectRatio" id="pv0-GI-gb0"/>
+                                            <constraint firstItem="kgH-9m-yRt" firstAttribute="top" secondItem="Gad-WA-yBM" secondAttribute="bottom" id="stB-L0-OfS"/>
+                                            <constraint firstAttribute="trailing" secondItem="Gad-WA-yBM" secondAttribute="trailing" id="voE-HM-Io7"/>
+                                            <constraint firstAttribute="trailing" secondItem="kgH-9m-yRt" secondAttribute="trailing" id="ypg-HW-1aC"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.08235294118" green="0.090196078430000007" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Efi-pn-hHw" firstAttribute="height" secondItem="76U-KO-KJx" secondAttribute="height" priority="250" identifier="WaterWatchMainViewHeight" id="E5A-6J-6ig"/>
+                                    <constraint firstItem="Efi-pn-hHw" firstAttribute="top" secondItem="76U-KO-KJx" secondAttribute="top" identifier="WaterWatchMainViewTop" id="I1O-C2-SGR"/>
+                                    <constraint firstItem="Efi-pn-hHw" firstAttribute="width" secondItem="76U-KO-KJx" secondAttribute="width" identifier="WaterWatchMainViewWidth" id="Sgi-oc-KQE"/>
+                                    <constraint firstItem="Efi-pn-hHw" firstAttribute="leading" secondItem="76U-KO-KJx" secondAttribute="leading" identifier="WaterWatchMainViewLeading" id="oJk-EF-6I1"/>
+                                    <constraint firstAttribute="bottom" secondItem="Efi-pn-hHw" secondAttribute="bottom" identifier="WaterWatchMainViewBottom" id="uqB-Bd-APV"/>
+                                    <constraint firstAttribute="trailing" secondItem="Efi-pn-hHw" secondAttribute="trailing" identifier="WaterWatchMainViewTrailing" id="y7h-Hd-8an"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="wcL-uC-Aip" firstAttribute="bottom" secondItem="76U-KO-KJx" secondAttribute="bottom" identifier="WaterWatchScrollViewBottom" id="k7p-Sk-9fu"/>
+                            <constraint firstItem="76U-KO-KJx" firstAttribute="top" secondItem="wcL-uC-Aip" secondAttribute="top" identifier="WaterWatchScrollViewTop" id="mWN-uG-537"/>
+                            <constraint firstItem="76U-KO-KJx" firstAttribute="leading" secondItem="wcL-uC-Aip" secondAttribute="leading" identifier="WaterWatchScrollViewLeading" id="n8m-Gh-Qj0"/>
+                            <constraint firstItem="wcL-uC-Aip" firstAttribute="trailing" secondItem="76U-KO-KJx" secondAttribute="trailing" identifier="WaterWatchScrollViewTrailing" id="w1c-RI-0DP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wcL-uC-Aip"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="xSg-Rc-DFg"/>
+                    <size key="freeformSize" width="375" height="2000"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HKY-ge-nrq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5194" y="5795"/>
+        </scene>
+        <!--Footer-->
+        <scene sceneID="fRr-e1-8xU">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Footer" id="3co-BF-CT0" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qkr-DT-CPS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5784" y="6345"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="green-spaces" width="1800" height="1000"/>
+    </resources>
+</document>

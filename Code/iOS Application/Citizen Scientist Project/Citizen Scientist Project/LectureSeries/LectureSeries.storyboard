@@ -1,0 +1,612 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CP4-Ar-ZCL">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Navigation-->
+        <scene sceneID="87V-jJ-sdF">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Navigation" id="uyd-fs-atr" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BjU-oR-Okf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="9892" y="1358"/>
+        </scene>
+        <!--Footer-->
+        <scene sceneID="Via-lb-hvu">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Footer" id="LER-0V-GzW" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X3a-sg-BsG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="9891" y="1401"/>
+        </scene>
+        <!--Lecture Series View Controller-->
+        <scene sceneID="5rU-wm-X0z">
+            <objects>
+                <viewController id="pNP-qc-qh0" customClass="LectureSeriesViewController" customModule="Citizen_Scientist_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="590-ma-yq2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="7000"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iEm-xt-iOd">
+                                <rect key="frame" x="0.0" y="64" width="375" height="6936"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hrO-Dz-shI">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="6061"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lecture-series" translatesAutoresizingMaskIntoConstraints="NO" id="nwo-sX-bd0">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="225"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="nwo-sX-bd0" secondAttribute="height" multiplier="5:3" identifier="WaterWatchMainImageAspectRatio" id="Tu9-ZS-lXc"/>
+                                                </constraints>
+                                            </imageView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="09d-OB-GBW" userLabel="Blue Box 1">
+                                                <rect key="frame" x="0.0" y="225" width="375" height="681"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KEY BISCAYNE CITIZEN SCIENTIST PROJECT’S LECTURE SERIES" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="uxj-6K-QjX">
+                                                        <rect key="frame" x="16" y="16" width="343" height="48"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kdd-hd-gRj">
+                                                        <rect key="frame" x="16" y="80" width="343" height="226"/>
+                                                        <string key="text">The Citizen Scientist Project’s Lecture Series is an ongoing monthly lecture series hosted on Key Biscayne and is open &amp; free to the public.
+
+Our lecture series topics vary from core topics in environmental science &amp; conservation to current topics that immediately impact Key Biscayne, Biscayne Bay, the Everglades, and other regions throughout South Florida.
+</string>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UKJ-Yg-XGW" userLabel="Water Background">
+                                                        <rect key="frame" x="0.0" y="306" width="375" height="375"/>
+                                                        <subviews>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="water-bg" translatesAutoresizingMaskIntoConstraints="NO" id="gyp-ES-DhD">
+                                                                <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="375" id="VI8-5Y-wHW"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="event-icon" translatesAutoresizingMaskIntoConstraints="NO" id="Cl2-by-gUE">
+                                                                <rect key="frame" x="124.5" y="43" width="125" height="125"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="Cl2-by-gUE" secondAttribute="height" multiplier="1:1" id="Ng4-Qf-7aW"/>
+                                                                    <constraint firstAttribute="height" constant="125" id="fac-V7-vJY"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JOIN THE NEXT CITIZEN SCIENTIST PROJECT LECTURE" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Seq-P4-Icd">
+                                                                <rect key="frame" x="32" y="189" width="311" height="48"/>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DeD-sN-zku">
+                                                                <rect key="frame" x="112.5" y="281" width="150" height="44"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="150" id="gbv-tz-Y8X"/>
+                                                                    <constraint firstAttribute="height" constant="44" id="gv9-0H-O5j"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                                                <state key="normal" title="Learn More"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                        <real key="value" value="4"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="clickLearnMoreButton:" destination="pNP-qc-qh0" eventType="touchUpInside" id="EZ5-g2-Mal"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstItem="Seq-P4-Icd" firstAttribute="top" secondItem="Cl2-by-gUE" secondAttribute="bottom" constant="21" id="4Ll-Pf-Rkt"/>
+                                                            <constraint firstItem="gyp-ES-DhD" firstAttribute="top" secondItem="UKJ-Yg-XGW" secondAttribute="top" id="7B7-yH-baq"/>
+                                                            <constraint firstItem="Cl2-by-gUE" firstAttribute="centerX" secondItem="UKJ-Yg-XGW" secondAttribute="centerX" id="BXX-T5-8CN"/>
+                                                            <constraint firstAttribute="trailing" secondItem="Seq-P4-Icd" secondAttribute="trailing" constant="32" id="LcA-co-kdj"/>
+                                                            <constraint firstItem="gyp-ES-DhD" firstAttribute="leading" secondItem="UKJ-Yg-XGW" secondAttribute="leading" id="M0Z-dB-qew"/>
+                                                            <constraint firstItem="Cl2-by-gUE" firstAttribute="top" secondItem="UKJ-Yg-XGW" secondAttribute="top" constant="43" id="Vc8-Ec-CZb"/>
+                                                            <constraint firstItem="DeD-sN-zku" firstAttribute="centerX" secondItem="UKJ-Yg-XGW" secondAttribute="centerX" id="Zag-2f-UTy"/>
+                                                            <constraint firstItem="DeD-sN-zku" firstAttribute="top" secondItem="Seq-P4-Icd" secondAttribute="bottom" constant="44" id="nG5-hk-7fd"/>
+                                                            <constraint firstItem="Seq-P4-Icd" firstAttribute="leading" secondItem="UKJ-Yg-XGW" secondAttribute="leading" constant="32" id="s3p-qU-t5l"/>
+                                                            <constraint firstAttribute="trailing" secondItem="gyp-ES-DhD" secondAttribute="trailing" id="wMo-es-Ls8"/>
+                                                            <constraint firstAttribute="bottom" secondItem="gyp-ES-DhD" secondAttribute="bottom" id="yoQ-hF-Khc"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.0039215686269999999" green="0.17254901959999999" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="kdd-hd-gRj" firstAttribute="top" secondItem="uxj-6K-QjX" secondAttribute="bottom" constant="16" id="3sE-eB-fWQ"/>
+                                                    <constraint firstAttribute="trailing" secondItem="kdd-hd-gRj" secondAttribute="trailing" constant="16" id="BVp-in-Lcq"/>
+                                                    <constraint firstItem="UKJ-Yg-XGW" firstAttribute="leading" secondItem="09d-OB-GBW" secondAttribute="leading" id="GGy-KS-wlw"/>
+                                                    <constraint firstAttribute="bottom" secondItem="UKJ-Yg-XGW" secondAttribute="bottom" id="ew7-Ow-ExI"/>
+                                                    <constraint firstItem="UKJ-Yg-XGW" firstAttribute="top" secondItem="kdd-hd-gRj" secondAttribute="bottom" id="fSA-D4-fQh"/>
+                                                    <constraint firstItem="kdd-hd-gRj" firstAttribute="leading" secondItem="09d-OB-GBW" secondAttribute="leading" constant="16" id="hNG-Zf-mgy"/>
+                                                    <constraint firstAttribute="trailing" secondItem="uxj-6K-QjX" secondAttribute="trailing" constant="16" id="hP9-0l-NEc"/>
+                                                    <constraint firstAttribute="trailing" secondItem="UKJ-Yg-XGW" secondAttribute="trailing" id="m1X-Gg-jMX"/>
+                                                    <constraint firstItem="uxj-6K-QjX" firstAttribute="top" secondItem="09d-OB-GBW" secondAttribute="top" constant="16" id="pUf-os-uKD"/>
+                                                    <constraint firstItem="uxj-6K-QjX" firstAttribute="leading" secondItem="09d-OB-GBW" secondAttribute="leading" constant="16" id="xGx-B4-Kdk"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ypX-k0-07x">
+                                                <rect key="frame" x="0.0" y="906" width="375" height="5030"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zmd-SY-pEr">
+                                                        <rect key="frame" x="0.0" y="0.0" width="375" height="564"/>
+                                                        <subviews>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="what-is-cit-sci" translatesAutoresizingMaskIntoConstraints="NO" id="cCg-Ja-wz1">
+                                                                <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="cCg-Ja-wz1" secondAttribute="height" multiplier="3:2" id="8EE-jz-O28"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WHAT IS A CITIZEN SCIENTIST?" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="xPP-Ph-wda">
+                                                                <rect key="frame" x="16" y="282" width="343" height="24"/>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                                                <color key="textColor" red="0.23921568630000001" green="0.22352941179999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZFI-Gz-USI">
+                                                                <rect key="frame" x="16" y="322" width="343" height="226"/>
+                                                                <string key="text">If you go to Google and type in citizen science, you will get over two million hits. So what is a this anyway? You may have heard it on the radio or read about it in the paper, but what is it really? Citizen science is a way for you, the general public, to be directly involved in the process of scientific data collection and be engaged in scientific thinking. The purpose is to have volunteers beachesbecome amateur scientists while working with a group of professional scientists.</string>
+                                                                <color key="textColor" red="0.23921568630000001" green="0.22352941179999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                            </textView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" red="0.95686274510000002" green="0.96470588239999999" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <constraints>
+                                                            <constraint firstItem="cCg-Ja-wz1" firstAttribute="top" secondItem="Zmd-SY-pEr" secondAttribute="top" id="0pt-3D-myb"/>
+                                                            <constraint firstItem="cCg-Ja-wz1" firstAttribute="leading" secondItem="Zmd-SY-pEr" secondAttribute="leading" id="JEy-PW-o3E"/>
+                                                            <constraint firstItem="xPP-Ph-wda" firstAttribute="top" secondItem="cCg-Ja-wz1" secondAttribute="bottom" constant="32" id="cK8-XF-Cwj"/>
+                                                            <constraint firstItem="xPP-Ph-wda" firstAttribute="leading" secondItem="Zmd-SY-pEr" secondAttribute="leading" constant="16" id="d5F-BR-KVe"/>
+                                                            <constraint firstAttribute="trailing" secondItem="ZFI-Gz-USI" secondAttribute="trailing" constant="16" id="j2E-kK-Cxq"/>
+                                                            <constraint firstItem="ZFI-Gz-USI" firstAttribute="leading" secondItem="Zmd-SY-pEr" secondAttribute="leading" constant="16" id="ji9-s7-7i8"/>
+                                                            <constraint firstItem="ZFI-Gz-USI" firstAttribute="top" secondItem="xPP-Ph-wda" secondAttribute="bottom" constant="16" id="kie-vT-atk"/>
+                                                            <constraint firstAttribute="trailing" secondItem="xPP-Ph-wda" secondAttribute="trailing" constant="16" id="mHp-ra-AlS"/>
+                                                            <constraint firstAttribute="trailing" secondItem="cCg-Ja-wz1" secondAttribute="trailing" id="nU7-F3-BlZ"/>
+                                                            <constraint firstAttribute="bottom" secondItem="ZFI-Gz-USI" secondAttribute="bottom" constant="16" id="vrg-57-25x"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="end-H9-TdV">
+                                                        <rect key="frame" x="0.0" y="564" width="375" height="621.5"/>
+                                                        <subviews>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bill-baggs-lecture" translatesAutoresizingMaskIntoConstraints="NO" id="Vhq-Yy-QNu">
+                                                                <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="Vhq-Yy-QNu" secondAttribute="height" multiplier="3:2" id="zd2-w2-Owo"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BILL BAGGS STATE PARK" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="2Lw-kS-FqI">
+                                                                <rect key="frame" x="16" y="282.5" width="343" height="24"/>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                                                <color key="textColor" red="0.23921568630000001" green="0.22352941179999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aeD-SF-T6x">
+                                                                <rect key="frame" x="16" y="322.5" width="343" height="283.5"/>
+                                                                <mutableString key="text">Dr. Elizabeth Golden talks to us about Bill Baggs State Park. The State Park has a unique history and a number of natural resources that the public can utilize! Bill Baggs Cape Florida State Park is the home of a historic lighthouse built in 1825 and reconstructed in 1846, and is the oldest standing structure in Miami-Dade County. Visitors come to the park to sunbathe, swim and picnic on more than one mile of sandy Atlantic beachfront, currently ranked #7 on the list of “Top 10 Beaches in America” by Dr. Stephen Leatherman, aka ‘Dr. Beach.’ Biking and kayaking are popular activities.</mutableString>
+                                                                <color key="textColor" red="0.23921568630000001" green="0.22352941179999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                            </textView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" red="0.95686274510000002" green="0.96470588239999999" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="Vhq-Yy-QNu" secondAttribute="trailing" id="AgL-Kg-ojs"/>
+                                                            <constraint firstItem="Vhq-Yy-QNu" firstAttribute="top" secondItem="end-H9-TdV" secondAttribute="top" id="OJZ-ZY-a9K"/>
+                                                            <constraint firstItem="2Lw-kS-FqI" firstAttribute="leading" secondItem="end-H9-TdV" secondAttribute="leading" constant="16" id="S71-3K-gnj"/>
+                                                            <constraint firstAttribute="trailing" secondItem="aeD-SF-T6x" secondAttribute="trailing" constant="16" id="Vre-UZ-IAb"/>
+                                                            <constraint firstItem="aeD-SF-T6x" firstAttribute="top" secondItem="2Lw-kS-FqI" secondAttribute="bottom" constant="16" id="em7-hm-kHL"/>
+                                                            <constraint firstItem="2Lw-kS-FqI" firstAttribute="top" secondItem="Vhq-Yy-QNu" secondAttribute="bottom" constant="32" id="gYF-47-PWO"/>
+                                                            <constraint firstAttribute="bottom" secondItem="aeD-SF-T6x" secondAttribute="bottom" constant="16" id="khZ-1R-QxR"/>
+                                                            <constraint firstAttribute="trailing" secondItem="2Lw-kS-FqI" secondAttribute="trailing" constant="16" id="v62-p3-ggU"/>
+                                                            <constraint firstItem="aeD-SF-T6x" firstAttribute="leading" secondItem="end-H9-TdV" secondAttribute="leading" constant="16" id="xiX-8z-Fey"/>
+                                                            <constraint firstItem="Vhq-Yy-QNu" firstAttribute="leading" secondItem="end-H9-TdV" secondAttribute="leading" id="zmj-Lp-Zrw"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TqC-Va-gz8">
+                                                        <rect key="frame" x="0.0" y="1185.5" width="375" height="616.5"/>
+                                                        <subviews>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="changing-by-degrees-lecture" translatesAutoresizingMaskIntoConstraints="NO" id="AnR-fd-pKZ">
+                                                                <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="AnR-fd-pKZ" secondAttribute="height" multiplier="3:2" id="dhq-ob-bg3"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CHANGING BY DEGREES – THE FATE OF CORAL REEF ECOSYSTEMS IN AN ERA OF CLIMATE CHANGE" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="ERK-wR-cF1">
+                                                                <rect key="frame" x="16" y="282.5" width="343" height="95.5"/>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                                                <color key="textColor" red="0.23921568630000001" green="0.22352941179999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mfm-t1-TCb">
+                                                                <rect key="frame" x="16" y="394" width="343" height="207"/>
+                                                                <string key="text">Dr. Andrew Baker’s lecture about the declining health of coral reefs around the world, and how research at the Rosenstiel School can help understand, prevent, and reverse these declines. The lecture discusses the effects of climate change on coral reefs, in particular the phenomenon of coral ‘bleaching’, and the question of whether corals can adapt to increasing temperatures and ocean acidification.</string>
+                                                                <color key="textColor" red="0.23921568630000001" green="0.22352941179999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                            </textView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" red="0.95686274510000002" green="0.96470588239999999" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <constraints>
+                                                            <constraint firstItem="AnR-fd-pKZ" firstAttribute="top" secondItem="TqC-Va-gz8" secondAttribute="top" id="3mB-TH-uyj"/>
+                                                            <constraint firstAttribute="trailing" secondItem="ERK-wR-cF1" secondAttribute="trailing" constant="16" id="8vv-bq-MJg"/>
+                                                            <constraint firstAttribute="trailing" secondItem="mfm-t1-TCb" secondAttribute="trailing" constant="16" id="Cmz-1U-yon"/>
+                                                            <constraint firstAttribute="trailing" secondItem="AnR-fd-pKZ" secondAttribute="trailing" id="Gde-15-OeB"/>
+                                                            <constraint firstItem="ERK-wR-cF1" firstAttribute="top" secondItem="AnR-fd-pKZ" secondAttribute="bottom" constant="32" id="NeQ-PA-2e1"/>
+                                                            <constraint firstItem="mfm-t1-TCb" firstAttribute="top" secondItem="ERK-wR-cF1" secondAttribute="bottom" constant="16" id="OnW-X5-edG"/>
+                                                            <constraint firstAttribute="bottom" secondItem="mfm-t1-TCb" secondAttribute="bottom" constant="16" id="be3-do-fic"/>
+                                                            <constraint firstItem="mfm-t1-TCb" firstAttribute="leading" secondItem="TqC-Va-gz8" secondAttribute="leading" constant="16" id="e0d-zx-3Iu"/>
+                                                            <constraint firstItem="AnR-fd-pKZ" firstAttribute="leading" secondItem="TqC-Va-gz8" secondAttribute="leading" id="fhx-5a-5Is"/>
+                                                            <constraint firstItem="ERK-wR-cF1" firstAttribute="leading" secondItem="TqC-Va-gz8" secondAttribute="leading" constant="16" id="xSV-G4-Bl8"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gbS-y6-F7I">
+                                                        <rect key="frame" x="0.0" y="1802" width="375" height="607.5"/>
+                                                        <subviews>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hurricane-lecture" translatesAutoresizingMaskIntoConstraints="NO" id="7qK-hu-eN1">
+                                                                <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="7qK-hu-eN1" secondAttribute="height" multiplier="3:2" id="uqS-IH-3B2"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HURRICANE SEASON &amp; FORECASTING" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="QCR-1o-SKE">
+                                                                <rect key="frame" x="16" y="282.5" width="343" height="48"/>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                                                <color key="textColor" red="0.23921568630000001" green="0.22352941179999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tkh-zU-MFZ">
+                                                                <rect key="frame" x="16" y="346.5" width="343" height="245.5"/>
+                                                                <mutableString key="text">A lecture on the general topic of Atlantic hurricanes by Dr. Aberson will be presented. The presentation will include the current information we have about these destructive events. June 1st every year marks the start of Hurricane Season, and no, we do not mean the UM football season. It’s the time of year when we all should be making sure we have our hurricane kit ready so we do not need to scramble at the last minute. This will last through November 30th and hopefully no longer, though that has happened in the past.</mutableString>
+                                                                <color key="textColor" red="0.23921568630000001" green="0.22352941179999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                            </textView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" red="0.95686274510000002" green="0.96470588239999999" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="QCR-1o-SKE" secondAttribute="trailing" constant="16" id="6Ef-UC-wtM"/>
+                                                            <constraint firstAttribute="trailing" secondItem="Tkh-zU-MFZ" secondAttribute="trailing" constant="16" id="7AW-Gg-EuA"/>
+                                                            <constraint firstItem="Tkh-zU-MFZ" firstAttribute="top" secondItem="QCR-1o-SKE" secondAttribute="bottom" constant="16" id="CuM-BG-9Ni"/>
+                                                            <constraint firstItem="QCR-1o-SKE" firstAttribute="top" secondItem="7qK-hu-eN1" secondAttribute="bottom" constant="32" id="LGr-jf-USC"/>
+                                                            <constraint firstItem="QCR-1o-SKE" firstAttribute="leading" secondItem="gbS-y6-F7I" secondAttribute="leading" constant="16" id="Rwn-Nr-i3k"/>
+                                                            <constraint firstItem="Tkh-zU-MFZ" firstAttribute="leading" secondItem="gbS-y6-F7I" secondAttribute="leading" constant="16" id="S4y-gv-v98"/>
+                                                            <constraint firstItem="7qK-hu-eN1" firstAttribute="top" secondItem="gbS-y6-F7I" secondAttribute="top" id="ZXi-wp-mGo"/>
+                                                            <constraint firstAttribute="bottom" secondItem="Tkh-zU-MFZ" secondAttribute="bottom" constant="16" id="dL7-fb-O0h"/>
+                                                            <constraint firstAttribute="trailing" secondItem="7qK-hu-eN1" secondAttribute="trailing" id="sI9-wY-gwK"/>
+                                                            <constraint firstItem="7qK-hu-eN1" firstAttribute="leading" secondItem="gbS-y6-F7I" secondAttribute="leading" id="teK-Ne-2gJ"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hkt-q7-shN">
+                                                        <rect key="frame" x="0.0" y="2409.5" width="375" height="473.5"/>
+                                                        <subviews>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="invasive-species-lecture" translatesAutoresizingMaskIntoConstraints="NO" id="bld-Ap-nwS">
+                                                                <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="bld-Ap-nwS" secondAttribute="height" multiplier="3:2" id="k47-U9-tbw"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="INVASIVE SPECIES IN KEY BISCAYNE &amp; SOUTH FLORIDA" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="OM9-Hf-YQe">
+                                                                <rect key="frame" x="16" y="282.5" width="343" height="48"/>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                                                <color key="textColor" red="0.23921568630000001" green="0.22352941179999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FCv-xu-KAr">
+                                                                <rect key="frame" x="16" y="346.5" width="343" height="111.5"/>
+                                                                <string key="text">Tom Jackson discusses Invasive Species! Tom is employed by NOAA as a fisheries biologist but is a wealth of knowledge about invasive species. Invasive species are a problem that we all see on a daily basis.</string>
+                                                                <color key="textColor" red="0.23921568630000001" green="0.22352941179999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                            </textView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" red="0.95686274510000002" green="0.96470588239999999" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <constraints>
+                                                            <constraint firstItem="FCv-xu-KAr" firstAttribute="leading" secondItem="hkt-q7-shN" secondAttribute="leading" constant="16" id="Bfc-rN-yp9"/>
+                                                            <constraint firstItem="OM9-Hf-YQe" firstAttribute="leading" secondItem="hkt-q7-shN" secondAttribute="leading" constant="16" id="Cek-K8-Ss3"/>
+                                                            <constraint firstItem="bld-Ap-nwS" firstAttribute="leading" secondItem="hkt-q7-shN" secondAttribute="leading" id="D4b-qH-Ou8"/>
+                                                            <constraint firstItem="OM9-Hf-YQe" firstAttribute="top" secondItem="bld-Ap-nwS" secondAttribute="bottom" constant="32" id="HLF-jh-u1A"/>
+                                                            <constraint firstAttribute="trailing" secondItem="FCv-xu-KAr" secondAttribute="trailing" constant="16" id="Hh8-Th-J60"/>
+                                                            <constraint firstAttribute="trailing" secondItem="OM9-Hf-YQe" secondAttribute="trailing" constant="16" id="JU3-73-Tsd"/>
+                                                            <constraint firstItem="FCv-xu-KAr" firstAttribute="top" secondItem="OM9-Hf-YQe" secondAttribute="bottom" constant="16" id="QEe-mL-1sL"/>
+                                                            <constraint firstAttribute="bottom" secondItem="FCv-xu-KAr" secondAttribute="bottom" constant="16" id="SIt-KE-7xm"/>
+                                                            <constraint firstItem="bld-Ap-nwS" firstAttribute="top" secondItem="hkt-q7-shN" secondAttribute="top" id="jUz-pu-dYq"/>
+                                                            <constraint firstAttribute="trailing" secondItem="bld-Ap-nwS" secondAttribute="trailing" id="nmQ-d1-aw1"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cuG-oU-hyH">
+                                                        <rect key="frame" x="0.0" y="2883" width="375" height="550"/>
+                                                        <subviews>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="marine-invertebrate-lecture" translatesAutoresizingMaskIntoConstraints="NO" id="I4O-aB-2Yd">
+                                                                <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="I4O-aB-2Yd" secondAttribute="height" multiplier="3:2" id="RCh-xI-5dV"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MARINE INVERTEBRATE IDENTIFICATION" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="6g1-dt-rr2">
+                                                                <rect key="frame" x="16" y="282.5" width="343" height="48"/>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                                                <color key="textColor" red="0.23921568630000001" green="0.22352941179999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mQY-Tj-pHa">
+                                                                <rect key="frame" x="16" y="346.5" width="343" height="188"/>
+                                                                <string key="text">This course will introduce you to the most common sea sponges, octocorals (soft corals), crustaceans, echinoderms and mollusks that you’re likely to encounter when diving or snorkeling on southeast Florida coral reefs. A test will be administered at the end of the class and all participants will receive a resource CD-ROM of images from the course for future reference.</string>
+                                                                <color key="textColor" red="0.23921568630000001" green="0.22352941179999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                            </textView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" red="0.95686274510000002" green="0.96470588239999999" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <constraints>
+                                                            <constraint firstItem="I4O-aB-2Yd" firstAttribute="top" secondItem="cuG-oU-hyH" secondAttribute="top" id="BxD-jU-MfK"/>
+                                                            <constraint firstItem="mQY-Tj-pHa" firstAttribute="leading" secondItem="cuG-oU-hyH" secondAttribute="leading" constant="16" id="G7L-1x-bYo"/>
+                                                            <constraint firstItem="mQY-Tj-pHa" firstAttribute="top" secondItem="6g1-dt-rr2" secondAttribute="bottom" constant="16" id="Hgf-HU-phr"/>
+                                                            <constraint firstAttribute="trailing" secondItem="I4O-aB-2Yd" secondAttribute="trailing" id="OwP-gq-Wtk"/>
+                                                            <constraint firstAttribute="trailing" secondItem="6g1-dt-rr2" secondAttribute="trailing" constant="16" id="YBu-sK-zz0"/>
+                                                            <constraint firstItem="I4O-aB-2Yd" firstAttribute="leading" secondItem="cuG-oU-hyH" secondAttribute="leading" id="bYP-fS-cqG"/>
+                                                            <constraint firstAttribute="trailing" secondItem="mQY-Tj-pHa" secondAttribute="trailing" constant="16" id="itL-hj-2Rc"/>
+                                                            <constraint firstItem="6g1-dt-rr2" firstAttribute="leading" secondItem="cuG-oU-hyH" secondAttribute="leading" constant="16" id="oLv-Ud-ZdZ"/>
+                                                            <constraint firstAttribute="bottom" secondItem="mQY-Tj-pHa" secondAttribute="bottom" constant="16" id="w4b-Sx-sfv"/>
+                                                            <constraint firstItem="6g1-dt-rr2" firstAttribute="top" secondItem="I4O-aB-2Yd" secondAttribute="bottom" constant="32" id="weg-6d-e1M"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tFn-Wt-ZtO">
+                                                        <rect key="frame" x="0.0" y="3433" width="375" height="564"/>
+                                                        <subviews>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="reef-fish-id-lecture" translatesAutoresizingMaskIntoConstraints="NO" id="FH6-XB-GhA">
+                                                                <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="FH6-XB-GhA" secondAttribute="height" multiplier="3:2" id="FrF-KE-p3H"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="REEF FISH IDENTIFICATION" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="fKq-4Z-xOc">
+                                                                <rect key="frame" x="16" y="282.5" width="343" height="24"/>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                                                <color key="textColor" red="0.23921568630000001" green="0.22352941179999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tOL-DV-IPW">
+                                                                <rect key="frame" x="16" y="322.5" width="343" height="226"/>
+                                                                <string key="text">REEF Fish Identification: A beginner course that teaches the basics of “fishwatching” including identification of 50 commonly sighted species found in the tropical western Atlantic. All materials provided. An evaluation will be conducted at the end of the training. Anyone scoring an 80% or better on the test and who goes on to complete two fish surveys will become an Experience Level 2 volunteer for Reef Environmental Education Foundation (REEF).</string>
+                                                                <color key="textColor" red="0.23921568630000001" green="0.22352941179999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                            </textView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" red="0.95686274510000002" green="0.96470588239999999" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <constraints>
+                                                            <constraint firstItem="tOL-DV-IPW" firstAttribute="top" secondItem="fKq-4Z-xOc" secondAttribute="bottom" constant="16" id="0Fj-Nd-vBg"/>
+                                                            <constraint firstItem="FH6-XB-GhA" firstAttribute="leading" secondItem="tFn-Wt-ZtO" secondAttribute="leading" id="1En-KY-7sF"/>
+                                                            <constraint firstItem="fKq-4Z-xOc" firstAttribute="leading" secondItem="tFn-Wt-ZtO" secondAttribute="leading" constant="16" id="5AK-xm-TUO"/>
+                                                            <constraint firstAttribute="bottom" secondItem="tOL-DV-IPW" secondAttribute="bottom" constant="16" id="Rkk-oQ-wRb"/>
+                                                            <constraint firstAttribute="trailing" secondItem="FH6-XB-GhA" secondAttribute="trailing" id="XmN-3y-1Ws"/>
+                                                            <constraint firstItem="tOL-DV-IPW" firstAttribute="leading" secondItem="tFn-Wt-ZtO" secondAttribute="leading" constant="16" id="dXz-JF-nRa"/>
+                                                            <constraint firstItem="FH6-XB-GhA" firstAttribute="top" secondItem="tFn-Wt-ZtO" secondAttribute="top" id="hUG-1W-Gr7"/>
+                                                            <constraint firstItem="fKq-4Z-xOc" firstAttribute="top" secondItem="FH6-XB-GhA" secondAttribute="bottom" constant="32" id="hb4-bs-N2y"/>
+                                                            <constraint firstAttribute="trailing" secondItem="fKq-4Z-xOc" secondAttribute="trailing" constant="16" id="ty9-Ml-aEn"/>
+                                                            <constraint firstAttribute="trailing" secondItem="tOL-DV-IPW" secondAttribute="trailing" constant="16" id="yDy-3I-TW9"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Hr-Gb-4Fz">
+                                                        <rect key="frame" x="0.0" y="3997" width="375" height="488"/>
+                                                        <subviews>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stony-coral-id-lecture" translatesAutoresizingMaskIntoConstraints="NO" id="6O5-TE-GKn">
+                                                                <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="6O5-TE-GKn" secondAttribute="height" multiplier="3:2" id="KSl-pV-aEl"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STONY CORAL IDENTIFICATION" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="wdG-3F-jgd">
+                                                                <rect key="frame" x="16" y="282.5" width="343" height="24"/>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                                                <color key="textColor" red="0.23921568630000001" green="0.22352941179999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LFZ-Ih-dl2">
+                                                                <rect key="frame" x="16" y="322.5" width="343" height="150"/>
+                                                                <string key="text">This course will introduce you to roughly thirty species of stony corals that are found within Miami-Dade, Broward, Palm Beach and Martin counties. A knowledge review will be administered at the end of the class and all participants will receive a resource CD-ROM of images from the course for future reference.</string>
+                                                                <color key="textColor" red="0.23921568630000001" green="0.22352941179999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                            </textView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" red="0.95686274510000002" green="0.96470588239999999" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <constraints>
+                                                            <constraint firstItem="LFZ-Ih-dl2" firstAttribute="top" secondItem="wdG-3F-jgd" secondAttribute="bottom" constant="16" id="6Ui-DD-Ywx"/>
+                                                            <constraint firstAttribute="trailing" secondItem="wdG-3F-jgd" secondAttribute="trailing" constant="16" id="7A0-tu-lmM"/>
+                                                            <constraint firstItem="6O5-TE-GKn" firstAttribute="leading" secondItem="8Hr-Gb-4Fz" secondAttribute="leading" id="EY7-Tq-ZYK"/>
+                                                            <constraint firstAttribute="trailing" secondItem="6O5-TE-GKn" secondAttribute="trailing" id="Fax-Dq-Ac9"/>
+                                                            <constraint firstItem="wdG-3F-jgd" firstAttribute="top" secondItem="6O5-TE-GKn" secondAttribute="bottom" constant="32" id="K2V-yY-Ax6"/>
+                                                            <constraint firstItem="wdG-3F-jgd" firstAttribute="leading" secondItem="8Hr-Gb-4Fz" secondAttribute="leading" constant="16" id="fI3-76-MGx"/>
+                                                            <constraint firstAttribute="trailing" secondItem="LFZ-Ih-dl2" secondAttribute="trailing" constant="16" id="hQn-G7-GZy"/>
+                                                            <constraint firstAttribute="bottom" secondItem="LFZ-Ih-dl2" secondAttribute="bottom" constant="16" id="lQp-ZJ-nL8"/>
+                                                            <constraint firstItem="LFZ-Ih-dl2" firstAttribute="leading" secondItem="8Hr-Gb-4Fz" secondAttribute="leading" constant="16" id="uHd-rv-aI1"/>
+                                                            <constraint firstItem="6O5-TE-GKn" firstAttribute="top" secondItem="8Hr-Gb-4Fz" secondAttribute="top" id="xeG-As-NyH"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lIm-iF-iA8">
+                                                        <rect key="frame" x="0.0" y="4485" width="375" height="545"/>
+                                                        <subviews>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="youth-fishing" translatesAutoresizingMaskIntoConstraints="NO" id="wYx-lY-J8I">
+                                                                <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="wYx-lY-J8I" secondAttribute="height" multiplier="3:2" id="KjG-A9-Gut"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YOUTH FISHING CLINIC" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="8MP-bu-Nbm">
+                                                                <rect key="frame" x="16" y="282.5" width="343" height="24"/>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                                                <color key="textColor" red="0.23921568630000001" green="0.22352941179999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2W3-th-G5w">
+                                                                <rect key="frame" x="16" y="322.5" width="343" height="207"/>
+                                                                <string key="text">The Youth Fishing Clinic is designed to create responsible marine resource stewards by teaching children about Florida’s marine ecosystems. Kids will learn about the animals that live in our marine environment, how to tie a knot and bait a hook, fishing regulations, proper casting and release techniques. Most importantly, this event will serve as a way for the community to learn more about becoming a Citizen Scientist.</string>
+                                                                <color key="textColor" red="0.23921568630000001" green="0.22352941179999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                            </textView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" red="0.95686274510000002" green="0.96470588239999999" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <constraints>
+                                                            <constraint firstItem="2W3-th-G5w" firstAttribute="top" secondItem="8MP-bu-Nbm" secondAttribute="bottom" constant="16" id="2iu-jz-vSz"/>
+                                                            <constraint firstItem="8MP-bu-Nbm" firstAttribute="top" secondItem="wYx-lY-J8I" secondAttribute="bottom" constant="32" id="3RH-3E-eQB"/>
+                                                            <constraint firstAttribute="trailing" secondItem="2W3-th-G5w" secondAttribute="trailing" constant="16" id="JOL-CP-hZr"/>
+                                                            <constraint firstItem="2W3-th-G5w" firstAttribute="leading" secondItem="lIm-iF-iA8" secondAttribute="leading" constant="16" id="KoB-2d-S6W"/>
+                                                            <constraint firstItem="wYx-lY-J8I" firstAttribute="top" secondItem="lIm-iF-iA8" secondAttribute="top" id="W5d-SC-oQR"/>
+                                                            <constraint firstAttribute="trailing" secondItem="wYx-lY-J8I" secondAttribute="trailing" id="Wv5-fW-bsk"/>
+                                                            <constraint firstAttribute="bottom" secondItem="2W3-th-G5w" secondAttribute="bottom" constant="16" id="hbK-OS-kjx"/>
+                                                            <constraint firstAttribute="trailing" secondItem="8MP-bu-Nbm" secondAttribute="trailing" constant="16" id="vwF-LV-zfl"/>
+                                                            <constraint firstItem="wYx-lY-J8I" firstAttribute="leading" secondItem="lIm-iF-iA8" secondAttribute="leading" id="wYN-ON-0ZR"/>
+                                                            <constraint firstItem="8MP-bu-Nbm" firstAttribute="leading" secondItem="lIm-iF-iA8" secondAttribute="leading" constant="16" id="zTu-am-uhX"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="hkt-q7-shN" firstAttribute="top" secondItem="gbS-y6-F7I" secondAttribute="bottom" id="4lD-XD-gpg"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Zmd-SY-pEr" secondAttribute="trailing" id="67t-pV-H2a"/>
+                                                    <constraint firstItem="gbS-y6-F7I" firstAttribute="leading" secondItem="ypX-k0-07x" secondAttribute="leading" id="7bM-NE-C85"/>
+                                                    <constraint firstItem="Zmd-SY-pEr" firstAttribute="top" secondItem="ypX-k0-07x" secondAttribute="top" id="Akk-UJ-ZDS"/>
+                                                    <constraint firstAttribute="trailing" secondItem="lIm-iF-iA8" secondAttribute="trailing" id="Epj-fY-zFV"/>
+                                                    <constraint firstAttribute="trailing" secondItem="TqC-Va-gz8" secondAttribute="trailing" id="Gm1-33-CCw"/>
+                                                    <constraint firstItem="TqC-Va-gz8" firstAttribute="top" secondItem="end-H9-TdV" secondAttribute="bottom" id="HEW-wo-zdM"/>
+                                                    <constraint firstItem="cuG-oU-hyH" firstAttribute="top" secondItem="hkt-q7-shN" secondAttribute="bottom" id="HMk-W7-qma"/>
+                                                    <constraint firstItem="Zmd-SY-pEr" firstAttribute="leading" secondItem="ypX-k0-07x" secondAttribute="leading" id="Jct-qn-ZwL"/>
+                                                    <constraint firstItem="gbS-y6-F7I" firstAttribute="top" secondItem="TqC-Va-gz8" secondAttribute="bottom" id="KiA-T4-xoy"/>
+                                                    <constraint firstItem="tFn-Wt-ZtO" firstAttribute="leading" secondItem="ypX-k0-07x" secondAttribute="leading" id="LHH-bn-Qge"/>
+                                                    <constraint firstAttribute="trailing" secondItem="gbS-y6-F7I" secondAttribute="trailing" id="R3H-vc-Yot"/>
+                                                    <constraint firstItem="hkt-q7-shN" firstAttribute="leading" secondItem="ypX-k0-07x" secondAttribute="leading" id="RdG-0D-qQW"/>
+                                                    <constraint firstItem="end-H9-TdV" firstAttribute="leading" secondItem="ypX-k0-07x" secondAttribute="leading" id="SSb-Bt-WIr"/>
+                                                    <constraint firstItem="Zmd-SY-pEr" firstAttribute="leading" secondItem="ypX-k0-07x" secondAttribute="leading" id="Sqw-CK-ECq"/>
+                                                    <constraint firstItem="lIm-iF-iA8" firstAttribute="leading" secondItem="ypX-k0-07x" secondAttribute="leading" id="Ulf-Ua-H4t"/>
+                                                    <constraint firstAttribute="bottom" secondItem="lIm-iF-iA8" secondAttribute="bottom" id="UvH-Kq-A61"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Zmd-SY-pEr" secondAttribute="trailing" id="bfz-TP-jX2"/>
+                                                    <constraint firstAttribute="trailing" secondItem="end-H9-TdV" secondAttribute="trailing" id="fSg-64-cyR"/>
+                                                    <constraint firstItem="lIm-iF-iA8" firstAttribute="top" secondItem="8Hr-Gb-4Fz" secondAttribute="bottom" id="h3i-9d-aJE"/>
+                                                    <constraint firstAttribute="trailing" secondItem="8Hr-Gb-4Fz" secondAttribute="trailing" id="inP-ke-2le"/>
+                                                    <constraint firstItem="tFn-Wt-ZtO" firstAttribute="top" secondItem="cuG-oU-hyH" secondAttribute="bottom" id="n3K-td-G4U"/>
+                                                    <constraint firstItem="end-H9-TdV" firstAttribute="top" secondItem="Zmd-SY-pEr" secondAttribute="bottom" id="naG-AW-7IL"/>
+                                                    <constraint firstItem="TqC-Va-gz8" firstAttribute="leading" secondItem="ypX-k0-07x" secondAttribute="leading" id="oLE-ju-cZ5"/>
+                                                    <constraint firstAttribute="trailing" secondItem="tFn-Wt-ZtO" secondAttribute="trailing" id="ol6-0K-cR8"/>
+                                                    <constraint firstAttribute="trailing" secondItem="cuG-oU-hyH" secondAttribute="trailing" id="tBN-6n-gcJ"/>
+                                                    <constraint firstAttribute="trailing" secondItem="hkt-q7-shN" secondAttribute="trailing" id="uLT-JS-c15"/>
+                                                    <constraint firstItem="8Hr-Gb-4Fz" firstAttribute="top" secondItem="tFn-Wt-ZtO" secondAttribute="bottom" id="xeh-aD-ECe"/>
+                                                    <constraint firstItem="8Hr-Gb-4Fz" firstAttribute="leading" secondItem="ypX-k0-07x" secondAttribute="leading" id="zQf-0X-W3a"/>
+                                                    <constraint firstItem="cuG-oU-hyH" firstAttribute="leading" secondItem="ypX-k0-07x" secondAttribute="leading" id="zyi-2h-XCI"/>
+                                                </constraints>
+                                            </view>
+                                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c5O-qO-X4f" userLabel="Footer">
+                                                <rect key="frame" x="0.0" y="5936" width="375" height="125"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="125" id="JMz-yt-9xp"/>
+                                                </constraints>
+                                                <connections>
+                                                    <segue destination="LER-0V-GzW" kind="embed" id="Ah0-hA-v6U"/>
+                                                </connections>
+                                            </containerView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="ypX-k0-07x" firstAttribute="top" secondItem="09d-OB-GBW" secondAttribute="bottom" id="5eF-Jj-b34"/>
+                                            <constraint firstItem="nwo-sX-bd0" firstAttribute="top" secondItem="hrO-Dz-shI" secondAttribute="top" id="FrN-sw-btc"/>
+                                            <constraint firstAttribute="trailing" secondItem="ypX-k0-07x" secondAttribute="trailing" id="Kq2-Io-wCA"/>
+                                            <constraint firstItem="09d-OB-GBW" firstAttribute="leading" secondItem="hrO-Dz-shI" secondAttribute="leading" id="MnC-zQ-4WL"/>
+                                            <constraint firstItem="ypX-k0-07x" firstAttribute="leading" secondItem="hrO-Dz-shI" secondAttribute="leading" id="ZEF-kP-OCA"/>
+                                            <constraint firstAttribute="trailing" secondItem="09d-OB-GBW" secondAttribute="trailing" id="jUT-E8-VJN"/>
+                                            <constraint firstAttribute="bottom" secondItem="c5O-qO-X4f" secondAttribute="bottom" id="naX-uH-4rS"/>
+                                            <constraint firstAttribute="trailing" secondItem="c5O-qO-X4f" secondAttribute="trailing" id="p1Y-of-c8o"/>
+                                            <constraint firstItem="c5O-qO-X4f" firstAttribute="leading" secondItem="hrO-Dz-shI" secondAttribute="leading" id="pxd-XZ-IcB"/>
+                                            <constraint firstItem="c5O-qO-X4f" firstAttribute="top" secondItem="ypX-k0-07x" secondAttribute="bottom" id="uuY-FO-BYA"/>
+                                            <constraint firstItem="09d-OB-GBW" firstAttribute="top" secondItem="nwo-sX-bd0" secondAttribute="bottom" id="woT-mL-71N"/>
+                                            <constraint firstItem="nwo-sX-bd0" firstAttribute="leading" secondItem="hrO-Dz-shI" secondAttribute="leading" id="x6M-fW-DKX"/>
+                                            <constraint firstAttribute="trailing" secondItem="nwo-sX-bd0" secondAttribute="trailing" id="xBa-1T-bm1"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.08235294118" green="0.090196078430000007" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="hrO-Dz-shI" secondAttribute="bottom" identifier="WaterWatchMainViewBottom" id="832-uG-YrD"/>
+                                    <constraint firstItem="hrO-Dz-shI" firstAttribute="top" secondItem="iEm-xt-iOd" secondAttribute="top" identifier="WaterWatchMainViewTop" id="K2h-bf-UL2"/>
+                                    <constraint firstAttribute="trailing" secondItem="hrO-Dz-shI" secondAttribute="trailing" identifier="WaterWatchMainViewTrailing" id="LPQ-8E-len"/>
+                                    <constraint firstItem="hrO-Dz-shI" firstAttribute="width" secondItem="iEm-xt-iOd" secondAttribute="width" identifier="WaterWatchMainViewWidth" id="LmZ-0N-j2n"/>
+                                    <constraint firstItem="hrO-Dz-shI" firstAttribute="height" secondItem="iEm-xt-iOd" secondAttribute="height" priority="250" identifier="WaterWatchMainViewHeight" id="UJd-zg-Ugu"/>
+                                    <constraint firstItem="hrO-Dz-shI" firstAttribute="leading" secondItem="iEm-xt-iOd" secondAttribute="leading" identifier="WaterWatchMainViewLeading" id="md1-bc-L3H"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="YFb-Hl-ZCm" firstAttribute="bottom" secondItem="iEm-xt-iOd" secondAttribute="bottom" identifier="WaterWatchScrollViewBottom" id="0FQ-ze-5aV"/>
+                            <constraint firstItem="YFb-Hl-ZCm" firstAttribute="trailing" secondItem="iEm-xt-iOd" secondAttribute="trailing" identifier="WaterWatchScrollViewTrailing" id="3v6-yp-fZk"/>
+                            <constraint firstItem="iEm-xt-iOd" firstAttribute="leading" secondItem="YFb-Hl-ZCm" secondAttribute="leading" identifier="WaterWatchScrollViewLeading" id="YYI-W1-jHg"/>
+                            <constraint firstItem="iEm-xt-iOd" firstAttribute="top" secondItem="YFb-Hl-ZCm" secondAttribute="top" identifier="WaterWatchScrollViewTop" id="iAe-Jg-fnz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="YFb-Hl-ZCm"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="gCu-yq-pRx">
+                        <barButtonItem key="leftBarButtonItem" image="1-header-nav-1" id="k2J-8r-0ee">
+                            <color key="tintColor" red="0.60392156860000001" green="0.6588235294" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="uyd-fs-atr" kind="show" id="LPN-xw-IsE"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <size key="freeformSize" width="375" height="7000"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X8r-h8-V4o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="9118" y="1382"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="vXY-46-Eb0">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CP4-Ar-ZCL" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Pwm-Wg-2ku">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="pNP-qc-qh0" kind="relationship" relationship="rootViewController" id="ZCr-ER-RFx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rBh-qd-yuP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="9118" y="-2271"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1-header-nav-1" width="37" height="37"/>
+        <image name="bill-baggs-lecture" width="600" height="400"/>
+        <image name="changing-by-degrees-lecture" width="600" height="400"/>
+        <image name="event-icon" width="800" height="800"/>
+        <image name="hurricane-lecture" width="600" height="400"/>
+        <image name="invasive-species-lecture" width="600" height="400"/>
+        <image name="lecture-series" width="1800" height="1000"/>
+        <image name="marine-invertebrate-lecture" width="600" height="400"/>
+        <image name="reef-fish-id-lecture" width="600" height="400"/>
+        <image name="stony-coral-id-lecture" width="600" height="400"/>
+        <image name="water-bg" width="1800" height="1000"/>
+        <image name="what-is-cit-sci" width="600" height="400"/>
+        <image name="youth-fishing" width="600" height="400"/>
+    </resources>
+</document>
